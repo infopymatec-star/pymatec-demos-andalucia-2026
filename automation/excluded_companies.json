@@ -1,0 +1,36 @@
+{
+  "policy": "Exclusión permanente: no investigar ni contactar empresas de Grupo TOPdigital, TDconsulting, sus marcas y empresas expresamente listadas. Si relación no verificable, descartar hasta comprobar. Ninguna comunicación comercial se envía de forma automática.",
+  "fragments": [
+    "topdigital",
+    "tdconsulting",
+    "top digital",
+    "grupo topdigital",
+    "grupo top digital",
+    "td consulting",
+    "top-digital"
+  ],
+  "domains": [
+    "topdigital.es",
+    "topdigital.com",
+    "grupotopdigital.es",
+    "grupotopdigital.com",
+    "tdconsulting.es",
+    "tdconsulting.com"
+  ],
+  "emails": [],
+  "names": [
+    "Grupo TOPdigital",
+    "TOPdigital",
+    "TDconsulting"
+  ],
+  "previously_contacted": [
+    "Laureano Ramos",
+    "Logarze Instalaciones",
+    "Electricidad Antonio Mesa",
+    "Carpintería Rahipe",
+    "Oryx Obras y Servicios",
+    "Bonela Integra S.L.",
+    "Construcciones Bonela",
+    "Construcciones Vázquez Santana"
+  ]
+}
