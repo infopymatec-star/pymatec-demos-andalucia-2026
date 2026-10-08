@@ -1,79 +1,67 @@
-name: Pymatec - propuestas diarias gratis
+name: Pymatec - captación web L-V 08:37
 
 on:
+  schedule:
+    - cron: '37 8 * * 1-5'
+      timezone: 'Europe/Madrid'
+  workflow_dispatch:
   push:
     paths:
       - '.github/workflows/pymatec-free-daily.yml'
-  schedule:
-    - cron: '23 9 * * *'
-      timezone: 'Europe/Madrid'
-  workflow_dispatch:
-
-permissions:
-  contents: write
-  issues: write
 
 concurrency:
   group: pymatec-daily
   cancel-in-progress: false
 
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
 jobs:
   discover:
-    name: Buscar negocios y crear maquetas
+    name: Verificar empresas y crear propuestas
+    if: github.event_name != 'push'
     runs-on: ubuntu-latest
-    timeout-minutes: 18
-    permissions:
-      contents: write
-      issues: write
-      pages: write
-      id-token: write
+    timeout-minutes: 25
     steps:
-      - name: Descargar repositorio
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
         with:
           persist-credentials: true
-      - name: Preparar Python
-        uses: actions/setup-python@v5
+      - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - name: Instalar dependencias libres
+      - name: Instalar dependencias gratuitas
         run: python -m pip install --disable-pip-version-check requests==2.32.5 beautifulsoup4==4.14.2
-      - name: Descubrir, verificar y generar demos
-        run: python automation/free_daily.py
-      - name: Guardar resultados sin repetir empresas
+      - name: Buscar con prioridad Málaga y verificar sin inventar datos
+        run: python automation/prospecting_weekdays.py
+      - name: Guardar histórico, propuestas y el informe
         run: |
           git config user.name 'pymatec-bot'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           git add auto-demos automation/seen.json automation/reports
           if git diff --cached --quiet; then
-            echo 'No hay cambios.'
+            echo 'No hubo cambios.'
           else
-            git commit -m "Propuestas diarias Pymatec $(date -u +%F) [skip ci]"
+            git commit -m "Pymatec prospección verificada $(date -u +%F) [skip ci]"
             git push origin HEAD:main
           fi
-      - name: Informe privado de envio - GitHub issue publico
-        env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: |
-          gh issue create \
-            --title "Pymatec: candidatas del $(date -u +%F) (sin enviar)" \
-            --body-file automation/issue-body.md || echo 'Consultar informe en automation/reports.'
       - name: Preparar GitHub Pages
         uses: actions/configure-pages@v5
-      - name: Empaquetar cinco webs iniciales y nuevas
+      - name: Construir publicación de demos
         run: |
           mkdir -p _site
           unzip -q -o site.zip -d _site
-          if [ -d auto-demos ]; then cp -R auto-demos _site/auto-demos; fi
+          cp -R auto-demos _site/auto-demos
           touch _site/.nojekyll
           printf 'User-agent: *\nDisallow: /\n' > _site/robots.txt
           test -f _site/index.html
-      - name: Subir paginas
-        uses: actions/upload-pages-artifact@v4
+      - uses: actions/upload-pages-artifact@v4
         with:
           path: _site
+
   deploy:
-    name: Publicar maquetas
+    name: Publicar demos revisadas
     needs: discover
     runs-on: ubuntu-latest
     permissions:
@@ -83,6 +71,38 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
-      - name: Desplegar
+      - uses: actions/deploy-pages@v4
         id: deployment
-        uses: actions/deploy-pages@v4
+
+  summary:
+    name: Verificar enlaces y enviar informe al propietario si hay credenciales
+    needs: deploy
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install --disable-pip-version-check requests==2.32.5
+      - name: Resumen solo a correo personal autorizado
+        env:
+          PYMATEC_GMAIL_ADDRESS: ${{ secrets.PYMATEC_GMAIL_ADDRESS }}
+          PYMATEC_GMAIL_APP_PASSWORD: ${{ secrets.PYMATEC_GMAIL_APP_PASSWORD }}
+          PYMATEC_REPORT_RECIPIENT: joselss86@hotmail.com
+        run: python automation/mail_summary.py
+
+  smoke:
+    name: Pruebas de exclusión, edición y correo sin envíos
+    if: github.event_name == 'push'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install --disable-pip-version-check requests==2.32.5 beautifulsoup4==4.14.2
+      - run: python automation/prospecting_weekdays.py --demo-test
+      - run: python automation/mail_summary.py --demo-test
