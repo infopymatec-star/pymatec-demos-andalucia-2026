@@ -361,18 +361,20 @@ def main():
  available_old=[x for x in items if x['website']]
  available_no=[x for x in items if not x['website']]
  made=[];counters={'sin-web-localizada':0,'web-mejorable':0}
- MAX_SCANNED=55;scanned=0
+ MAX_SCANNED=65;scanned=0
  # Seek 2 + 3, backfill from the other category if the source lacks candidates.
- for group,collection,desired in [
-   ('sin-web-localizada',available_no,2),
-   ('web-mejorable',available_old,3),
-   ('web-mejorable',available_old,5),
-   ('sin-web-localizada',available_no,5)]:
+ for group,collection,desired,round_limit in [
+   ('sin-web-localizada',available_no,2,14),
+   ('web-mejorable',available_old,3,30),
+   ('web-mejorable',available_old,5,20),
+   ('sin-web-localizada',available_no,5,12)]:
+  examined_this_round=0
   for c in collection:
-   if len(made)>=5 or scanned>=MAX_SCANNED:break
+   if len(made)>=5 or scanned>=MAX_SCANNED or examined_this_round>=round_limit:break
    if counters[group]>=desired:break
    if any(v['osm_id']==c['osm_id'] for v in made):continue
    scanned+=1
+   examined_this_round+=1
    try:
     if group=='web-mejorable':
      selected=extract(c,cfg)
