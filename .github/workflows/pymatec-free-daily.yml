@@ -1,6 +1,9 @@
 name: Pymatec - propuestas diarias gratis
 
 on:
+  push:
+    paths:
+      - '.github/workflows/pymatec-free-daily.yml'
   schedule:
     - cron: '23 9 * * *'
       timezone: 'Europe/Madrid'
