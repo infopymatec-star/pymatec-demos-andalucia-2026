@@ -1,160 +1,262 @@
-"""Pymatec: presentación en tres páginas de las demos estáticas.
-
-Inicio / Sobre nosotros / Contáctanos. Datos empresariales solo de la web
-verificada; nunca activa envíos reales ni muestra enlaces a la web original.
+"""Plantillas multipágina Pymatec: contenido de negocio y contacto verificables.
+Las demos públicas son conceptuales, con formulario desactivado y sin links
+al sitio original. Las fotos de trabajos solo se muestran cuando hay evidencia.
 """
-from bs4 import BeautifulSoup
 from html import escape
+from urllib.parse import quote
 
-EXTRA_CSS = """
-.toplinks{display:flex;gap:25px;align-items:center}
-.toplinks a{font-size:14px;font-weight:760;color:#344450;transition:color .2s}
-.toplinks a:hover,.toplinks a[aria-current="page"]{color:var(--brand)}
-.subhero{min-height:300px;padding:80px 0;color:white;display:flex;align-items:center;background:linear-gradient(90deg,#193a47db,#193a4782),url('https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1800&q=80') center/cover}
-.subhero .eyebrow{color:#dcebf2}.subhero h1{font-size:clamp(40px,6vw,75px);line-height:1.05;letter-spacing:-.065em;margin:15px 0 10px}
-.subhero p{max-width:640px;font-size:18px}
-.cta-strip{padding:58px 0;background:#eff5f5}
-.cta-strip .wrap{display:flex;align-items:center;justify-content:space-between;gap:30px}
-.cta-strip h2{font-size:clamp(28px,3.6vw,44px);letter-spacing:-.05em;margin:7px 0 0}
-.contact-layout{display:grid;grid-template-columns:.86fr 1.14fr;gap:30px;align-items:start}
-.form-shell{background:#fff;padding:34px;border:1px solid #dee7e9;box-shadow:0 20px 42px #2036440f;border-radius:26px}
-.contact-layout .contact{padding:29px;background:#f6f7f5;border-radius:24px}
-.contact-layout .entry{grid-template-columns:105px 1fr;align-items:start}
-.form-shell .sample-form{border:none;padding:0;margin:0}
-.form-shell .sample-form h3{font-size:25px;line-height:1.25;margin-bottom:20px}
-.form-shell .sample-form .formhelp{background:#eaf4f6;padding:13px;border-radius:13px}
-.form-shell .sample-form button{opacity:.83}
-.contact-intro{text-align:left;margin-bottom:42px}
-.contact-intro h2{font-size:clamp(34px,4.4vw,59px);letter-spacing:-.06em;line-height:1.12;margin:12px 0}
-.contact-intro p{color:var(--muted);max-width:630px}
-.about-services{padding:70px 0;background:#f7f8f7}
-.about-services h2{font-size:clamp(30px,4vw,50px);letter-spacing:-.06em}
-.about-tags{display:flex;gap:12px;flex-wrap:wrap}
-.about-tags span{border:1px solid #dce6e7;background:white;border-radius:40px;padding:11px 19px;font-weight:740;color:#374c56}
-.home-preview{display:flex;align-items:center;gap:22px;margin-top:24px}
-.home-preview .button{flex-shrink:0}
-@media(max-width:880px){nav{flex-wrap:wrap;padding:10px 0}.toplinks{order:3;width:100%;justify-content:space-between;gap:8px;padding-bottom:10px;display:flex}.toplinks a{font-size:12px}.contact-layout{grid-template-columns:1fr}.cta-strip .wrap{display:block}.cta-strip .button{margin-top:20px}}
-@media(max-width:520px){nav{gap:10px}.button{padding:12px 15px;font-size:13px}.logo{max-height:40px;max-width:145px}.toplinks{gap:5px}.form-shell{padding:20px}.subhero{min-height:260px;padding:56px 0}.contact-layout .entry{grid-template-columns:1fr;gap:5px}}
+
+def E(value):
+    return escape(str(value or ''), quote=True)
+
+
+SERVICES = {
+ 'climatización': 'Climatización y sistemas de aire acondicionado para edificios y espacios profesionales.',
+ 'fontanería': 'Redes de suministro, instalaciones de fontanería y sistemas de saneamiento.',
+ 'agua caliente sanitaria': 'Instalaciones y equipos para la producción de agua caliente sanitaria.',
+ 'protección contra incendios': 'Sistemas de detección y extinción de incendios, instalación y mantenimiento.',
+ 'contraincendios': 'Sistemas de detección y extinción de incendios, instalación y mantenimiento.',
+ 'sistemas de gas': 'Instalaciones de gas, mantenimiento y soluciones adaptadas a cada proyecto.',
+ 'ventilación': 'Sistemas de ventilación y renovación de aire para diferentes edificios.',
+ 'energía solar': 'Instalaciones solares y soluciones de aprovechamiento energético.',
+ 'electricidad': 'Instalaciones eléctricas y trabajos de mantenimiento.',
+ 'carpintería': 'Fabricación, instalación y acabados en madera.',
+}
+
+PHOTOS = {
+ 'hvac': 'https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=1600&q=85',
+ 'electrician': 'https://images.unsplash.com/photo-1621905252507-b35492cc74b4?auto=format&fit=crop&w=1600&q=85',
+ 'carpenter': 'https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1600&q=85',
+ 'plumber': 'https://images.unsplash.com/photo-1585704032915-c3400ca199e7?auto=format&fit=crop&w=1600&q=85',
+ 'gardener': 'https://images.unsplash.com/photo-1416879595882-3373a0480b5b?auto=format&fit=crop&w=1600&q=85',
+}
+FALLBACK = 'https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1600&q=85'
+OTHER_PHOTO = 'https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1200&q=82'
+
+CSS = r"""
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap');
+:root{--brand:#276b78;--brand-dark:#184a56;--ink:#1d3138;--muted:#61727a;--soft:#f4f7f6;--cream:#f8f7f2;--line:#dce5e5;--accent:#d9a672}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;color:var(--ink);background:#fff;font:16px/1.7 'DM Sans',system-ui,sans-serif}
+a{color:inherit;text-decoration:none}button,input,textarea{font:inherit}.wrap{width:min(1200px,90%);margin:auto}
+.demo-note{background:#f0f4f4;color:#52676d;text-align:center;font-size:11px;letter-spacing:.04em;padding:7px 12px}
+.site-header{background:#fff;border-bottom:1px solid #edf0ee;position:sticky;top:0;z-index:30;box-shadow:0 2px 16px #1b343a08}
+.navigation{display:flex;align-items:center;justify-content:space-between;gap:28px;min-height:91px}
+.brand{display:flex;align-items:center;gap:12px;min-width:0}.brand img{height:58px;max-width:160px;object-fit:contain}.brand span{font-family:Manrope,sans-serif;font-size:16px;font-weight:800;line-height:1.16;letter-spacing:-.04em;max-width:160px}
+.menu{display:flex;align-items:center;gap:27px}.menu a{font-size:13px;font-weight:800;color:#51636b;white-space:nowrap}
+.menu a.active,.menu a:hover{color:var(--brand)}
+.btn{border:0;border-radius:999px;background:var(--brand);color:#fff;padding:15px 22px;display:inline-flex;align-items:center;justify-content:center;gap:12px;cursor:pointer;font-weight:800;font-size:13px;white-space:nowrap;transition:transform .18s,background .18s}
+.btn:hover{background:var(--brand-dark);transform:translateY(-2px)}.btn.light{background:#fff;color:var(--brand-dark)}.btn.light:hover{background:#e8f0f1}
+.eyebrow{font-size:11px;letter-spacing:.19em;text-transform:uppercase;font-weight:800;color:var(--brand)}
+h1,h2,h3{font-family:Manrope,'DM Sans',sans-serif;line-height:1.12;letter-spacing:-.05em}
+h1{font-size:clamp(43px,5.4vw,75px);margin:21px 0}h2{font-size:clamp(32px,4vw,53px);margin:18px 0}h3{font-size:21px;margin:12px 0}
+p{margin:0 0 17px;color:var(--muted)}.lead{font-size:18px;line-height:1.82}
+.section{padding:95px 0}.section-intro{max-width:720px;margin-bottom:37px}
+.section-intro p{font-size:17px}.hero{padding:65px 0 70px;background:var(--cream);position:relative;overflow:hidden}
+.hero-layout{display:grid;grid-template-columns:1fr 1.02fr;gap:48px;align-items:center}
+.hero h1{max-width:650px}.hero p{max-width:600px;font-size:18px}
+.hero-photo{min-height:550px;border-radius:8px 105px 8px 80px;background-size:cover;background-position:center;position:relative;box-shadow:0 30px 70px #152e3530}
+.hero-photo:after{content:'';position:absolute;inset:0;border-radius:inherit;background:linear-gradient(180deg,transparent 50%,#1730384a)}
+.hero-floating{position:absolute;z-index:2;left:-25px;bottom:34px;background:#fff;box-shadow:0 16px 50px #19363c35;padding:18px 23px;border-radius:17px;max-width:260px}
+.hero-floating strong{display:block;font:800 28px Manrope,sans-serif;color:var(--brand);letter-spacing:-.06em;line-height:1.1}
+.hero-floating span{display:block;font-size:13px;color:#576a70;margin-top:4px}
+.hero-sub{display:flex;align-items:center;gap:16px;flex-wrap:wrap;margin-top:26px}.hero-sub a:not(.btn){font-size:13px;font-weight:800;color:var(--brand)}
+.service-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:21px}
+.svc{background:#fff;border:1px solid var(--line);border-radius:21px;overflow:hidden;transition:transform .18s,box-shadow .18s}
+.svc:hover{transform:translateY(-4px);box-shadow:0 18px 50px #1a384211}
+.svc-media{height:172px;background-size:cover;background-position:center;position:relative}
+.svc-number{position:absolute;top:15px;left:15px;background:#fff;border-radius:99px;font-size:12px;font-weight:800;color:var(--brand);padding:6px 10px}
+.svc-body{padding:25px 26px 27px}.svc h3{font-size:20px;margin:0 0 9px}.svc p{font-size:14px;margin:0}
+.soft{background:var(--soft)}
+.intro-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:68px;align-items:center}
+.intro-photo{min-height:450px;border-radius:80px 8px 75px 8px;background-size:cover;background-position:center}
+.intro-side p{font-size:18px}.fact-row{display:grid;grid-template-columns:repeat(2,1fr);gap:13px;margin:27px 0}
+.fact{padding:18px 21px;background:#f1f7f5;border-radius:15px;font-weight:700;color:#36505a;font-size:14px}
+.project-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.project{overflow:hidden;border-radius:20px;border:1px solid var(--line);background:#fff}
+.project-photo{height:235px;width:100%;display:block;object-fit:cover}
+.project-copy{padding:20px 23px}.project h3{font-size:18px;margin:0 0 7px}.project p{font-size:13px;margin:0}
+.cta{background:linear-gradient(105deg,#18444d,#266875);color:#fff;padding:64px 0}
+.cta-layout{display:flex;align-items:center;justify-content:space-between;gap:35px}
+.cta h2{color:#fff;max-width:700px;margin:10px 0;font-size:clamp(30px,3.3vw,47px)}
+.cta p{color:#d9e8e9;margin:0}.cta .eyebrow{color:#d8e8e5}
+.pagehero{background:var(--cream);min-height:325px;display:grid;align-items:center;position:relative;overflow:hidden}
+.pagehero:before{content:'';position:absolute;right:-60px;top:-135px;width:430px;height:430px;background:#e4edeb;border-radius:50%}
+.pagehero .wrap{position:relative;padding:70px 0}.pagehero h1{font-size:clamp(42px,5vw,67px);margin:13px 0}.pagehero p{font-size:18px;max-width:710px}
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:68px;align-items:center}
+.about-photo{width:100%;height:500px;object-fit:cover;border-radius:80px 8px 75px 8px}
+.about-copy .lead{font-size:18px}.tag-list{display:flex;gap:11px;flex-wrap:wrap;margin-top:20px}
+.tag{padding:10px 16px;border:1px solid #cddfdf;border-radius:99px;color:#335963;font-size:13px;font-weight:800;background:#f6fbfa}
+.contact-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:45px;align-items:start}
+.contact-panel{padding:34px;background:var(--soft);border-radius:24px}
+.contact-line{padding:18px 0;border-bottom:1px solid #dce5e5}.contact-line:last-child{border-bottom:0}
+.contact-line small{display:block;color:var(--brand);font-size:11px;text-transform:uppercase;letter-spacing:.14em;font-weight:800;margin-bottom:5px}
+.contact-line a,.contact-line span{overflow-wrap:anywhere;font-weight:750;font-size:17px;color:#243941}
+.form-panel{border:1px solid var(--line);padding:36px;border-radius:25px;box-shadow:0 22px 50px #2136400c}
+.form-panel h2{font-size:31px;margin:0 0 9px}.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.form-panel label{font-weight:750;color:#344951;font-size:13px;display:block;margin-top:17px}
+.form-panel input,.form-panel textarea{background:#fafcfc;border:1px solid #d9e3e5;display:block;border-radius:13px;padding:13px 14px;width:100%;margin-top:7px;color:#213942}
+.form-panel textarea{min-height:133px;resize:vertical}.form-info{background:#f0f6f6;border-radius:13px;padding:13px 16px;font-size:12px;margin:18px 0;color:#48636a}
+.demo-form-button{opacity:.75;cursor:not-allowed}
+.site-footer{background:#192f36;color:#eef5f3;padding:70px 0 0}
+.footer-grid{display:grid;grid-template-columns:1.25fr .8fr 1.05fr;gap:65px;padding-bottom:62px}
+.footer-brand{font-size:21px;font-weight:800;letter-spacing:-.04em;color:#fff}
+.site-footer h3{font-size:14px;text-transform:uppercase;letter-spacing:.09em;font-weight:800;margin:0 0 19px;color:#e1eee9}
+.site-footer p{color:#bacbc9;font-size:13px;line-height:1.9;margin-top:14px;max-width:320px}
+.footer-links a{display:block;color:#d3e2df;margin:0 0 12px;font-size:14px}
+.footer-contact a,.footer-contact span{display:block;color:#d3e2df;font-size:14px;margin-bottom:13px;overflow-wrap:anywhere}
+.footer-contact strong{color:#fff;font-size:12px;display:block;letter-spacing:.05em}
+.footer-bottom{border-top:1px solid #385057;padding:15px 0;color:#b0c2c0;font-size:11px;display:flex;justify-content:space-between;gap:25px}
+@media(max-width:1020px){.hero-layout,.intro-grid,.about-grid{gap:28px}.hero-photo{min-height:440px}.menu{gap:17px}.navigation{gap:14px}}
+@media(max-width:800px){.navigation{flex-wrap:wrap;padding:11px 0}.menu{order:3;width:100%;justify-content:center;padding:4px 0 8px}.hero-layout,.intro-grid,.about-grid,.contact-grid{grid-template-columns:1fr}.hero-layout{gap:36px}.hero-photo{min-height:460px}.hero-floating{left:15px}.section{padding:70px 0}.service-grid,.project-grid{grid-template-columns:repeat(2,1fr)}.footer-grid{gap:25px}.cta-layout{align-items:flex-start}}
+@media(max-width:560px){.wrap{width:min(100% - 38px,1200px)}.navigation{gap:8px}.brand img{height:44px;max-width:140px}.brand span{font-size:13px;max-width:115px}.navigation>.btn{padding:12px 14px;font-size:11px}.menu{justify-content:space-between}.menu a{font-size:12px}.hero{padding:50px 0}.hero h1{font-size:42px}.hero-photo{min-height:350px;border-radius:8px 70px 8px 60px}.hero-floating{left:14px;bottom:15px}.service-grid,.project-grid,.footer-grid,.form-grid{grid-template-columns:1fr}.cta-layout{display:block}.cta .btn{margin-top:20px}.intro-photo,.about-photo{height:300px;min-height:300px}.footer-grid{gap:32px}.footer-bottom{display:block}.form-panel,.contact-panel{padding:24px}}
 """
-
-def _clone(markup):
-    return BeautifulSoup(markup, 'html.parser')
-
-def _new(soup, markup):
-    return _clone(markup).find()
-
-def _configure_links(soup, selected):
-    nav = soup.select_one('header nav')
-    if nav is None:
-        raise ValueError('No se encontró navegación')
-    old_links = nav.select_one('.toplinks')
-    if old_links: old_links.decompose()
-    links = soup.new_tag('div', attrs={'class':'toplinks'})
-    for filename, title in (('index.html','Inicio'),('sobre-nosotros.html','Sobre nosotros'),('contacto.html','Contáctanos')):
-        tag = soup.new_tag('a',href=filename)
-        tag.string = title
-        if selected == filename: tag['aria-current'] = 'page'
-        links.append(tag)
-    button = nav.select_one('a.button')
-    if button:
-        button['href']='contacto.html'
-        button.insert_before(links)
-    else:
-        nav.append(links)
-    for a in soup.select('a[href]'):
-        link=a.get('href','')
-        if link=='#contacto': a['href']='contacto.html'
-        elif link=='#sobre-nosotros': a['href']='sobre-nosotros.html'
-        elif link=='#servicios' and selected != 'index.html': a['href']='index.html#servicios'
-    logo=nav.select_one('div')
-    # preserve original logo and make it a home link if possible
-    if logo and logo.name=='div' and not logo.select_one('a'):
-        home=soup.new_tag('a',href='index.html')
-        for node in list(logo.contents): home.append(node.extract())
-        logo.append(home)
-    # Links back to the business's original website are intentionally omitted
-    for a in soup.select('footer a'):
-        a.unwrap()
-    foot=soup.select_one('footer')
-    if foot:
-        foot.clear()
-        foot.append('Maqueta de diseño no oficial creada por Pymatec. Sin relación ni aprobación de la empresa. Imágenes ilustrativas y formulario no operativo.')
-    return soup
 
 def make_pages(info, city, slug, document):
-    """Return {'index.html':..., 'sobre-nosotros.html':..., 'contacto.html':...}."""
-    original = _clone(document)
-    if not original.select_one('#sobre-nosotros') or not original.select_one('#contacto'):
-        raise ValueError('Faltan secciones de origen para generar las páginas')
-    style=original.select_one('style')
-    if not style: raise ValueError('Falta CSS base')
-    style.append(EXTRA_CSS)
-    name = escape(info['name'])
-    genre = escape(city)
-    sector = escape(info.get('craft','').replace('_',' ').capitalize())
-    # HOME: portada, servicios y adelanto de empresa, sin sección completa ni contacto.
-    home = _clone(str(original))
-    for selector in ('#sobre-nosotros','#contacto'):
-        block=home.select_one(selector)
-        if block: block.decompose()
-    home = _configure_links(home,'index.html')
-    preview = home.select_one('main > section.section:not(#servicios)')
-    if preview:
-        h2=preview.select_one('h2')
-        if h2: h2.string='Una empresa que merece presentarse bien.'
-        p=preview.select_one('p')
-        if p: p.string='Una web clara y visual que facilita descubrir la trayectoria, los servicios y los datos de contacto.'
-        wrap=preview.select_one('.wrap')
-        if wrap: wrap.append(_new(home,'<div class="home-preview"><a class="button" href="sobre-nosotros.html">Conoce la empresa ↗</a><a href="contacto.html" class="section-link">Contacta con nosotros</a></div>'))
-    # ABOUT: an independent page with the verified paragraph from the company.
-    about = _clone(str(original))
-    about_section = about.select_one('#sobre-nosotros')
-    about_html = str(about_section)
-    main=about.select_one('main')
-    main.clear()
-    hero=f'''<section class="subhero"><div class="wrap"><div class="eyebrow">Conoce la empresa</div><h1>Sobre nosotros.</h1><p>Trayectoria y especialidades de {name.rstrip('.')}.</p></div></section>'''
-    main.append(_new(about,hero))
-    main.append(_new(about,about_html))
-    services=info.get('services',[])[:8]
-    if not services:
-        services = [info.get('activity') or ('Servicios de '+sector.lower())]
-    cleanservices=''.join('<span>'+escape(str(x)[:80])+'</span>' for x in services)
-    main.append(_new(about,'<section class="about-services"><div class="wrap"><span class="eyebrow">Áreas de trabajo</span><h2>Nuestras especialidades</h2><div class="about-tags">'+cleanservices+'</div></div></section>'))
-    main.append(_new(about,'<section class="cta-strip"><div class="wrap"><div><span class="eyebrow">Contacta con nosotros</span><h2>¿Hablamos de tu proyecto?</h2></div><a class="button" href="contacto.html">Solicitar presupuesto ↗</a></div></section>'))
-    about=_configure_links(about,'sobre-nosotros.html')
-    if about.title: about.title.string='Sobre nosotros · '+info['name']
-    # CONTACT: clean 2-column layout, remove 'Web oficial' and add demo form.
-    contact = _clone(str(original))
-    original_contact = contact.select_one('#contacto')
-    old_form = original_contact.select_one('form.sample-form')
-    if not old_form: raise ValueError('No se ha encontrado el formulario')
-    form_html=str(old_form)
-    phone = info.get('phone','')
-    email = info.get('email','')
-    phone_number=escape(phone) if phone else 'Consultar por correo'
-    phone_el='<a href="tel:'+escape(phone,quote=True)+'">'+phone_number+'</a>' if phone else '<span>Consultar por correo</span>'
-    extra=''
-    if info.get('address'):
-        extra+='<div class="entry"><small>Dirección</small><span>'+escape(info['address'])+'</span></div>'
-    if info.get('hours'):
-        extra+='<div class="entry"><small>Horario</small><span>'+escape(info['hours'])+'</span></div>'
-    contact_section = '''<section class="section" id="contacto"><div class="wrap">
-    <div class="contact-intro"><div class="eyebrow">Contáctanos</div><h2>Cuéntanos qué necesitas.</h2>
-    <p>Teléfono y correo de contacto para consultas y presupuestos. El formulario es una muestra visual y todavía no realiza envíos.</p></div>
-    <div class="contact-layout"><div class="contact">
-    <div class="entry"><small>Teléfono</small>'''+phone_el+'''</div>
-    <div class="entry"><small>Email</small><a href="mailto:'''+escape(email,quote=True)+'''">'''+escape(email)+'''</a></div>
-    '''+extra+'''</div><div class="form-shell">'''+form_html+'''</div></div></div></section>'''
-    main=contact.select_one('main')
-    main.clear()
-    main.append(_new(contact,'<section class="subhero"><div class="wrap"><div class="eyebrow">Estamos a tu disposición</div><h1>Contáctanos.</h1><p>Habla con '+name+' y solicita información sobre sus servicios.</p></div></section>'))
-    main.append(_new(contact,contact_section))
-    contact=_configure_links(contact,'contacto.html')
-    if contact.title: contact.title.string='Contáctanos · '+info['name']
-    result={'index.html':str(home),'sobre-nosotros.html':str(about),'contacto.html':str(contact)}
-    assert all('<html' in v and '</html>' in v for v in result.values())
-    assert 'id="sobre-nosotros"' not in result['index.html']
-    assert 'id="contacto"' not in result['index.html']
-    assert '<form' in result['contacto.html']
-    assert 'Visitar sitio original' not in result['contacto.html']
+    """Three static, linked customer-facing pages. Form remains a disabled visual example."""
+    name=E(info.get('name'))
+    short=E(info.get('name','').rstrip('.'))
+    city=E(city)
+    activity=E(info.get('activity') or 'Instalaciones y servicios')
+    brand=E(info.get('color') or '#276b78')
+    photo=E(info.get('hero_image') or PHOTOS.get(info.get('craft'),FALLBACK))
+    secondary=E(info.get('secondary_image') or OTHER_PHOTO)
+    logo=info.get('logo') or ''
+    logo_html=(f'<img src="{E(logo)}" alt="Logotipo de {name}" loading="eager">' if logo else '')
+    email=E(info.get('email'))
+    phone_raw=info.get('phone') or ''
+    phone=E(phone_raw)
+    tel=E(''.join(c for c in phone_raw if c.isdigit() or c=='+'))
+    address=E(info.get('address'))
+    hours=E(info.get('hours'))
+    about=E(info.get('about') or ('Conoce los servicios y especialidades de '+info.get('name','la empresa')+'. Estamos a tu disposición para ampliar información sobre nuestros trabajos.'))
+    services=info.get('services') or [info.get('activity') or 'Servicios profesionales']
+    services=[str(s)[:90] for s in services][:9]
+    has_experience=bool(info.get('experience'))
+    experience=E(info.get('experience') or '')
+    service_cards=[]
+    service_tags=[]
+    for i,service in enumerate(services):
+        key=service.strip().lower()
+        description=SERVICES.get(key, 'Consulta nuestros servicios y soluciones para tus necesidades.')
+        image=(info.get('service_images') or [])
+        image=image[i] if i<len(image) else [photo,secondary,OTHER_PHOTO][i%3]
+        service_cards.append(
+           f'<article class="svc"><div class="svc-media" style="background-image:url(&quot;{E(image)}&quot;)">'
+           f'<span class="svc-number">{i+1:02d} / {len(services):02d}</span></div>'
+           f'<div class="svc-body"><h3>{E(service)}</h3><p>{E(description)}</p></div></article>')
+        service_tags.append(f'<span class="tag">{E(service)}</span>')
+    project_cards=[]
+    for p in (info.get('projects') or [])[:6]:
+        if not p.get('title') or not p.get('image'): continue
+        project_cards.append('<article class="project">'
+         +f'<img class="project-photo" loading="lazy" src="{E(p["image"])}" alt="{E(p["title"])}">'
+         +f'<div class="project-copy"><h3>{E(p["title"])}</h3><p>{E(p.get("description","Trabajos de instalaciones y mantenimiento"))}</p></div></article>')
+    phone_html=f'<a href="tel:{tel}">{E(info.get("phone_display") or phone_raw)}</a>' if phone_raw else '<span>Consúltanos por correo</span>'
+    address_html=f'<div class="contact-line"><small>Dirección</small><span>{address}</span></div>' if address else ''
+    hours_html=f'<div class="contact-line"><small>Horario</small><span>{hours}</span></div>' if hours else ''
+    css=CSS.replace('--brand:#276b78;',f'--brand:{brand};')
+    def page(filename,title,body):
+        nav=''.join(f'<a class="{"active" if file==filename else ""}" href="{file}">{label}</a>' for file,label in
+            [('index.html','Inicio'),('sobre-nosotros.html','Sobre nosotros'),('contacto.html','Contáctanos')])
+        header=f'''<div class="demo-note">Propuesta conceptual no oficial · Imágenes ilustrativas salvo fotografías de trabajos identificados</div>
+        <header class="site-header"><div class="wrap navigation">
+        <a class="brand" href="index.html">{logo_html}<span>{name}</span></a>
+        <nav class="menu" aria-label="Principal">{nav}</nav>
+        <a class="btn" href="contacto.html">Pedir presupuesto ↗</a></div></header>'''
+        footer=f'''<footer class="site-footer"><div class="wrap footer-grid">
+          <div><a class="footer-brand" href="index.html">{name}</a>
+             <p>{E(info.get("footer_description") or "Servicios profesionales, instalación y mantenimiento. Información y presupuesto bajo consulta.")}</p>
+          </div><div><h3>Enlaces</h3><div class="footer-links">
+             <a href="index.html">Inicio</a><a href="index.html#servicios">Servicios</a>
+             <a href="sobre-nosotros.html">Sobre nosotros</a><a href="contacto.html">Contáctanos</a></div></div>
+          <div class="footer-contact"><h3>Contacto</h3>
+             <strong>Teléfono</strong>{phone_html}<strong>Correo electrónico</strong>
+             <a href="mailto:{email}">{email}</a>
+             {f'<strong>Dirección</strong><span>{address}</span>' if address else ''}
+             {f'<strong>Horario</strong><span>{hours}</span>' if hours else ''}</div></div>
+          <div class="wrap footer-bottom"><span>{name} · Propuesta web de demostración</span>
+             <span>Diseño conceptual por Pymatec · No es una web oficial · Formulario sin envío</span></div></footer>'''
+        return ('<!doctype html><html lang="es"><head><meta charset="utf-8">'
+           '<meta name="viewport" content="width=device-width,initial-scale=1">'
+           '<meta name="robots" content="noindex,nofollow,noarchive">'
+           f'<meta name="description" content="Servicios e información de {name}">'
+           f'<title>{E(title)} · {name}</title><style>{css}</style></head><body>'
+           +header+'<main>'+body+'</main>'+footer+'</body></html>')
+    # HOME: no sales pitch about the website.
+    expnote=(f'<div class="hero-floating"><strong>{experience}</strong><span>de experiencia en el sector</span></div>' if has_experience else '')
+    home=f'''<section class="hero"><div class="wrap hero-layout"><div>
+        <span class="eyebrow">Instalaciones · Servicios profesionales · {city}</span>
+        <h1>{E(info.get("hero_title") or "Soluciones profesionales para cada proyecto.")}</h1>
+        <p class="lead">{E(info.get("hero_subtitle") or about[:180])}</p>
+        <div class="hero-sub"><a class="btn" href="contacto.html">Solicitar presupuesto ↗</a>
+        <a href="#servicios">Descubre nuestros servicios ↓</a></div></div>
+        <div class="hero-photo" role="img" aria-label="Imagen ilustrativa de instalaciones y edificios" style="background-image:url(&quot;{photo}&quot;)">{expnote}</div></div></section>
+        <section class="section" id="servicios"><div class="wrap">
+        <div class="section-intro"><span class="eyebrow">Qué hacemos</span><h2>Servicios e instalaciones</h2>
+        <p>{E(info.get("services_intro") or "Conoce nuestras principales áreas de trabajo y encuentra la solución que necesitas.")}</p></div>
+        <div class="service-grid">{''.join(service_cards)}</div></div></section>
+        <section class="section soft"><div class="wrap intro-grid">
+        <div class="intro-photo" role="img" aria-label="Fotografía ilustrativa de instalaciones" style="background-image:url(&quot;{secondary}&quot;)"></div>
+        <div class="intro-side"><span class="eyebrow">Conoce nuestra empresa</span>
+        <h2>{E(info.get("about_home_title") or "Experiencia y soluciones a medida.")}</h2>
+        <p>{about}</p><a class="btn" href="sobre-nosotros.html">Sobre nosotros ↗</a></div></div></section>'''
+    if project_cards:
+        home+=f'''<section class="section"><div class="wrap"><div class="section-intro">
+          <span class="eyebrow">Nuestra trayectoria</span><h2>Algunos de nuestros trabajos</h2>
+          <p>Una selección de proyectos que figuran en la trayectoria de la empresa.</p></div>
+          <div class="project-grid">{''.join(project_cards[:3])}</div></div></section>'''
+    home+='''<section class="cta"><div class="wrap cta-layout"><div>
+      <span class="eyebrow">¿Hablamos?</span><h2>Cuéntanos qué necesitas para tu próximo proyecto.</h2>
+      <p>Instalaciones, mantenimiento y asesoramiento para encontrar una solución.</p></div>
+      <a class="btn light" href="contacto.html">Contactar ↗</a></div></section>'''
+    # ABOUT with real company text and real project photos when supplied.
+    about_body=f'''<section class="pagehero"><div class="wrap">
+       <span class="eyebrow">La empresa</span><h1>Sobre nosotros</h1>
+       <p>Conoce nuestra experiencia, nuestra forma de trabajar y las especialidades de {short}.</p></div></section>
+       <section class="section"><div class="wrap about-grid">
+       <div><span class="eyebrow">Nuestra trayectoria</span>
+       <h2>{E(info.get("about_title") or "Compromiso con cada instalación.")}</h2>
+       <p class="lead">{about}</p>
+       <p>{E(info.get("about_more") or "Ofrecemos atención y soluciones adaptadas a las necesidades de cada proyecto. Contacta con nosotros para ampliar información sobre nuestros servicios.")}</p>
+       <a class="btn" href="contacto.html">Hablar con nosotros ↗</a></div>
+       <img class="about-photo" src="{secondary}" alt="Fotografía ilustrativa del sector" loading="lazy"></div></section>
+       <section class="section soft"><div class="wrap"><span class="eyebrow">Nuestra actividad</span>
+       <h2>Nuestras especialidades</h2><div class="tag-list">{''.join(service_tags)}</div></div></section>'''
+    if project_cards:
+        about_body+=f'''<section class="section"><div class="wrap">
+         <span class="eyebrow">Proyectos</span><h2>Trabajos realizados</h2>
+         <div class="project-grid">{''.join(project_cards[:3])}</div></div></section>'''
+    # Contact with honest disabled form: not misleadingly labeled a working submission.
+    form='''<div class="form-panel"><h2>Envíanos tu consulta</h2>
+      <p>Déjanos tus datos y cuéntanos qué necesitas.</p>
+      <form aria-label="Formulario visual de muestra">
+      <div class="form-grid">
+        <label>Nombre<input type="text" placeholder="Nombre y apellidos" autocomplete="off"></label>
+        <label>Teléfono<input type="tel" placeholder="Tu teléfono" autocomplete="off"></label>
+      </div>
+      <label>Correo electrónico<input type="email" placeholder="tu@email.com" autocomplete="off"></label>
+      <label>Mensaje<textarea placeholder="Cuéntanos en qué podemos ayudarte"></textarea></label>
+      <div class="form-info">Formulario de demostración: todavía no realiza envíos ni guarda los datos introducidos.</div>
+      <button type="button" class="btn demo-form-button" aria-disabled="true">Enviar consulta (muestra)</button>
+      </form></div>'''
+    contact_body=f'''<section class="pagehero"><div class="wrap">
+      <span class="eyebrow">Estamos a tu disposición</span><h1>Contáctanos</h1>
+      <p>Solicita información sobre nuestros servicios y proyectos.</p></div></section>
+      <section class="section"><div class="wrap contact-grid"><div>
+      <span class="eyebrow">Datos de contacto</span><h2>Hablemos de tu proyecto.</h2>
+      <p>Estamos a tu disposición para responder consultas de instalaciones y mantenimiento.</p>
+      <div class="contact-panel">
+      <div class="contact-line"><small>Teléfono</small>{phone_html}</div>
+      <div class="contact-line"><small>Correo electrónico</small><a href="mailto:{email}">{email}</a></div>
+      {address_html}{hours_html}</div></div>{form}</div></section>'''
+    result={'index.html':page('index.html','Inicio',home),
+            'sobre-nosotros.html':page('sobre-nosotros.html','Sobre nosotros',about_body),
+            'contacto.html':page('contacto.html','Contáctanos',contact_body)}
+    assert 'Una web clara' not in result['index.html']
+    assert 'Una empresa que merece presentarse bien' not in result['index.html']
+    assert '02 · Una web para conectar' not in result['index.html']
+    assert 'Teléfono' in result['index.html'] and email in result['index.html']
+    assert '<footer ' in result['index.html']
+    assert 'Visitar sitio original' not in ''.join(result.values())
+    assert 'Formulario de demostración' in result['contacto.html']
     return result
