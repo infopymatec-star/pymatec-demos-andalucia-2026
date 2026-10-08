@@ -95,7 +95,7 @@ jobs:
         run: python automation/mail_summary.py
 
   smoke:
-    name: Pruebas de exclusión, edición y correo sin envíos
+    name: Pruebas de exclusión, verificación de plantilla y resumen sin envíos
     if: github.event_name == 'push'
     runs-on: ubuntu-latest
     steps:
