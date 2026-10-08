@@ -22,6 +22,8 @@ Este repositorio conserva la **última plantilla de referencia revisada**, adapt
 
 El workflow `summary` comprueba las URLs tras publicarlas y **puede enviar al correo propio `joselss86@hotmail.com`**, exclusivamente, usando `automation/mail_summary.py`, si se configuran los secretos **`PYMATEC_GMAIL_ADDRESS` = `info.pymatec@gmail.com`** y **`PYMATEC_GMAIL_APP_PASSWORD`** (contraseña de aplicación Google, nunca una contraseña normal ni incluida en código). Configurar en *Repositorio → Settings → Secrets and variables → Actions*.
 
+Existe además una **tarea programada en ChatGPT los días laborables a las 09:20 Europe/Madrid** que comprueba la ejecución del día y, si hay datos y no existe otro resumen enviado, intenta enviar un único informe mediante Gmail conectado a `joselss86@hotmail.com`. Este control posterior es necesario porque no se puede investigar, publicar y entregar un informe completo en el mismo instante de inicio 08:37. No hay garantía de finalización a esa hora si GitHub se retrasa.
+
 **Estado inicial del envío: NO CONFIGURADO** hasta confirmar esos secretos. Sin ellos se genera el informe histórico en GitHub, pero **no se envía email**. No se envía correo a prospectos en ningún caso.
 
 **La búsqueda comienza con la programación prevista para las 08:37; el informe solo puede enviarse después de generar, desplegar y comprobar las propuestas**, por lo que su recepción a esa hora exacta no es técnicamente posible en este flujo.
