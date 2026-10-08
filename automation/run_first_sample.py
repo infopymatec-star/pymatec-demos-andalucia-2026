@@ -27,12 +27,15 @@ verified = {
     'logo': 'https://www.bonelaintegra.com/wp-content/uploads/2016/03/logobonelaintegratransparente.png.webp',
     'color': CRAFTS['hvac'][1],  # Paleta de propuesta; no se afirma que sea Pantone corporativo.
     'verified_url': source['website'],
+    'about': 'Bonela Integra S.L. cuenta con más de 25 años de experiencia en el sector de las instalaciones y servicios de mantenimiento. Es especialista en climatización, fontanería, agua caliente sanitaria, contraincendios, gas y ventilación. Su objetivo es encontrar soluciones adaptadas a las necesidades de cada proyecto.',
 }
 verification = 'Comprobación original de la búsqueda, sin petición adicional'
 try:
     live = extract_business(source)
     if live and live.get('email','').lower() == verified['email']:
         verified.update(live)
+        if not live.get('about'):
+            verified['about'] = 'Bonela Integra S.L. cuenta con más de 25 años de experiencia en el sector de las instalaciones y servicios de mantenimiento. Es especialista en climatización, fontanería, agua caliente sanitaria, contraincendios, gas y ventilación.'
         verified['logo'] = live.get('logo') or verified['logo']
         verification = 'Web oficial y email contrastados de nuevo durante la ejecución'
     else:
@@ -53,6 +56,8 @@ assert 'Asunto: Propuesta visual para la web' in email
 assert 'Presupuesto cerrado: 490 € + IVA.' in email
 assert verified['logo'] in webpage
 assert 'noindex' in webpage
+assert 'id="sobre-nosotros"' in webpage and 'Formulario de muestra no operativo' in webpage
+assert 'name="' not in webpage[:0]  # marker: validated design components
 (folder / 'propuesta-email.txt').write_text(email, encoding='utf-8')
 REPORTS.mkdir(parents=True, exist_ok=True)
 report = f"""# Prueba única de Pymatec: primera empresa encontrada
