@@ -44,14 +44,6 @@ def inspect(page, url, title, checks):
   if href.startswith(('#','mailto:','tel:','https://','http://')):continue
   local=href.split('#')[0].split('?')[0]
   if local and local not in PAGES:checks.append(title+': menú con enlace inválido '+local)
- # Comprobar fondos remotos en el viewport cuando estén definidos por CSS.
- backs=page.evaluate("""() => Array.from(document.querySelectorAll('*')).map(el =>
-  getComputedStyle(el).backgroundImage).filter(s=>s && s !== 'none')""")
- for css in set(backs):
-  for src in re.findall(r'url\(["\\']?([^)"\\']+)',css):
-   if src.startswith('https://'):
-    # Si fondo falla se detectará en DOM navegando: no atribuir imagen a la empresa.
-    pass
  return data
 
 def main():
