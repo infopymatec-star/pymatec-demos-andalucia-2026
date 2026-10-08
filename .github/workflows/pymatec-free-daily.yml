@@ -108,3 +108,4 @@ jobs:
       - run: python -m pip install --disable-pip-version-check requests==2.32.5 beautifulsoup4==4.14.2
       - run: python automation/prospecting_weekdays.py --demo-test
       - run: python automation/mail_summary.py --demo-test
+      # Smoke tests never send emails or publish fictitious proposals.
