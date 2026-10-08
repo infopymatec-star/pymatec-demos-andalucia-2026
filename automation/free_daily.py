@@ -82,8 +82,7 @@ def overpass(city):
     city_name, lat, lon = city
     # A single small query each day; the public instance may legitimately deny a busy query.
     q = f'''[out:json][timeout:24];(
-    nwr(around:25000,{lat},{lon})["craft"]["name"]["website"];
-    nwr(around:25000,{lat},{lon})["office"="company"]["name"]["website"];
+    nwr(around:11000,{lat},{lon})["craft"]["name"]["website"];
     );out tags center 100;'''
     resp = requests.post('https://overpass-api.de/api/interpreter', data={'data': q}, headers=HEADERS, timeout=39)
     resp.raise_for_status()
