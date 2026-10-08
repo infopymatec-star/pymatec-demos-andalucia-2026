@@ -1,0 +1,7 @@
+{
+  "schema_version": 1,
+  "policy": "Máximo un email comercial por empresa de por vida. No mandar sin comprobación de Gmail/Enviados, base legal y registro de send confirmado. Correo comercial automático desactivado.",
+  "records": [],
+  "updated": "2026-10-09",
+  "note": "Historial LOCAL inicialmente vacío: NO prueba que Gmail nunca haya enviado a la empresa. Las reservas, envíos confirmados y casos inciertos bloquean nuevos intentos. Registrar cada envío autorizado con company name, alias, dominio(s), emails, estado, message_id y fecha."
+}
