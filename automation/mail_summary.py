@@ -77,7 +77,8 @@ def main():
             if attempt<3:time.sleep(12)
         entry['verified_public']=ok
         entry['publish_reason']=reason
-    data['status']='public_verified' if all(e.get('verified_public') for e in data['entries']) else 'incomplete'
+    data['status']=('no_proposals' if not data['entries'] else
+                    'public_verified' if all(e.get('verified_public') for e in data['entries']) else 'incomplete')
     data['checked_at']=dt.datetime.now(ZoneInfo('Europe/Madrid')).isoformat(timespec='seconds')
     name.write_text(json.dumps(data,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
     sender=os.getenv('PYMATEC_GMAIL_ADDRESS','').strip()
