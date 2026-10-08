@@ -47,6 +47,11 @@ try:
 except Exception as e:
     verification = 'Web original contrastada al seleccionar la empresa; no se pudo repetir petición: ' + type(e).__name__
 
+verified['about'] = ('Bonela Integra S.L. cuenta con más de 25 años de experiencia '
+    'en instalaciones y servicios de mantenimiento. Se dedica a climatización, '
+    'fontanería, agua caliente sanitaria, protección contra incendios, sistemas '
+    'de gas y ventilación. Su web destaca el trabajo en equipo y la búsqueda '
+    'de soluciones adaptadas a cada proyecto.')
 city = 'Estación de Cártama, Málaga'
 day = date.today().isoformat()
 slug, webpage = make_demo(verified, city)
