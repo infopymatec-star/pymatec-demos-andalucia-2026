@@ -115,7 +115,7 @@ def candidate(row,city,cfg,prev):
  ident=str(row.get('type',''))+':'+str(row.get('id',''))
  out={'name':name,'craft':craft,'website':url or '','domain':domain(url) if url else '',
    'email':email,'phone':phone[:40],'osm_id':ident,
-   'address':address_from_tags(tags,city),'city':city,
+   'address':address_from_tags(tags,city),'address_confirmed':bool(tags.get('addr:street') and tags.get('addr:housenumber')),'city':city,
    'source':'https://www.openstreetmap.org/'+str(row.get('type','node'))+'/'+str(row.get('id','')),
    'group':'con-web' if url else 'sin-web-localizada'}
  if banned_candidate(out,cfg) or known(out,prev):return
@@ -183,7 +183,7 @@ def extract(c,cfg):
   'services_intro':'Contacta para conocer los servicios y solicitar información sobre tu proyecto.'}
 def checked_no_website(c):
  """Do not claim absence merely because an OSM item lacks website=."""
- if c['website'] or not c['email'] or not c['phone'] or not c['address'].split(',')[0].strip():
+ if c['website'] or not c['email'] or not c['phone'] or not c.get('address_confirmed'):
   return False,'Faltan evidencias independientes o datos de contacto'
  # Un motor público puede no responder; entonces se descarta, no se inventa el resultado.
  try:
