@@ -34,7 +34,7 @@ jobs:
       - name: Instalar dependencias gratuitas
         run: python -m pip install --disable-pip-version-check requests==2.32.5 beautifulsoup4==4.14.2
       - name: Buscar con prioridad Málaga y verificar sin inventar datos
-        run: python automation/prospecting_weekdays.py
+        run: python automation/guarded_weekday.py
       - name: Preparar navegador de revisión de escritorio y móvil
         run: |
           python -m pip install playwright==1.55.0
@@ -112,7 +112,8 @@ jobs:
         with:
           python-version: '3.12'
       - run: python -m pip install --disable-pip-version-check requests==2.32.5 beautifulsoup4==4.14.2
-      - run: python automation/prospecting_weekdays.py --demo-test
+      - run: python automation/guarded_weekday.py --demo-test
+      - run: python automation/commercial_email_guard.py --demo-test
       - run: python automation/mail_summary.py --demo-test
       - name: Instalar navegador de verificación gratuito
         run: |
