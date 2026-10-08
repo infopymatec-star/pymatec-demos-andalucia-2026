@@ -62,6 +62,15 @@ verified.update({
     'about_more': 'Nuestra actividad abarca desde el diseño y la ejecución de instalaciones hasta los servicios de mantenimiento. Apostamos por el trabajo en equipo y por encontrar la solución más adecuada para cada proyecto.',
     'footer_description': 'Instalaciones y mantenimiento industrial: climatización, fontanería, protección contra incendios, agua caliente sanitaria, gas y ventilación.',
     'experience': '+25 años',
+    'phone_display': '(+34) 952 02 87 55',
+    'service_images': [
+      'https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=1100&q=83',
+      'https://images.unsplash.com/photo-1585704032915-c3400ca199e7?auto=format&fit=crop&w=1100&q=83',
+      'https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1100&q=83',
+      'https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1100&q=83',
+      'https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1100&q=83',
+      'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1100&q=83',
+    ],
     'hero_image': 'https://www.bonelaintegra.com/wp-content/uploads/2023/03/instalaciones-edar-estepona.jpg.webp',
     'secondary_image': 'https://www.bonelaintegra.com/wp-content/uploads/2023/03/Hotel-Angela.jpg.webp',
     'projects': [
@@ -98,6 +107,7 @@ assert '03hospitalvelez_alb' in pages['index.html']
 for content_page in pages.values():
     assert 'Teléfono' in content_page and 'estudio@bonelaintegra.com' in content_page
     assert 'C. Miguel Berrocal' in content_page
+    assert '(+34) 952 02 87 55' in content_page
     assert 'Una web clara' not in content_page
     assert 'Visitar sitio original' not in content_page
 assert 'Formular' in pages['contacto.html']
