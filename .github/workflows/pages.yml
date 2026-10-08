@@ -20,6 +20,7 @@ jobs:
         run: |
           mkdir -p _site
           unzip -q -o site.zip -d _site
+          if [ -d auto-demos ]; then cp -R auto-demos _site/auto-demos; fi
           touch _site/.nojekyll
           printf 'User-agent: *\nDisallow: /\n' > _site/robots.txt
           test -f _site/index.html
