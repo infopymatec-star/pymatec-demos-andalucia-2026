@@ -6,6 +6,7 @@ fueron confirmados previamente. El script vuelve a comprobarlos cuando puede.
 No envía emails; la única prueba de envío la hace el usuario mediante Gmail.
 """
 from datetime import date
+from site_pages import make_pages
 from pathlib import Path
 import json
 from free_daily import (
@@ -27,6 +28,9 @@ verified = {
     'logo': 'https://www.bonelaintegra.com/wp-content/uploads/2016/03/logobonelaintegratransparente.png.webp',
     'color': CRAFTS['hvac'][1],  # Paleta de propuesta; no se afirma que sea Pantone corporativo.
     'verified_url': source['website'],
+    'services': ['Climatización', 'Fontanería', 'Agua caliente sanitaria', 'Protección contra incendios', 'Sistemas de gas', 'Ventilación'],
+    'address': 'C. Miguel Berrocal, 14, 29580 Estación de Cártama, Málaga',
+    'hours': 'Lunes a viernes · 09:00–14:00 y 16:00–19:00',
     'about': 'Bonela Integra S.L. cuenta con más de 25 años de experiencia en el sector de las instalaciones y servicios de mantenimiento. Es especialista en climatización, fontanería, agua caliente sanitaria, contraincendios, gas y ventilación. Su objetivo es encontrar soluciones adaptadas a las necesidades de cada proyecto.',
 }
 verification = 'Comprobación original de la búsqueda, sin petición adicional'
@@ -46,9 +50,11 @@ except Exception as e:
 city = 'Estación de Cártama, Málaga'
 day = date.today().isoformat()
 slug, webpage = make_demo(verified, city)
+pages = make_pages(verified, city, slug, webpage)
 folder = DEST / slug
 folder.mkdir(parents=True, exist_ok=True)
-(folder / 'index.html').write_text(webpage, encoding='utf-8')
+for filename, source_html in pages.items():
+    (folder / filename).write_text(source_html, encoding='utf-8')
 url = 'https://infopymatec-star.github.io/pymatec-demos-andalucia-2026/auto-demos/' + slug + '/'
 email, compose = create_note({'email':verified['email'],'demo_url':url}, day)
 assert email.count(url) == 1
@@ -56,8 +62,14 @@ assert 'Asunto: Propuesta visual para la web' in email
 assert 'Presupuesto cerrado: 490 € + IVA.' in email
 assert verified['logo'] in webpage
 assert 'noindex' in webpage
-assert 'id="sobre-nosotros"' in webpage and 'Formulario de muestra no operativo' in webpage
-assert 'name="' not in webpage[:0]  # marker: validated design components
+assert 'id="sobre-nosotros"' not in pages['index.html']
+assert 'id="contacto"' not in pages['index.html']
+assert 'id="sobre-nosotros"' in pages['sobre-nosotros.html']
+assert 'class="sample-form"' in pages['contacto.html']
+assert 'Web oficial' not in pages['contacto.html']
+assert 'Visitar sitio original' not in pages['contacto.html']
+assert 'C. Miguel Berrocal' in pages['contacto.html']
+assert 'Más de 25' in pages['sobre-nosotros.html'] or 'más de 25' in pages['sobre-nosotros.html']
 (folder / 'propuesta-email.txt').write_text(email, encoding='utf-8')
 REPORTS.mkdir(parents=True, exist_ok=True)
 report = f"""# Prueba única de Pymatec: primera empresa encontrada
