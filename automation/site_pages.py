@@ -213,7 +213,7 @@ def make_pages(info, city, slug, document):
     about_body=f'''<section class="pagehero"><div class="wrap">
        <span class="eyebrow">La empresa</span><h1>Sobre nosotros</h1>
        <p>Conoce nuestra experiencia, nuestra forma de trabajar y las especialidades de {short}.</p></div></section>
-       <section class="section"><div class="wrap about-grid">
+       <section class="section" id="sobre-nosotros"><div class="wrap about-grid">
        <div><span class="eyebrow">Nuestra trayectoria</span>
        <h2>{E(info.get("about_title") or "Compromiso con cada instalación.")}</h2>
        <p class="lead">{about}</p>
@@ -229,7 +229,7 @@ def make_pages(info, city, slug, document):
     # Contact with honest disabled form: not misleadingly labeled a working submission.
     form='''<div class="form-panel"><h2>Envíanos tu consulta</h2>
       <p>Déjanos tus datos y cuéntanos qué necesitas.</p>
-      <form aria-label="Formulario visual de muestra">
+      <form class="sample-form" aria-label="Formulario visual de muestra">
       <div class="form-grid">
         <label>Nombre<input type="text" placeholder="Nombre y apellidos" autocomplete="off"></label>
         <label>Teléfono<input type="tel" placeholder="Tu teléfono" autocomplete="off"></label>
@@ -242,7 +242,7 @@ def make_pages(info, city, slug, document):
     contact_body=f'''<section class="pagehero"><div class="wrap">
       <span class="eyebrow">Estamos a tu disposición</span><h1>Contáctanos</h1>
       <p>Solicita información sobre nuestros servicios y proyectos.</p></div></section>
-      <section class="section"><div class="wrap contact-grid"><div>
+      <section class="section" id="contacto"><div class="wrap contact-grid"><div>
       <span class="eyebrow">Datos de contacto</span><h2>Hablemos de tu proyecto.</h2>
       <p>Estamos a tu disposición para responder consultas de instalaciones y mantenimiento.</p>
       <div class="contact-panel">
