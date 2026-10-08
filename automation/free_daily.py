@@ -200,7 +200,7 @@ def create_note(entry, date):
     The reviewer must verify prior lawful authorisation for commercial sending.
     """
     email, demo = entry['email'], entry['demo_url']
-    subj = 'Propuesta de rediseño web · Pymatec'
+    subj = 'Propuesta visual para la web'
     template = (ROOT / 'automation' / 'email_tipo.md').read_text(encoding='utf-8')
     if template.count('{{ENLACE_WEB}}') != 1:
         raise ValueError('La plantilla debe incluir una sola variable {{ENLACE_WEB}}')
