@@ -262,11 +262,7 @@ def make_pages(info, city, slug, document):
         <div class="section-intro"><span class="eyebrow">Qué hacemos</span><h2>Servicios e instalaciones</h2>
         <p>{E(info.get("services_intro") or "Conoce nuestras principales áreas de trabajo y encuentra la solución que necesitas.")}</p></div>
         <div class="service-grid">{''.join(service_cards)}</div></div></section>
-        <section class="section soft"><div class="wrap intro-grid">
-        <div class="intro-photo" role="img" aria-label="Fotografía ilustrativa de instalaciones" style="background-image:url(&quot;{secondary}&quot;)"></div>
-        <div class="intro-side"><span class="eyebrow">Conoce nuestra empresa</span>
-        <h2>{E(info.get("about_home_title") or "Experiencia y soluciones a medida.")}</h2>
-        <p>{about}</p><a class="btn" href="sobre-nosotros.html">Sobre nosotros ↗</a></div></div></section>'''
+        '''
     if project_cards:
         home+=f'''<section class="section" id="proyectos"><div class="wrap"><div class="section-intro">
           <span class="eyebrow">Proyectos realizados</span><h2>Trabajos que hablan por nosotros.</h2>
@@ -322,6 +318,16 @@ def make_pages(info, city, slug, document):
             'contacto.html':page('contacto.html','Contáctanos',contact_body)}
     assert 'Una web clara' not in result['index.html']
     assert 'Una empresa que merece presentarse bien' not in result['index.html']
+    # La presentación de la empresa y su historia solo se muestran en la página independiente.
+    assert 'Conoce nuestra empresa' not in result['index.html']
+    assert 'Conoce nuestra empresa' not in result['sobre-nosotros.html']
+    assert 'about_home_title' not in result['index.html']
+    assert 'Más de 25 años de oficio, proyectos y compromiso' not in result['index.html']
+    assert 'Sobre nosotros ↗' not in result['index.html']
+    assert 'id="proyectos"' in result['index.html'] or not project_cards
+    assert 'id="sobre-nosotros"' not in result['index.html']
+    assert 'id="sobre-nosotros"' in result['sobre-nosotros.html']
+
     assert '02 · Una web para conectar' not in result['index.html']
     assert 'Teléfono' in result['index.html'] and email in result['index.html']
     assert '<footer ' in result['index.html']
