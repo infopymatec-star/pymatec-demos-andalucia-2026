@@ -112,7 +112,7 @@ def make_pages(info, city, slug, document):
     about_html = str(about_section)
     main=about.select_one('main')
     main.clear()
-    hero=f'''<section class="subhero"><div class="wrap"><div class="eyebrow">Conoce la empresa</div><h1>Sobre nosotros.</h1><p>Trayectoria y especialidades de {name}.</p></div></section>'''
+    hero=f'''<section class="subhero"><div class="wrap"><div class="eyebrow">Conoce la empresa</div><h1>Sobre nosotros.</h1><p>Trayectoria y especialidades de {name.rstrip('.')}.</p></div></section>'''
     main.append(_new(about,hero))
     main.append(_new(about,about_html))
     services=info.get('services',[])[:8]
