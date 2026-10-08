@@ -21,6 +21,7 @@ from urllib.parse import quote, urljoin, urlparse
 
 import requests
 from bs4 import BeautifulSoup
+from site_pages import make_pages
 
 ROOT = Path(__file__).resolve().parents[1]
 DEST = ROOT / 'auto-demos'
@@ -309,6 +310,11 @@ def main():
         city='Málaga'
         lead={'name':'TALLER DE PRUEBA - NO PUBLICAR','website':'https://example.net','domain':'example.net','craft':'carpenter','email':'ejemplo@example.net','logo':None,'color':'#876044','phone':'+34950000000','verified_url':'https://example.net'}
         slug,html_content=make_demo(lead,city)
+        examples=make_pages(lead,city,slug,html_content)
+        assert set(examples)=={'index.html','sobre-nosotros.html','contacto.html'}
+        assert 'Sobre nosotros' in examples['sobre-nosotros.html']
+        assert 'form' in examples['contacto.html']
+        assert 'Visitar sitio original' not in examples['contacto.html']
         assert 'PROPUESTA DE DISEÑO NO OFICIAL' in html_content
         assert 'mailto:ejemplo@example.net' in html_content
         mail, compose = create_note({'email':'ejemplo@example.net', 'demo_url':'https://example.net/demo/'}, '2026-10-08')
@@ -336,9 +342,11 @@ def main():
             lead=None
         if lead is None: continue
         slug,content=make_demo(lead,city_name)
+        pages=make_pages(lead,city_name,slug,content)
         folder=DEST/slug
         folder.mkdir(parents=True,exist_ok=True)
-        (folder/'index.html').write_text(content,encoding='utf-8')
+        for filename,page in pages.items():
+            (folder/filename).write_text(page,encoding='utf-8')
         demo=REPO_URL+slug+'/'
         entry={**lead,'slug':slug,'demo_url':demo,'city':city_name,'date':day}
         mail,compose=create_note(entry,day)
