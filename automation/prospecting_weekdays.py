@@ -244,35 +244,36 @@ def verify_static(pages,company):
  if 'Formulario de demostración' not in pages['contacto.html']:raise ValueError('Formulario no declarado demo')
 def create_mail(c,link):
  subject='Propuesta visual para la web'
- improvements=', '.join(c.get('website_signals',[])[:2]) if c['group']=='web-mejorable' else 'posibilidad de contar con una presentación digital profesional'
- introduction='He visitado vuestra web' if c['group']=='web-mejorable' else 'He encontrado información pública sobre vuestra actividad'
- txt=f"""Buenos días,
+ # Describir mejoras, sin hacer reproches tecnológicos ni atribuir fallos sin evidencia.
+ mapping={
+  'No declara meta viewport móvil':'mejor presentación y navegación en dispositivos móviles',
+  'Diseño rígido de tablas detectado':'una estructura más limpia y flexible',
+  'Etiquetas HTML obsoletas detectadas':'un diseño más actual y accesible',
+  'Generador CMS antiguo declarado':'un sitio mejor preparado para navegadores actuales',
+  'Copyright visible sin actualización desde 2021 o antes':'contenidos e información corporativa revisados',
+  'Ancho HTML fijo detectado':'mejor adaptación a diferentes tamaños de pantalla',
+  'Sitio servido sin HTTPS':'una configuración segura con HTTPS en la versión definitiva'
+ }
+ improvements=[mapping.get(x,'una estructura más clara de servicios y contacto') for x in c.get('website_signals',[])[:2]]
+ if not improvements: improvements=['una mejor presentación de los servicios y un acceso sencillo al contacto']
+ intro=('He revisado vuestra web actual y su información pública.'
+        if c['group']=='web-mejorable' else
+        'He revisado la información pública disponible sobre vuestra empresa.')
+ params={
+  'INTRO':intro,
+  'EMPRESA':c['name'],
+  'ACTIVIDAD':c['activity'].lower(),
+  'MEJORAS':'; '.join(improvements),
+  'ENLACE_WEB':link
+ }
+ txt=(ROOT/'automation'/'email_tipo.md').read_text(encoding='utf-8')
+ for key,value in params.items():
+  if txt.count('{{'+key+'}}')!=1:raise ValueError('Plantilla incorrecta: '+key)
+  txt=txt.replace('{{'+key+'}}',value)
+ if '{{' in txt:raise ValueError('Marcador sin resolver en propuesta')
+ plain=txt.replace('**[Enlace web]('+link+')**',link).replace('**','')
+ return subject,txt,gmail_compose(c['email'],subject,plain) if c.get('email') else ''
 
-Soy José Luis, de Pymatec. {introduction} y he preparado un borrador visual para {c['name']}, centrado en vuestra actividad de {c['activity'].lower()}.
-
-Podéis verlo aquí: {link}
-
-La propuesta tiene tres apartados: Inicio, Sobre nosotros y Contacto. Busca presentar de forma clara vuestros servicios y facilitar que os contacten por teléfono o desde el formulario.
-
-Aspectos revisados: {improvements}.
-
-**Presupuesto cerrado: 490 € + IVA.**
-
-Incluye adaptación de textos y fotografías que nos facilitéis, diseño para móvil y ordenador, formulario operativo con protección antispam en la web definitiva, configuración SEO básica, publicación en vuestro dominio, dos rondas de revisión y 15 días de corrección de incidencias.
-
-Dominio y alojamiento aparte, aprovechando los existentes cuando sea posible. Forma de pago: 50 % al aceptar y 50 % antes de publicar. Sin mantenimiento obligatorio.
-
-La maqueta es una muestra sin compromiso y su formulario todavía no realiza envíos.
-
-¿Qué os parece? Si os encaja, podemos comentarlo en una llamada breve.
-
-Un saludo,
-José Luis
-Pymatec
-Tel.: 693 28 13 10
-https://pymatec.es
-"""
- return subject,txt,gmail_compose(c['email'],subject,txt) if c.get('email') else ''
 def make_report(day,city,rows,notes,scanned):
  counts={'sin-web-localizada':sum(x['group']=='sin-web-localizada' for x in rows),
    'web-mejorable':sum(x['group']=='web-mejorable' for x in rows)}
