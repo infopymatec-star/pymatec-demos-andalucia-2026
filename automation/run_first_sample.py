@@ -52,6 +52,24 @@ verified['about'] = ('Bonela Integra S.L. cuenta con más de 25 años de experie
     'fontanería, agua caliente sanitaria, protección contra incendios, sistemas '
     'de gas y ventilación. Su web destaca el trabajo en equipo y la búsqueda '
     'de soluciones adaptadas a cada proyecto.')
+# Información específica confirmada en las páginas oficiales de Bonela.
+verified.update({
+    'hero_title': 'Instalaciones que hacen funcionar cada espacio.',
+    'hero_subtitle': 'Climatización, fontanería y mantenimiento industrial con más de 25 años de experiencia.',
+    'services_intro': 'Instalaciones técnicas para edificios, espacios profesionales y proyectos industriales.',
+    'about_home_title': 'Más de 25 años aportando soluciones.',
+    'about_title': 'Más de 25 años comprometidos con las instalaciones.',
+    'about_more': 'Nuestra actividad abarca desde el diseño y la ejecución de instalaciones hasta los servicios de mantenimiento. Apostamos por el trabajo en equipo y por encontrar la solución más adecuada para cada proyecto.',
+    'footer_description': 'Instalaciones y mantenimiento industrial: climatización, fontanería, protección contra incendios, agua caliente sanitaria, gas y ventilación.',
+    'experience': '+25 años',
+    'hero_image': 'https://www.bonelaintegra.com/wp-content/uploads/2023/03/instalaciones-edar-estepona.jpg.webp',
+    'secondary_image': 'https://www.bonelaintegra.com/wp-content/uploads/2023/03/Hotel-Angela.jpg.webp',
+    'projects': [
+      {'title': 'Hospital Comarcal de la Axarquía', 'description': 'Fontanería y climatización', 'image': 'https://www.bonelaintegra.com/wp-content/uploads/2023/03/03hospitalvelez_alb-300x220.jpg.webp'},
+      {'title': 'Estación Marítima', 'description': 'Climatización, fontanería, saneamiento y protección contra incendios', 'image': 'https://www.bonelaintegra.com/wp-content/uploads/2023/03/10estmaritima_alb-300x200.jpg.webp'},
+      {'title': 'Sede BestSeller', 'description': 'Energía solar, fontanería, saneamiento y riego', 'image': 'https://www.bonelaintegra.com/wp-content/uploads/2023/03/bESTSELLER-300x225.jpg.webp'},
+    ],
+})
 city = 'Estación de Cártama, Málaga'
 day = date.today().isoformat()
 slug, webpage = make_demo(verified, city)
@@ -74,6 +92,16 @@ assert 'class="sample-form"' in pages['contacto.html']
 assert 'Web oficial' not in pages['contacto.html']
 assert 'Visitar sitio original' not in pages['contacto.html']
 assert 'C. Miguel Berrocal' in pages['contacto.html']
+assert 'instalaciones que hacen funcionar' in pages['index.html'].lower()
+assert 'Algunos de nuestros trabajos' in pages['index.html']
+assert '03hospitalvelez_alb' in pages['index.html']
+for content_page in pages.values():
+    assert 'Teléfono' in content_page and 'estudio@bonelaintegra.com' in content_page
+    assert 'C. Miguel Berrocal' in content_page
+    assert 'Una web clara' not in content_page
+    assert 'Visitar sitio original' not in content_page
+assert 'Formular' in pages['contacto.html']
+
 assert 'Más de 25' in pages['sobre-nosotros.html'] or 'más de 25' in pages['sobre-nosotros.html']
 (folder / 'propuesta-email.txt').write_text(email, encoding='utf-8')
 REPORTS.mkdir(parents=True, exist_ok=True)
