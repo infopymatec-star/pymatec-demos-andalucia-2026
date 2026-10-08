@@ -42,6 +42,7 @@ jobs:
           grep -q 'site-footer' auto-demos/bonela-integra-s-l-62264/index.html
           grep -q 'Hospital Comarcal de la Axarquía' auto-demos/bonela-integra-s-l-62264/index.html
           grep -q 'C. Miguel Berrocal' auto-demos/bonela-integra-s-l-62264/sobre-nosotros.html
+          grep -q '952 02 87 55' auto-demos/bonela-integra-s-l-62264/index.html
           grep -q 'Formulario de demostración' auto-demos/bonela-integra-s-l-62264/contacto.html
           ! grep -q 'Una empresa que merece presentarse bien' auto-demos/bonela-integra-s-l-62264/index.html
       - name: Guardar ejemplo y publicar con GitHub Pages
