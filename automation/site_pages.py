@@ -89,9 +89,6 @@ def make_pages(info, city, slug, document):
     style=original.select_one('style')
     if not style: raise ValueError('Falta CSS base')
     style.append(EXTRA_CSS)
-    for el in original.select('.contact .entry'):
-        if 'web oficial' in el.get_text(' ',strip=True).lower():
-            el.decompose()
     name = escape(info['name'])
     genre = escape(city)
     sector = escape(info.get('craft','').replace('_',' ').capitalize())
