@@ -70,14 +70,17 @@ def prior_history():
  prev.setdefault('osm_ids',[])
  prev.setdefault('emails',[])
  prev.setdefault('events',[])
+ prev.setdefault('examined_osm_ids',[])
+ prev.setdefault('examined_domains',[])
+ prev.setdefault('examined_names',[])
  for dom in ('laureanoramos.es','logarze.es','instalacionesmesa.com',
    'carpinterosjaen.com','oryxobrasyservicios.com','bonelaintegra.com'):
   if dom not in prev['domains']:prev['domains'].append(dom)
  return prev
 def known(c,state):
- for k,field in (('domain','domains'),('osm_id','osm_ids'),('email','emails')):
+ for k,field in (('domain','domains'),('osm_id','osm_ids'),('email','emails'),('domain','examined_domains'),('osm_id','examined_osm_ids')):
   if c.get(k) and norm(c[k]) in set(norm(x) for x in state[field]): return True
- if c.get('name') and norm(c['name']) in set(norm(x) for x in state['names']):return True
+ if c.get('name') and norm(c['name']) in set(norm(x) for x in state['names']+state['examined_names']):return True
  return False
 def req(url,timeout=12):
  u=public_site(url)
@@ -310,12 +313,16 @@ def write_manifest(day,entries,notes,city):
    'osm_id','source','folder')} for e in entries],
   'limitations':notes,'commercial_emails_sent':0,'summary_email_sent':False}
  (REPORT/(day+'.json')).write_text(json.dumps(data,indent=2,ensure_ascii=False)+'\n',encoding='utf-8')
-def save_state(prev,rows,day):
+def save_state(prev,rows,day,reviewed):
  for c in rows:
   for k,field in (('domain','domains'),('name','names'),('osm_id','osm_ids'),('email','emails')):
    value=c.get(k)
    if value and value not in prev[field]:prev[field].append(value)
   prev['events'].append({'date':day,'name':c['name'],'group':c['group'],'link':c['demo_url'],'email_status':'prepared-not-sent'})
+ for c in reviewed:
+  for k,target in (('domain','examined_domains'),('osm_id','examined_osm_ids'),('name','examined_names')):
+   value=c.get(k)
+   if value and value not in prev[target]:prev[target].append(value)
  prev['updated']=day
  STATE.write_text(json.dumps(prev,indent=2,ensure_ascii=False)+'\n',encoding='utf-8')
 def main():
@@ -360,7 +367,7 @@ def main():
   lookup.add(uniq);items.append(c)
  available_old=[x for x in items if x['website']]
  available_no=[x for x in items if not x['website']]
- made=[];counters={'sin-web-localizada':0,'web-mejorable':0}
+ made=[];reviewed=[];examined_ids_this_run=set();counters={'sin-web-localizada':0,'web-mejorable':0}
  MAX_SCANNED=65;scanned=0
  # Seek 2 + 3, backfill from the other category if the source lacks candidates.
  for group,collection,desired,round_limit in [
@@ -372,7 +379,9 @@ def main():
   for c in collection:
    if len(made)>=5 or scanned>=MAX_SCANNED or examined_this_round>=round_limit:break
    if counters[group]>=desired:break
-   if any(v['osm_id']==c['osm_id'] for v in made):continue
+   if c['osm_id'] in examined_ids_this_run:continue
+   examined_ids_this_run.add(c['osm_id'])
+   reviewed.append(c)
    scanned+=1
    examined_this_round+=1
    try:
@@ -404,7 +413,7 @@ def main():
    except Exception as e:
     notes.append('Candidato omitido por fallo de verificación '+type(e).__name__)
   if len(made)>=5 or scanned>=MAX_SCANNED:break
- save_state(prev,made,day)
+ save_state(prev,made,day,reviewed)
  report=make_report(day,town[0],made,notes,scanned)
  (REPORT/(day+'.md')).write_text(report,encoding='utf-8')
  (ROOT/'automation'/'issue-body.md').write_text(report,encoding='utf-8')
