@@ -45,6 +45,10 @@ jobs:
           grep -q '952 02 87 55' auto-demos/bonela-integra-s-l-62264/index.html
           grep -q 'Formulario de demostración' auto-demos/bonela-integra-s-l-62264/contacto.html
           ! grep -q 'Una empresa que merece presentarse bien' auto-demos/bonela-integra-s-l-62264/index.html
+          ! grep -q 'Conoce nuestra empresa' auto-demos/bonela-integra-s-l-62264/index.html
+          ! grep -q 'Más de 25 años de oficio, proyectos y compromiso' auto-demos/bonela-integra-s-l-62264/index.html
+          ! grep -q 'Sobre nosotros ↗' auto-demos/bonela-integra-s-l-62264/index.html
+          grep -q 'id="sobre-nosotros"' auto-demos/bonela-integra-s-l-62264/sobre-nosotros.html
           grep -q 'Instalaciones industriales y mantenimiento en Málaga' auto-demos/bonela-integra-s-l-62264/index.html
           grep -q 'mobile-quickbar' auto-demos/bonela-integra-s-l-62264/index.html
           grep -q 'id="proyectos"' auto-demos/bonela-integra-s-l-62264/index.html
