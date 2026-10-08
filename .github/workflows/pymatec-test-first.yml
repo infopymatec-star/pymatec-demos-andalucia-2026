@@ -37,7 +37,7 @@ jobs:
           test -f auto-demos/bonela-integra-s-l-62264/sobre-nosotros.html
           test -f auto-demos/bonela-integra-s-l-62264/contacto.html
           ! grep -q 'Visitar sitio original' auto-demos/bonela-integra-s-l-62264/contacto.html
-          grep -q 'Algunos de nuestros trabajos' auto-demos/bonela-integra-s-l-62264/index.html
+          grep -q 'Trabajos que hablan por nosotros.' auto-demos/bonela-integra-s-l-62264/index.html
           grep -q 'estudio@bonelaintegra.com' auto-demos/bonela-integra-s-l-62264/index.html
           grep -q 'site-footer' auto-demos/bonela-integra-s-l-62264/index.html
           grep -q 'Hospital Comarcal de la Axarquía' auto-demos/bonela-integra-s-l-62264/index.html
@@ -45,6 +45,11 @@ jobs:
           grep -q '952 02 87 55' auto-demos/bonela-integra-s-l-62264/index.html
           grep -q 'Formulario de demostración' auto-demos/bonela-integra-s-l-62264/contacto.html
           ! grep -q 'Una empresa que merece presentarse bien' auto-demos/bonela-integra-s-l-62264/index.html
+          grep -q 'Instalaciones industriales y mantenimiento en Málaga' auto-demos/bonela-integra-s-l-62264/index.html
+          grep -q 'mobile-quickbar' auto-demos/bonela-integra-s-l-62264/index.html
+          grep -q 'id="proyectos"' auto-demos/bonela-integra-s-l-62264/index.html
+          grep -q 'Centro-Bestseller-en-Churriana.jpg.webp' auto-demos/bonela-integra-s-l-62264/index.html
+          ! grep -q 'images.unsplash.com' auto-demos/bonela-integra-s-l-62264/index.html
       - name: Guardar ejemplo y publicar con GitHub Pages
         run: |
           git config user.name 'pymatec-bot'
