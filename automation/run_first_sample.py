@@ -99,6 +99,13 @@ assert 'Presupuesto cerrado: 490 € + IVA.' in email
 assert verified['logo'] in webpage
 assert 'noindex' in webpage
 assert 'id="sobre-nosotros"' not in pages['index.html']
+assert 'Conoce nuestra empresa' not in pages['index.html']
+assert 'Más de 25 años de oficio, proyectos y compromiso' not in pages['index.html']
+assert 'Su web destaca el trabajo en equipo' not in pages['index.html']
+assert 'Sobre nosotros ↗' not in pages['index.html']
+assert 'Climatización' in pages['index.html']
+assert 'id="proyectos"' in pages['index.html']
+assert 'id="sobre-nosotros"' in pages['sobre-nosotros.html']
 assert 'id="contacto"' not in pages['index.html']
 assert 'id="sobre-nosotros"' in pages['sobre-nosotros.html']
 assert 'class="sample-form"' in pages['contacto.html']
