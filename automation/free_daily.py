@@ -194,17 +194,22 @@ def gmail_compose(email,subject,body):
     return 'https://mail.google.com/mail/?view=cm&fs=1&to='+quote(email,safe='@')+'&su='+quote(subject,safe='')+'&body='+quote(body,safe='')
 
 def create_note(entry, date):
-    name, email, demo = entry['name'],entry['email'],entry['demo_url']
-    subj = f'Propuesta visual para la web de {name} · Pymatec'
-    body = (f'Hola,\n\nDesde Pymatec hemos preparado una propuesta conceptual no oficial de rediseño web para {name}. '
-            'Es una maqueta basada en información pública, no encargada ni validada por vuestra empresa.\n\n'
-            f'Puedes verla aquí: {demo}\n\n'
-            'Si os interesa valorar una actualización de vuestra web, podemos comentar el alcance y preparar un presupuesto cerrado sin compromiso. '
-            'La información e imágenes se revisarían con vosotros antes de publicarla como web definitiva.\n\n'
-            'Un saludo,\nJosé Luis · Pymatec\n693 28 13 10\ninfo.pymatec@gmail.com\n\n'
-            'Si preferís no recibir más propuestas, indicádnoslo respondiendo a este mensaje.')
-    note = f'Para: {email}\nAsunto: {subj}\n\n{body}\n'
-    return note, gmail_compose(email,subj,body)
+    """Prepare the same email copy for every business; only the demo URL changes.
+
+    The Gmail compose link is not a saved draft and does not send email.
+    The reviewer must verify prior lawful authorisation for commercial sending.
+    """
+    email, demo = entry['email'], entry['demo_url']
+    subj = 'Propuesta de rediseño web · Pymatec'
+    template = (ROOT / 'automation' / 'email_tipo.md').read_text(encoding='utf-8')
+    if template.count('{{ENLACE_WEB}}') != 1:
+        raise ValueError('La plantilla debe incluir una sola variable {{ENLACE_WEB}}')
+    body = template.replace('{{ENLACE_WEB}}', demo)
+    note = f'Para: {email}\nAsunto: {subj}\n\n{body}'
+    plain = body.replace(f'**[Enlace web]({demo})**', demo)
+    plain = plain.replace('[https://pymatec.es](https://pymatec.es)', 'https://pymatec.es')
+    plain = plain.replace('**', '')
+    return note, gmail_compose(email, subj, plain)
 
 def main():
     parser=argparse.ArgumentParser()
@@ -223,6 +228,12 @@ def main():
         slug,html_content=make_demo(lead,city)
         assert 'PROPUESTA DE DISEÑO NO OFICIAL' in html_content
         assert 'mailto:ejemplo@example.net' in html_content
+        mail, compose = create_note({'email':'ejemplo@example.net', 'demo_url':'https://example.net/demo/'}, '2026-10-08')
+        assert mail.count('https://example.net/demo/') == 1
+        assert 'Presupuesto cerrado: 490 € + IVA.' in mail
+        assert 'Podéis verlo aquí:' in mail
+        assert 'restauración y contacto' in mail
+        assert 'view=cm' in compose and 'https%3A%2F%2Fexample.net%2Fdemo%2F' in compose
         print('TEST OK: generated HTML, safe noindex, contact. No file saved.')
         return
     idx=dt.date.fromisoformat(day).toordinal()%len(CITIES)
