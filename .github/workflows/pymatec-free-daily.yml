@@ -109,3 +109,4 @@ jobs:
       - run: python automation/prospecting_weekdays.py --demo-test
       - run: python automation/mail_summary.py --demo-test
       # Smoke tests never send emails or publish fictitious proposals.
+      # Recheck model email and expanded corporate exclusions after updates.
