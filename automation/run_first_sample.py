@@ -54,29 +54,33 @@ verified['about'] = ('Bonela Integra S.L. cuenta con más de 25 años de experie
     'de soluciones adaptadas a cada proyecto.')
 # Información específica confirmada en las páginas oficiales de Bonela.
 verified.update({
-    'hero_title': 'Instalaciones que hacen funcionar cada espacio.',
-    'hero_subtitle': 'Climatización, fontanería y mantenimiento industrial con más de 25 años de experiencia.',
-    'services_intro': 'Instalaciones técnicas para edificios, espacios profesionales y proyectos industriales.',
-    'about_home_title': 'Más de 25 años aportando soluciones.',
+    'hero_title': 'Instalaciones industriales y mantenimiento en Málaga.',
+    'hero_subtitle': 'Climatización, fontanería, protección contra incendios, gas, ACS y ventilación para edificios y proyectos industriales.',
+    'services_intro': 'Proyectos de instalación y mantenimiento con soluciones técnicas adaptadas a cada edificio y actividad.',
+    'about_home_title': 'Más de 25 años de oficio, proyectos y compromiso.',
     'about_title': 'Más de 25 años comprometidos con las instalaciones.',
     'about_more': 'Nuestra actividad abarca desde el diseño y la ejecución de instalaciones hasta los servicios de mantenimiento. Apostamos por el trabajo en equipo y por encontrar la solución más adecuada para cada proyecto.',
-    'footer_description': 'Instalaciones y mantenimiento industrial: climatización, fontanería, protección contra incendios, agua caliente sanitaria, gas y ventilación.',
+    'footer_description': 'Climatización, fontanería y mantenimiento industrial en Málaga. Soluciones técnicas en ACS, protección contra incendios, gas y ventilación.',
     'experience': '+25 años',
+    'trust_1': 'Más de 25 años de experiencia',
+    'trust_2': 'Instalación y mantenimiento',
+    'trust_3': 'Climatización · Fontanería · PCI',
+    'trust_4': 'Estación de Cártama · Málaga',
     'phone_display': '(+34) 952 02 87 55',
     'service_images': [
-      'https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=1100&q=83',
-      'https://images.unsplash.com/photo-1585704032915-c3400ca199e7?auto=format&fit=crop&w=1100&q=83',
-      'https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1100&q=83',
-      'https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1100&q=83',
-      'https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1100&q=83',
-      'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1100&q=83',
+      'https://www.bonelaintegra.com/wp-content/uploads/2023/03/03hospitalvelez_alb.jpg.webp',
+      'https://www.bonelaintegra.com/wp-content/uploads/2023/03/01bibliotecama_alb.jpg.webp',
+      'https://www.bonelaintegra.com/wp-content/uploads/2023/03/02buensamarit_alb.jpg.webp',
+      'https://www.bonelaintegra.com/wp-content/uploads/2023/03/10estmaritima_alb.jpg.webp',
+      'https://www.bonelaintegra.com/wp-content/uploads/2023/03/06hotelflorida_alb.jpg.webp',
+      'https://www.bonelaintegra.com/wp-content/uploads/2023/03/04puertoluz_alb.jpg.webp',
     ],
     'hero_image': 'https://www.bonelaintegra.com/wp-content/uploads/2023/03/instalaciones-edar-estepona.jpg.webp',
     'secondary_image': 'https://www.bonelaintegra.com/wp-content/uploads/2023/03/Hotel-Angela.jpg.webp',
     'projects': [
-      {'title': 'Hospital Comarcal de la Axarquía', 'description': 'Fontanería y climatización', 'image': 'https://www.bonelaintegra.com/wp-content/uploads/2023/03/03hospitalvelez_alb-300x220.jpg.webp'},
-      {'title': 'Estación Marítima', 'description': 'Climatización, fontanería, saneamiento y protección contra incendios', 'image': 'https://www.bonelaintegra.com/wp-content/uploads/2023/03/10estmaritima_alb-300x200.jpg.webp'},
-      {'title': 'Sede BestSeller', 'description': 'Energía solar, fontanería, saneamiento y riego', 'image': 'https://www.bonelaintegra.com/wp-content/uploads/2023/03/bESTSELLER-300x225.jpg.webp'},
+      {'title': 'Hospital Comarcal de la Axarquía', 'description': 'Fontanería y climatización', 'image': 'https://www.bonelaintegra.com/wp-content/uploads/2023/03/03hospitalvelez_alb.jpg.webp'},
+      {'title': 'Estación Marítima', 'description': 'Climatización, fontanería, saneamiento y protección contra incendios', 'image': 'https://www.bonelaintegra.com/wp-content/uploads/2023/03/10estmaritima_alb.jpg.webp'},
+      {'title': 'Sede BestSeller', 'description': 'Energía solar, fontanería, saneamiento y riego', 'image': 'https://www.bonelaintegra.com/wp-content/uploads/2023/03/Centro-Bestseller-en-Churriana.jpg.webp'},
     ],
 })
 city = 'Estación de Cártama, Málaga'
@@ -101,8 +105,8 @@ assert 'class="sample-form"' in pages['contacto.html']
 assert 'Web oficial' not in pages['contacto.html']
 assert 'Visitar sitio original' not in pages['contacto.html']
 assert 'C. Miguel Berrocal' in pages['contacto.html']
-assert 'instalaciones que hacen funcionar' in pages['index.html'].lower()
-assert 'Algunos de nuestros trabajos' in pages['index.html']
+assert 'instalaciones industriales y mantenimiento en málaga' in pages['index.html'].lower()
+assert 'Trabajos que hablan por nosotros.' in pages['index.html']
 assert '03hospitalvelez_alb' in pages['index.html']
 for content_page in pages.values():
     assert 'Teléfono' in content_page and 'estudio@bonelaintegra.com' in content_page
