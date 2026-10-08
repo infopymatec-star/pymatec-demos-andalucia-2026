@@ -132,7 +132,7 @@ def historical_signals(soup,response):
  if re.search(r'<font\b|<marquee\b',raw): reasons.append('Etiquetas HTML obsoletas detectadas')
  if re.search(r'generator.{0,35}wordpress\s+[1-4]\.',raw): reasons.append('Generador CMS antiguo declarado')
  if re.search(r'\b(?:copyright|©)\s*(?:201[0-9]|202[0-1])\b',text): reasons.append('Copyright visible sin actualización desde 2021 o antes')
- if re.search(r'\bwidth\s*=\s*["\\'](?:900|960|1000|1024)["\\']',raw):reasons.append('Ancho HTML fijo detectado')
+ if any(('width="'+str(w)+'"') in raw for w in (900,960,1000,1024)): reasons.append('Ancho HTML fijo detectado')
  if response.url.startswith('http://'):reasons.append('Sitio servido sin HTTPS')
  return reasons
 def extract(c,cfg):
