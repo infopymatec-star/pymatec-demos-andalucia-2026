@@ -37,6 +37,10 @@ jobs:
           test -f auto-demos/bonela-integra-s-l-62264/sobre-nosotros.html
           test -f auto-demos/bonela-integra-s-l-62264/contacto.html
           ! grep -q 'Visitar sitio original' auto-demos/bonela-integra-s-l-62264/contacto.html
+          grep -q 'Algunos de nuestros trabajos' auto-demos/bonela-integra-s-l-62264/index.html
+          grep -q 'estudio@bonelaintegra.com' auto-demos/bonela-integra-s-l-62264/index.html
+          grep -q 'site-footer' auto-demos/bonela-integra-s-l-62264/index.html
+          ! grep -q 'Una empresa que merece presentarse bien' auto-demos/bonela-integra-s-l-62264/index.html
       - name: Guardar ejemplo y publicar con GitHub Pages
         run: |
           git config user.name 'pymatec-bot'
