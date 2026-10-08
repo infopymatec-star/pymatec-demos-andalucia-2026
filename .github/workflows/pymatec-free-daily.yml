@@ -110,3 +110,4 @@ jobs:
       - run: python automation/mail_summary.py --demo-test
       # Smoke tests never send emails or publish fictitious proposals.
       # Recheck model email and expanded corporate exclusions after updates.
+      # Final: comprobar que incluso las candidatas descartadas se registran para no repetirlas.
