@@ -1,0 +1,32 @@
+Buenos días,
+
+Soy José Luis, de Pymatec. He visitado vuestra web y he preparado un **borrador con un diseño más actual**, manteniendo vuestra identidad y dando más protagonismo a vuestros servicios.
+
+Podéis verlo aquí: **[Enlace web]({{ENLACE_WEB}})**
+
+La propuesta es una web de una página, organizada por secciones, para presentar vuestra empresa y facilitar el contacto desde el móvil y el ordenador.
+
+**Presupuesto cerrado: 490 € + IVA.**
+
+Incluye:
+- Adaptación de textos y fotografías que nos facilitéis.
+- Secciones de servicios, empresa, restauración y contacto.
+- Diseño adaptado a móviles y ordenadores.
+- Formulario operativo con protección antispam.
+- Configuración básica de SEO y publicación en vuestro dominio.
+- Dos rondas de revisión y 15 días de corrección de incidencias tras la publicación.
+
+El dominio y el alojamiento se abonan aparte; revisaremos si podéis aprovechar los que ya tenéis.
+
+**Forma de pago:** 50 % al aceptar y 50 % antes de la publicación. Sin mantenimiento mensual obligatorio.
+
+El enlace es una muestra sin compromiso y su formulario todavía no realiza envíos.
+
+**¿Qué os parece la propuesta?** Si os encaja, podemos comentarla en una llamada breve y concretar los contenidos y la fecha de entrega.
+
+Un saludo,
+
+**José Luis**
+Pymatec
+Tel.: **693 28 13 10**
+[https://pymatec.es](https://pymatec.es)
