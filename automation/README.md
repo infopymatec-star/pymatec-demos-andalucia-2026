@@ -16,6 +16,9 @@ Este repositorio conserva la **última plantilla de referencia revisada**, adapt
 - **Revisión antes de publicar:** controles de contenido, enlaces internos y estructura, seguidos por Chromium/Playwright en **escritorio 1280px y móvil 390px** para todas las páginas: imágenes `<img>` y fondos del diseño, desbordamiento horizontal, menú y pie. Si la prueba falla, el workflow bloquea publicación. Esta prueba técnica no reemplaza una revisión humana de estética, veracidad de fotos o accesibilidad avanzada.
 - Propuestas: `auto-demos/<slug>/` contiene los tres HTML + `propuesta-email.txt`, redactado de forma personalizada con **presupuesto 490 € + IVA**, dos revisiones, 15 días de incidencias y pago 50/50.
 - **Prohibido enviar automáticamente correos comerciales**. Los correos públicos no autorizan publicidad no solicitada (art. 21 LSSI). El estado por defecto es preparado/pendiente de acreditación legal, nunca enviado.
+- **Regla definitiva: un único correo comercial por empresa en toda su historia.** La ejecución diaria usa obligatoriamente `automation/guarded_weekday.py`, que consulta `automation/commercial_email_history.json` y `automation/excluded_companies.json` antes de seleccionar y antes de preparar el correo. La identificación cruza nombre y alias, dominio de la web, emails y dominios de correo corporativos e identificador OSM. Si existe un envío confirmado o incierto, se bloquea por defecto incluso si cambia el destinatario o el asunto.
+- **Verificación adicional Gmail:** antes de cualquier envío comercial futuro que haya sido autorizado legalmente, comprobar manualmente Gmail «Enviados» por **todas las direcciones conocidas de la empresa** y sus posibles alias. Si Gmail no está accesible o hay incertidumbre, no enviar. El historial local vacío no demuestra que nunca se haya enviado un correo desde Gmail u otra herramienta. Guardar cada envío autorizado que realmente se complete (fecha, empresa/alias, direcciones, dominio, ID del mensaje y estado `sent`) y bloquear también los estados `reserved`, `sending` y `uncertain`. Jamás reintentar ciegamente tras un error de envío.
+- **La automatización NO ENVÍA email comercial en ningún caso**; solo genera propuestas para revisar. Los controles anteriores se mantienen para futuras solicitudes de envío autorizado, pero no pueden impedir envíos manuales realizados fuera de este sistema.
 - **Informe:** `automation/reports/AAAA-MM-DD.md` y `.json` con todas las empresas verificadas o los motivos por los que hubo menos de cinco; no se afirma lo no completado.
 
 ## Correo diario a su propietario
@@ -39,7 +42,8 @@ Existe además una **tarea programada en ChatGPT los días laborables a las 09:2
 ## Pruebas sin contactar empresas
 
 ```bash
-python automation/prospecting_weekdays.py --demo-test
+python automation/commercial_email_guard.py --demo-test
+python automation/guarded_weekday.py --demo-test
 python automation/mail_summary.py --demo-test
 ```
 
