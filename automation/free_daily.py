@@ -164,7 +164,17 @@ def extract_business(option):
     tel = soup.select_one('a[href^="tel:"]')
     phone = tel.get('href','')[4:].strip() if tel else ''
     if len(phone)>35 or not re.fullmatch(r'[+0-9 ()\-]*',phone): phone=''
-    return {**option, 'email':email, 'logo':logo, 'color':palette, 'phone':phone, 'verified_url':r.url}
+    # Resumen de la empresa exclusivamente a partir del texto público de su sitio.
+    paragraphs = [
+        p.get_text(' ',strip=True) for p in soup.find_all('p')[:100]
+        if 90 <= len(p.get_text(' ',strip=True)) <= 720
+    ]
+    about = next((p for p in paragraphs if option['name'].split()[0].lower() in p.lower()), '')
+    if not about:
+        about = next((p for p in paragraphs if any(
+            word in p.lower() for word in ('empresa','instalaciones','carpintería','fontanería','servicios')
+        )), '')
+    return {**option, 'email':email, 'logo':logo, 'color':palette, 'phone':phone, 'verified_url':r.url, 'about':about}
 
 def clean(s): return html.escape(str(s),quote=True)
 
@@ -187,7 +197,80 @@ def make_demo(info, city):
     doc = f'''<!doctype html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex,nofollow,noarchive"><meta name="description" content="Demo conceptual no oficial Pymatec · {clean(name)}"><title>{clean(name)} · Propuesta Pymatec</title><style>
 :root{{--brand:{color};--ink:#21313d;--muted:#65717a;--cream:#f6f5f1}}*{{box-sizing:border-box}}html{{scroll-behavior:smooth}}body{{margin:0;font:16px/1.65 system-ui,-apple-system,sans-serif;color:var(--ink)}}.wrap{{max-width:1190px;margin:auto;padding:0 5%}}.note{{font-size:10px;padding:8px 12px;text-align:center;background:#f3f5f6;letter-spacing:.08em;font-weight:700}}header{{background:#fff;position:sticky;top:0;z-index:10;border-bottom:1px solid #e9e9e9}}nav{{min-height:86px;display:flex;justify-content:space-between;align-items:center;gap:24px}}.logo{{max-height:58px;max-width:200px;object-fit:contain}}.wordmark{{font-size:21px;font-weight:850;letter-spacing:-.04em}}a{{text-decoration:none;color:inherit}}.button{{background:var(--brand);color:#fff;display:inline-block;padding:15px 23px;border-radius:40px;font-weight:750}}.hero{{background:linear-gradient(90deg,#18202bdd,#18202b77),url('{photo_url}') center/cover;min-height:640px;color:#fff;display:flex;align-items:center}}.eyebrow{{text-transform:uppercase;font-size:11px;letter-spacing:.19em;font-weight:800}}h1{{font-size:clamp(43px,7vw,92px);line-height:1.06;letter-spacing:-.065em;max-width:900px;margin:22px 0}}h2{{font-size:clamp(30px,4vw,54px);line-height:1.15;letter-spacing:-.06em}}.hero p{{max-width:640px;font-size:19px}}.section{{padding:95px 0}}.soft{{background:var(--cream)}}.grid{{display:grid;grid-template-columns:1fr 1fr;gap:65px;align-items:start}}.service{{padding:29px;border:1px solid #e3e5e5;background:#fff;border-radius:19px;min-height:185px}}.service b{{display:block;font-size:21px;letter-spacing:-.025em}}.service p{{color:var(--muted)}}.contact{{background:#f7f7f4;border:1px solid #e5e5e1;padding:27px;border-radius:24px}}.entry{{display:grid;grid-template-columns:100px 1fr;gap:16px;padding:19px 0;border-bottom:1px solid #e1e1da}}.entry:last-child{{border:0}}.entry small{{text-transform:uppercase;letter-spacing:.12em;color:var(--brand);font-weight:800}}.entry a,.entry span{{overflow-wrap:anywhere}}.banner{{background:linear-gradient(90deg,#1f303fbf,#1f303f7d),url('{photo_url}') center/cover;color:white;padding:75px 0}}footer{{padding:28px 0;font-size:12px;color:#606b71}}footer a{{text-decoration:underline}}@media(max-width:750px){{nav{{min-height:72px}}.wordmark{{font-size:18px}}.hero{{min-height:565px}}.grid{{grid-template-columns:1fr;gap:15px}}.section{{padding:65px 0}}.entry{{grid-template-columns:1fr;gap:4px}}.button{{font-size:13px}}}}
 </style></head><body><div class="note">PROPUESTA DE DISEÑO NO OFICIAL · NO ENCARGADA NI VALIDADA POR LA EMPRESA · PYMATEC</div><header><nav class="wrap"><div>{logo}{lettermark}</div><a class="button" href="#contacto">Solicitar presupuesto ↗</a></nav></header><main><section class="hero"><div class="wrap"><div class="eyebrow">{clean(sector)} · {clean(city)}</div><h1>{clean(title)}.<br>Una presencia más actual.</h1><p>{clean(desc)} Una propuesta de presentación más clara, pensada para móviles y para facilitar el contacto.</p><a class="button" href="#contacto">Pide información ↗</a></div></section><section class="section soft" id="servicios"><div class="wrap"><div class="eyebrow">01 · Especialidad</div><h2>Lo importante, a primera vista.</h2><div class="grid"><div class="service"><b>{clean(sector)}</b><p>Presentación de la actividad según el perfil público de la empresa.</p></div><div class="service"><b>Presupuestos</b><p>Contacto directo para consultar condiciones, alcance y disponibilidad.</p></div></div></div></section><section class="section"><div class="wrap grid"><div><div class="eyebrow">02 · Una web para conectar</div><h2>Un espacio que representa mejor tu trabajo.</h2><p>Este diseño es una maqueta conceptual para mostrar una posible mejora de la presencia digital de {clean(name)}. Las fotografías son ilustrativas.</p></div><div><p style="font-size:20px;margin-top:70px;color:var(--muted)">Una web más clara, con información esencial y acceso sencillo al contacto desde cualquier dispositivo.</p></div></div></section><section class="banner"><div class="wrap"><div class="eyebrow">03 · El siguiente paso</div><h2>¿Hablamos de tu proyecto?</h2><a class="button" href="#contacto">Solicitar presupuesto ↗</a></div></section><section class="section" id="contacto"><div class="wrap grid"><div><div class="eyebrow">04 · Contacto</div><h2>Hablemos.</h2><p>Datos encontrados en la web pública de la empresa; deben ser confirmados antes de una publicación oficial.</p></div><div class="contact"><div class="entry"><small>Teléfono</small>{phone_html}</div><div class="entry"><small>Email</small><a href="mailto:{clean(info['email'])}">{clean(info['email'])}</a></div><div class="entry"><small>Web oficial</small><a href="{clean(info['verified_url'])}" target="_blank" rel="noopener noreferrer">Visitar sitio original ↗</a></div></div></div></section></main><footer><div class="wrap">Propuesta de rediseño no oficial creada por Pymatec. No representa a {clean(name)} ni implica su aprobación. Datos de descubrimiento: OpenStreetMap © colaboradores (ODbL). <a href="{clean(info['verified_url'])}">Fuente oficial de contacto</a>.</div></footer></body></html>'''
-    return slug, doc
+    return slug, enrich_demo(doc, info, city)
+
+
+def enrich_demo(doc, info, city):
+    """Visual demo: brand, imagery, verified company description and a non-sending form."""
+    name = clean(info['name'])
+    craft = info['craft']
+    sector = clean(CRAFTS[craft][0])
+    about = (info.get('about') or '').strip()
+    if len(about) < 70:
+        about = (
+            f'{info["name"]} presenta sus servicios de {CRAFTS[craft][0].lower()} '
+            f'a través de su página web. Este espacio de muestra puede explicar '
+            'su experiencia, su equipo y su forma de trabajar, con textos '
+            'facilitados y validados por la empresa.'
+        )
+    about = clean(about[:660])
+    photo_urls = {
+      'carpenter': ('photo-1600607687920-4e2a09cf159d','photo-1600566753190-17f0baa2a6c3'),
+      'electrician': ('photo-1621905252507-b35492cc74b4','photo-1504307651254-35680f356dfd'),
+      'plumber': ('photo-1585704032915-c3400ca199e7','photo-1504307651254-35680f356dfd'),
+      'hvac': ('photo-1504307651254-35680f356dfd','photo-1497366811353-6870744d04b2'),
+      'gardener': ('photo-1416879595882-3373a0480b5b','photo-1497366754035-f200968a6e72')
+    }.get(craft, ('photo-1504307651254-35680f356dfd','photo-1497366811353-6870744d04b2'))
+    pic1, pic2 = ('https://images.unsplash.com/'+p+'?auto=format&fit=crop&w=1100&q=80' for p in photo_urls)
+    css = """\
+.extra-about{padding:94px 0;background:#f7f8f7}.extra-about .aboutgrid{display:grid;grid-template-columns:1fr 1fr;gap:55px;align-items:center}
+.extra-about h2{font-size:clamp(34px,4vw,56px);line-height:1.12;letter-spacing:-.055em}
+.extra-about p{font-size:18px;line-height:1.85;color:#65717a}
+.extra-about img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:25px}
+.demo-gallery{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:26px}.demo-gallery img{height:180px}
+.section-link{color:var(--brand);font-weight:800;text-decoration:underline;text-underline-offset:5px}
+.toplinks{display:flex;gap:18px;align-items:center}.toplinks a{font-size:13px;font-weight:750}
+.sample-form{border-top:1px solid #e4e9eb;padding-top:25px;margin-top:19px}.sample-form h3{font-size:23px;margin:0 0 16px;letter-spacing:-.03em}
+.sample-form .pair{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.sample-form label{display:grid;font-size:13px;font-weight:700;gap:6px;margin-bottom:12px}
+.sample-form input,.sample-form textarea{width:100%;border:1px solid #d9e1e4;border-radius:12px;background:#fff;font:inherit;padding:12px;resize:vertical}
+.sample-form textarea{min-height:110px}
+.sample-form .formhelp{font-size:12px;line-height:1.5;color:#65717a;padding:12px 0}
+.sample-form button{border:0;cursor:default;font-size:14px}
+@media(max-width:840px){.extra-about .aboutgrid{grid-template-columns:1fr}.toplinks{display:none}.sample-form .pair{grid-template-columns:1fr}}
+"""
+    doc = doc.replace('</style>', css+'</style>', 1)
+    about_html = (
+       '<section class="extra-about" id="sobre-nosotros"><div class="wrap aboutgrid">'
+       '<div><div class="eyebrow">02 · Sobre nosotros</div>'
+       '<h2>Conoce '+name+'</h2><p>'+about+'</p>'
+       '<p>Una presentación visual de la empresa, sus servicios y su experiencia. '
+       'Esta maqueta se ha elaborado a partir de información pública y está pendiente de validación.</p>'
+       '<a class="section-link" href="#contacto">Contacta con la empresa ↗</a></div>'
+       '<div><img src="'+pic1+'" alt="Fotografía ilustrativa del sector de '+sector+'" loading="lazy">'
+       '<div class="demo-gallery">'
+       '<img src="'+pic2+'" alt="Fotografía ilustrativa" loading="lazy">'
+       '<img src="'+pic1+'" alt="Actividad del sector" loading="lazy">'
+       '</div></div></div></section>'
+    )
+    doc = doc.replace('<section class="banner">',about_html+'<section class="banner">',1)
+    doc = doc.replace('<a class="button" href="#contacto">Solicitar presupuesto ↗</a></nav>',
+                      '<div class="toplinks"><a href="#servicios">Servicios</a><a href="#sobre-nosotros">Sobre nosotros</a><a href="#contacto">Contáctanos</a></div><a class="button" href="#contacto">Solicitar presupuesto ↗</a></nav>',1)
+    form_html = (
+       '<form class="sample-form" aria-label="Formulario de muestra" action="#contacto">'
+       '<h3>Envíanos tu consulta</h3>'
+       '<div class="pair"><label>Nombre<input placeholder="Nombre y apellidos" autocomplete="off"></label>'
+       '<label>Teléfono<input type="tel" placeholder="Tu teléfono" autocomplete="off"></label></div>'
+       '<label>Email<input type="email" placeholder="Tu correo" autocomplete="off"></label>'
+       '<label>Mensaje<textarea placeholder="¿En qué podemos ayudarte?"></textarea></label>'
+       '<p class="formhelp">Formulario de muestra no operativo. Ningún dato se envía ni se almacena.</p>'
+       '<button class="button" type="button">Enviar consulta (demo)</button></form>'
+    )
+    needle = '</div></div></div></section></main>'
+    if needle not in doc:
+        raise ValueError('No se localizó el bloque de contacto de la maqueta')
+    doc = doc.replace(needle,form_html+needle,1)
+    return doc
 
 def gmail_compose(email,subject,body):
     # Opens a pre-filled compose view. This is NOT a saved Gmail draft and never sends.
