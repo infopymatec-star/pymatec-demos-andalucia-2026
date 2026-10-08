@@ -112,6 +112,7 @@ jobs:
         run: |
           python -m pip install playwright==1.55.0
           python -m playwright install --with-deps chromium
+      # Comprobar también las seis imágenes de fondo en ambos tamaños.
       - name: Auditar demo de referencia en escritorio y móvil
         run: python automation/qa_browser.py --demo-test
       # Smoke tests never send emails or publish fictitious proposals.
