@@ -40,6 +40,26 @@ def inspect(page, url, title, checks):
  if title.endswith('contacto.html') and not data['form']:checks.append(title+': sin formulario visual')
  for img in data['images']:
   if not img['ok']:checks.append(title+': imagen fallida '+str(img['src'])[:100])
+ # Verificar también las imágenes de fondo del hero y de las tarjetas.
+ backgrounds=page.evaluate("""async () => {
+   const els=[...document.querySelectorAll('.hero-photo,.svc-media,.intro-photo')];
+   const urls=els.map(el=>{
+     const s=getComputedStyle(el).backgroundImage;
+     const m=s && s.match(/url\\(["']?([^"')]+)["']?\\)/);
+     return m && m[1];
+   }).filter(Boolean);
+   return await Promise.all([...new Set(urls)].map(url => new Promise(resolve => {
+     const im=new Image(); let done=false;
+     const finish=(ok)=>{if(!done){done=true;resolve({url,ok})}};
+     im.onload=()=>finish(im.naturalWidth>0);
+     im.onerror=()=>finish(false);
+     im.src=url;
+     setTimeout(()=>finish(false),6500);
+   })));
+ }""")
+ for item in backgrounds:
+  if not item['ok']:checks.append(title+': fondo de imagen no cargado '+str(item['url'])[:100])
+
  for href in data['nav']:
   if href.startswith(('#','mailto:','tel:','https://','http://')):continue
   local=href.split('#')[0].split('?')[0]
