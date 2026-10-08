@@ -111,6 +111,56 @@ p{margin:0 0 17px;color:var(--muted)}.lead{font-size:18px;line-height:1.82}
 @media(max-width:560px){.wrap{width:min(100% - 38px,1200px)}.navigation{gap:8px}.brand img{height:44px;max-width:140px}.brand span{font-size:13px;max-width:115px}.navigation>.btn{padding:12px 14px;font-size:11px}.menu{justify-content:space-between}.menu a{font-size:12px}.hero{padding:50px 0}.hero h1{font-size:42px}.hero-photo{min-height:350px;border-radius:8px 70px 8px 60px}.hero-floating{left:14px;bottom:15px}.service-grid,.project-grid,.footer-grid,.form-grid{grid-template-columns:1fr}.cta-layout{display:block}.cta .btn{margin-top:20px}.intro-photo,.about-photo{height:300px;min-height:300px}.footer-grid{gap:32px}.footer-bottom{display:block}.form-panel,.contact-panel{padding:24px}}
 """
 
+
+MODERN_CSS = """
+/* Editorial treatment: large meaningful imagery, legible navigation and discreet motion. */
+:root{--ink:#15323a;--muted:#5f7075;--soft:#f4f8f7;--cream:#f8f7f2}
+body{font-size:16px}
+.site-header{box-shadow:0 8px 28px #142f3409}
+.navigation{min-height:88px;gap:20px}
+.menu{gap:20px}
+.menu a{font-size:12px;letter-spacing:.01em}
+.menu a.active{position:relative}
+.menu a.active::after{content:'';position:absolute;bottom:-15px;left:0;right:0;background:var(--brand);height:2px}
+.demo-note{font-size:10px;padding:6px 12px;letter-spacing:.065em}
+.hero{background:linear-gradient(120deg,#f4f8f7 0%,#fbf8f1 90%);padding:76px 0 86px}
+.hero-layout{grid-template-columns:1.06fr 1fr;gap:65px}
+.hero h1{font-size:clamp(44px,5.2vw,74px);line-height:1.075;letter-spacing:-.065em}
+.hero .lead{line-height:1.76}
+.hero-photo{min-height:580px;border-radius:7px 110px 8px 85px;box-shadow:0 30px 70px #11364029}
+.hero-photo:before{content:'';position:absolute;inset:0;border-radius:inherit;background:linear-gradient(120deg,transparent 40%,#092a3722)}
+.hero-floating{background:rgba(255,255,255,.95);backdrop-filter:blur(9px);padding:18px 25px;max-width:270px}
+.trust-strip{background:#193c45;color:#f4fbfb;border-bottom:1px solid #2e5860}
+.trust-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:22px;padding:23px 0}
+.trust-item{display:flex;align-items:center;gap:13px;font-size:13px;font-weight:760;line-height:1.4}
+.trust-icon{color:#b2d6d7;font-size:19px;font-weight:800}
+.section{padding:94px 0}
+.section-intro{max-width:795px}
+.section-intro p{font-size:18px}
+.svc{border-radius:8px 28px 8px 28px}
+.svc-media{height:202px}
+.svc-body{min-height:172px;display:flex;flex-direction:column;justify-content:flex-start}
+.svc h3{font-size:21px}
+.project{border-radius:7px 26px 7px 26px}
+.project-photo{height:260px;background:#e9eeee}
+.project-copy{padding:22px 24px 25px}
+.project-copy p{font-size:14px;line-height:1.65}
+.project-grid .project:first-child{grid-column:span 1}
+.photo-note{font-size:12px;color:#7a8b91;margin-top:15px}
+.project-kicker{font-size:11px;color:var(--brand);font-weight:800;letter-spacing:.13em;text-transform:uppercase;display:block;margin-bottom:7px}
+.intro-photo{min-height:470px}
+.intro-side .lead{font-size:18px}
+.intro-side p{line-height:1.8}
+.btn{min-height:48px}
+.btn:focus-visible,.menu a:focus-visible{outline:3px solid #8ebfc6;outline-offset:3px}
+.footer-bottom{font-size:10px}
+.mobile-quickbar{display:none}
+@media(max-width:1050px){.menu{gap:12px}.hero-layout{gap:35px}.hero h1{font-size:clamp(42px,5.2vw,65px)}.brand img{max-width:125px}}
+@media(max-width:810px){.trust-grid{grid-template-columns:repeat(2,1fr)}.hero-layout{grid-template-columns:1fr}.hero-photo{min-height:490px}.menu{justify-content:space-between;overflow-x:auto;scrollbar-width:none}.menu::-webkit-scrollbar{display:none}.menu a.active::after{bottom:-3px}.site-header{position:relative}}
+@media(max-width:580px){body{padding-bottom:72px}.hero{padding:43px 0 60px}.hero h1{font-size:clamp(39px,10.8vw,52px)}.hero .lead{font-size:16px}.hero-photo{min-height:360px}.trust-grid{grid-template-columns:repeat(2,1fr);gap:12px 18px;padding:19px 0}.trust-item{font-size:11px}.trust-icon{font-size:15px}.svc-body{min-height:unset}.section-intro p{font-size:16px}.service-grid{grid-template-columns:1fr}.project-photo{height:235px}.mobile-quickbar{position:fixed;bottom:0;left:0;right:0;z-index:40;background:rgba(255,255,255,.98);box-shadow:0 -9px 25px #152d3416;padding:10px 18px calc(10px + env(safe-area-inset-bottom));display:flex;gap:10px}.mobile-quickbar a{flex:1;border-radius:12px;min-height:46px;display:grid;place-items:center;font-weight:800;font-size:13px;background:#eaf4f3;color:#244b54}.mobile-quickbar a:last-child{background:var(--brand);color:#fff}.site-footer{padding-top:58px}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;transition:none!important}}
+"""
+
 def make_pages(info, city, slug, document):
     """Three static, linked customer-facing pages. Form remains a disabled visual example."""
     name=E(info.get('name'))
@@ -150,14 +200,22 @@ def make_pages(info, city, slug, document):
         if not p.get('title') or not p.get('image'): continue
         project_cards.append('<article class="project">'
          +f'<img class="project-photo" loading="lazy" src="{E(p["image"])}" alt="{E(p["title"])}">'
-         +f'<div class="project-copy"><h3>{E(p["title"])}</h3><p>{E(p.get("description","Trabajos de instalaciones y mantenimiento"))}</p></div></article>')
+         +f'<div class="project-copy"><span class="project-kicker">Proyecto realizado</span><h3>{E(p["title"])}</h3><p>{E(p.get("description","Trabajos de instalaciones y mantenimiento"))}</p></div></article>')
     phone_html=f'<a href="tel:{tel}">{E(info.get("phone_display") or phone_raw)}</a>' if phone_raw else '<span>Consúltanos por correo</span>'
     address_html=f'<div class="contact-line"><small>Dirección</small><span>{address}</span></div>' if address else ''
     hours_html=f'<div class="contact-line"><small>Horario</small><span>{hours}</span></div>' if hours else ''
     css=CSS.replace('--brand:#276b78;',f'--brand:{brand};')
+    css += MODERN_CSS
     def page(filename,title,body):
-        nav=''.join(f'<a class="{"active" if file==filename else ""}" href="{file}">{label}</a>' for file,label in
-            [('index.html','Inicio'),('sobre-nosotros.html','Sobre nosotros'),('contacto.html','Contáctanos')])
+        nav=''.join(
+          f'<a class="{"active" if url==filename else ""}" href="{url}">{label}</a>'
+          for url,label in [
+              ('index.html','Inicio'),
+              ('index.html#servicios','Servicios'),
+              ('index.html#proyectos','Proyectos'),
+              ('sobre-nosotros.html','Sobre nosotros'),
+              ('contacto.html','Contacto')
+          ])
         header=f'''<div class="demo-note">Propuesta conceptual no oficial · Imágenes ilustrativas salvo fotografías de trabajos identificados</div>
         <header class="site-header"><div class="wrap navigation">
         <a class="brand" href="index.html">{logo_html}<span>{name}</span></a>
@@ -174,14 +232,17 @@ def make_pages(info, city, slug, document):
              <a href="mailto:{email}">{email}</a>
              {f'<strong>Dirección</strong><span>{address}</span>' if address else ''}
              {f'<strong>Horario</strong><span>{hours}</span>' if hours else ''}</div></div>
-          <div class="wrap footer-bottom"><span>{name} · Propuesta web de demostración</span>
-             <span>Diseño conceptual por Pymatec · No es una web oficial · Formulario sin envío</span></div></footer>'''
+          <div class="wrap footer-bottom"><span>© {name} · Presentación de muestra</span>
+             <span>Demo no oficial por Pymatec · Formulario desactivado</span></div></footer>'''
         return ('<!doctype html><html lang="es"><head><meta charset="utf-8">'
            '<meta name="viewport" content="width=device-width,initial-scale=1">'
            '<meta name="robots" content="noindex,nofollow,noarchive">'
            f'<meta name="description" content="Servicios e información de {name}">'
            f'<title>{E(title)} · {name}</title><style>{css}</style></head><body>'
-           +header+'<main>'+body+'</main>'+footer+'</body></html>')
+           +header+'<main>'+body+'</main>'+footer
+           +('<div class="mobile-quickbar"><a href="tel:'+tel+'">☎ Llamar</a><a href="contacto.html">Solicitar presupuesto ↗</a></div>' if phone_raw else
+             '<div class="mobile-quickbar"><a href="sobre-nosotros.html">Sobre nosotros</a><a href="contacto.html">Contactar ↗</a></div>')
+           +'</body></html>')
     # HOME: no sales pitch about the website.
     expnote=(f'<div class="hero-floating"><strong>{experience}</strong><span>de experiencia en el sector</span></div>' if has_experience else '')
     home=f'''<section class="hero"><div class="wrap hero-layout"><div>
@@ -190,7 +251,13 @@ def make_pages(info, city, slug, document):
         <p class="lead">{E(info.get("hero_subtitle") or about[:180])}</p>
         <div class="hero-sub"><a class="btn" href="contacto.html">Solicitar presupuesto ↗</a>
         <a href="#servicios">Descubre nuestros servicios ↓</a></div></div>
-        <div class="hero-photo" role="img" aria-label="Imagen ilustrativa de instalaciones y edificios" style="background-image:url(&quot;{photo}&quot;)">{expnote}</div></div></section>
+        <div class="hero-photo" role="img" aria-label="Fotografía de un proyecto de instalaciones" style="background-image:url(&quot;{photo}&quot;)">{expnote}</div></div></section>
+        <div class="trust-strip"><div class="wrap trust-grid">
+        <div class="trust-item"><span class="trust-icon">✦</span><span>{E(info.get("trust_1") or "Experiencia en el sector")}</span></div>
+        <div class="trust-item"><span class="trust-icon">⌁</span><span>{E(info.get("trust_2") or "Atención profesional")}</span></div>
+        <div class="trust-item"><span class="trust-icon">↗</span><span>{E(info.get("trust_3") or "Servicios especializados")}</span></div>
+        <div class="trust-item"><span class="trust-icon">◉</span><span>{E(info.get("trust_4") or "Solicita información")}</span></div>
+        </div></div>
         <section class="section" id="servicios"><div class="wrap">
         <div class="section-intro"><span class="eyebrow">Qué hacemos</span><h2>Servicios e instalaciones</h2>
         <p>{E(info.get("services_intro") or "Conoce nuestras principales áreas de trabajo y encuentra la solución que necesitas.")}</p></div>
@@ -201,10 +268,11 @@ def make_pages(info, city, slug, document):
         <h2>{E(info.get("about_home_title") or "Experiencia y soluciones a medida.")}</h2>
         <p>{about}</p><a class="btn" href="sobre-nosotros.html">Sobre nosotros ↗</a></div></div></section>'''
     if project_cards:
-        home+=f'''<section class="section"><div class="wrap"><div class="section-intro">
-          <span class="eyebrow">Nuestra trayectoria</span><h2>Algunos de nuestros trabajos</h2>
-          <p>Una selección de proyectos que figuran en la trayectoria de la empresa.</p></div>
-          <div class="project-grid">{''.join(project_cards[:3])}</div></div></section>'''
+        home+=f'''<section class="section" id="proyectos"><div class="wrap"><div class="section-intro">
+          <span class="eyebrow">Proyectos realizados</span><h2>Trabajos que hablan por nosotros.</h2>
+          <p>Instalaciones ejecutadas en edificios y espacios de diferentes características.</p></div>
+          <div class="project-grid">{''.join(project_cards[:3])}</div>
+          <p class="photo-note">Fotografías y referencias de trabajos publicados por la empresa.</p></div></section>'''
     home+='''<section class="cta"><div class="wrap cta-layout"><div>
       <span class="eyebrow">¿Hablamos?</span><h2>Cuéntanos qué necesitas para tu próximo proyecto.</h2>
       <p>Instalaciones, mantenimiento y asesoramiento para encontrar una solución.</p></div>
