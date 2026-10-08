@@ -35,6 +35,12 @@ jobs:
         run: python -m pip install --disable-pip-version-check requests==2.32.5 beautifulsoup4==4.14.2
       - name: Buscar con prioridad Málaga y verificar sin inventar datos
         run: python automation/prospecting_weekdays.py
+      - name: Preparar navegador de revisión de escritorio y móvil
+        run: |
+          python -m pip install playwright==1.55.0
+          python -m playwright install --with-deps chromium
+      - name: Revisión obligatoria de 3 páginas en 1280px y 390px
+        run: python automation/qa_browser.py
       - name: Guardar histórico, propuestas y el informe
         run: |
           git config user.name 'pymatec-bot'
