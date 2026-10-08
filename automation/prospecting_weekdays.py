@@ -192,8 +192,25 @@ def checked_no_website(c):
   r.raise_for_status()
   body=BeautifulSoup(r.text,'html.parser').get_text(' ',strip=True).lower()
   if len(body)<350 or 'unusual traffic' in body or 'captcha' in body:return False,'Búsqueda no verificable'
-  # No se puede probar una negativa global, solo ausencia de una web identificable.
-  return True,'Sin sitio oficial identificable en OSM y búsqueda web limitada; requiere revisión humana'
+  # Exigir segundo indicio independiente: identidad, localidad y email.
+  normalized=norm(body)
+  if norm(c['name']) not in normalized or norm(c['city']) not in normalized:
+   return False,'No se corrobora identidad y localidad en la segunda fuente'
+  if c['email'].lower() not in body:
+   return False,'No se corrobora el correo corporativo en una segunda fuente'
+  # Si hay enlace que parece web oficial, no se clasifica como sin web.
+  excluded_domains=('google.','facebook.','instagram.','linkedin.','paginasamarillas.',
+    'empresite.','einforma.','axesor.','infoempresa.','cylex.','mapquest.','openstreetmap.')
+  links=BeautifulSoup(r.text,'html.parser').select('a[href]')
+  company_tokens=[x for x in norm(c['name']).split() if len(x)>=5 and x not in ('servicios','empresa','construcciones','mantenimiento')]
+  for a in links[:75]:
+   href=a.get('href','')
+   h=urlparse(href).hostname or ''
+   if not h or any(term in h for term in excluded_domains):continue
+   visible_link=norm(a.get_text(' ',strip=True))
+   if company_tokens and all(x in visible_link for x in company_tokens[:2]):
+    return False,'Se localiza enlace web posiblemente oficial: requiere investigación manual'
+  return True,'Sin web oficial identificable en ficha y búsqueda limitada; ausencia no demostrable'
  except Exception:return False,'Búsqueda de contraste no disponible'
 def info_without_website(c):
  # Se debe evitar afirmar servicios concretos, acreditaciones o antigüedad no contrastadas.
