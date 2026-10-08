@@ -34,6 +34,9 @@ jobs:
           test -f auto-demos/index.html
           find auto-demos -name 'propuesta-email.txt' | grep bonela
           grep -l 'Bonela Integra S.L.' auto-demos/bonela*/index.html
+          test -f auto-demos/bonela-integra-s-l-62264/sobre-nosotros.html
+          test -f auto-demos/bonela-integra-s-l-62264/contacto.html
+          ! grep -q 'Visitar sitio original' auto-demos/bonela-integra-s-l-62264/contacto.html
       - name: Guardar ejemplo y publicar con GitHub Pages
         run: |
           git config user.name 'pymatec-bot'
