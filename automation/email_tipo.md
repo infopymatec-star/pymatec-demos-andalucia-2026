@@ -1,18 +1,20 @@
 Buenos días,
 
-Soy José Luis, de Pymatec. He visitado vuestra web y he preparado un **borrador con un diseño más actual**, manteniendo vuestra identidad y dando más protagonismo a vuestros servicios.
+Soy José Luis, de Pymatec. {{INTRO}} He preparado un **borrador con un diseño más actual** para {{EMPRESA}}, adaptado a vuestra actividad de {{ACTIVIDAD}}.
 
 Podéis verlo aquí: **[Enlace web]({{ENLACE_WEB}})**
 
-La propuesta es una web de una página, organizada por secciones, para presentar vuestra empresa y facilitar el contacto desde el móvil y el ordenador.
+La propuesta es una web corporativa con tres páginas: **Inicio, Sobre nosotros y Contáctanos**, pensada para presentar vuestros servicios, destacar información real de vuestra empresa y facilitar el contacto desde el móvil y el ordenador.
+
+**Mejoras previstas:** {{MEJORAS}}.
 
 **Presupuesto cerrado: 490 € + IVA.**
 
 Incluye:
 - Adaptación de textos y fotografías que nos facilitéis.
-- Secciones de servicios, empresa, restauración y contacto.
+- Páginas de inicio, sobre nosotros y contacto, con los servicios de vuestra actividad.
 - Diseño adaptado a móviles y ordenadores.
-- Formulario operativo con protección antispam.
+- Formulario operativo con protección antispam en la versión definitiva.
 - Configuración básica de SEO y publicación en vuestro dominio.
 - Dos rondas de revisión y 15 días de corrección de incidencias tras la publicación.
 
@@ -29,4 +31,4 @@ Un saludo,
 **José Luis**
 Pymatec
 Tel.: **693 28 13 10**
-[https://pymatec.es](https://pymatec.es)
+https://pymatec.es
