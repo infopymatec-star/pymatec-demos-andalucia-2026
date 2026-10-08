@@ -25,6 +25,8 @@ jobs:
           python-version: '3.12'
       - name: Instalar dependencias gratuitas
         run: python -m pip install --disable-pip-version-check requests==2.32.5 beautifulsoup4==4.14.2
+      - name: Verificar estructura nueva de las demos (sin publicar prueba ficticia)
+        run: python automation/free_daily.py --demo-test
       - name: Probar generador con primera empresa real
         run: python automation/run_first_sample.py
       - name: Comprobar archivo generado
