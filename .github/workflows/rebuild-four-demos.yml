@@ -1,0 +1,69 @@
+name: Pymatec - reconstruir cuatro demos con plantilla aprobada
+on:
+  workflow_dispatch:
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+concurrency:
+  group: pymatec-rebuild-four
+  cancel-in-progress: false
+jobs:
+  rebuild:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install requests==2.32.5 beautifulsoup4==4.14.2 playwright==1.55.0
+      - run: python -m playwright install --with-deps chromium
+      - name: Reconstruir con plantilla de tres páginas
+        run: python automation/rebuild_four_demos.py
+      - name: Validar las doce páginas en escritorio y móvil
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          from automation.rebuild_four_demos import COMPANIES
+          day="rebuild-four"
+          folder=Path("automation/reports")
+          folder.mkdir(exist_ok=True)
+          (folder/(day+".json")).write_text(json.dumps({"entries":[{"name":c["name"],"folder":c["slug"]} for c in COMPANIES]}))
+          PY
+          python automation/qa_browser.py --date rebuild-four
+      - name: Guardar demos validadas sin enviar emails
+        run: |
+          git config user.name 'pymatec-bot'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add auto-demos/servicios-integrales-cartama auto-demos/imperespuma-malaga auto-demos/reformas-francisco-paz auto-demos/fahala-garden
+          if ! git diff --cached --quiet; then
+            git commit -m "Rehacer cuatro demos con plantilla aprobada [skip ci]"
+            git push origin HEAD:main
+          fi
+      - uses: actions/configure-pages@v5
+      - name: Montar Pages
+        run: |
+          mkdir -p _site
+          unzip -q -o site.zip -d _site
+          cp -R auto-demos _site/auto-demos
+          touch _site/.nojekyll
+          test -f _site/index.html
+      - uses: actions/upload-pages-artifact@v4
+        with:
+          path: _site
+  deploy:
+    needs: rebuild
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/deploy-pages@v4
+        id: deployment
