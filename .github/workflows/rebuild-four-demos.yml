@@ -28,7 +28,7 @@ jobs:
           python - <<'PY'
           import json
           from pathlib import Path
-          from automation.rebuild_four_demos import COMPANIES
+          COMPANIES=[{"name":name,"slug":slug} for name,slug in [("Servicios Integrales Cártama","servicios-integrales-cartama"),("Imperespuma Málaga","imperespuma-malaga"),("Reformas Francisco Paz","reformas-francisco-paz"),("Fahala Garden","fahala-garden")]]
           day="rebuild-four"
           folder=Path("automation/reports")
           folder.mkdir(exist_ok=True)
