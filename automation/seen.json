@@ -7,12 +7,18 @@
     "oryxobrasyservicios.com",
     "bonelaintegra.com"
   ],
-  "updated": "2026-10-09",
+  "updated": "2026-10-12",
   "names": [],
   "osm_ids": [],
   "emails": [],
   "events": [],
-  "examined_osm_ids": [],
+  "examined_osm_ids": [
+    "node:4851165346",
+    "node:9805703672"
+  ],
   "examined_domains": [],
-  "examined_names": []
+  "examined_names": [
+    "Vidriokam",
+    "m&s Renovierungen · Vermietungen"
+  ]
 }
