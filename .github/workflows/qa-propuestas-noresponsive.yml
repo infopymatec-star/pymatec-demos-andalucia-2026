@@ -1,0 +1,30 @@
+name: QA cinco rediseños no responsive de Pymatec
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'auto-demos/tir-trans-malaga-redisenio/**'
+      - 'auto-demos/instalaciones-la-roca-redisenio/**'
+      - 'auto-demos/radiadores-la-vega-redisenio/**'
+      - 'auto-demos/rotana-gestores-redisenio/**'
+      - 'auto-demos/promociones-pered-redisenio/**'
+      - '.github/workflows/qa-propuestas-noresponsive.yml'
+      - 'automation/qa_propuestas_noresponsive.py'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  qa:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Instalar Chromium Playwright
+        run: |
+          pip install playwright==1.55.0
+          python -m playwright install --with-deps chromium
+      - name: 'Inspección real: 390px y 1280px, imágenes y menú'
+        run: python automation/qa_propuestas_noresponsive.py
