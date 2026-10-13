@@ -10,7 +10,8 @@ sites={
   "AMFS Málaga":"https://www.amfutbolsala.com/",
   "Chemasol":"https://www.chemasol.es/",
   "Acricema":"https://www.acricema.es/",
-  "JMG Construcciones":"https://jmgconstrucciones.es/"
+  "JMG Construcciones":"https://jmgconstrucciones.es/",
+  "Reparaciones Quirós":"https://reparacionesquiros.es.tl/"
 }
 with sync_playwright() as pw:
  b=pw.chromium.launch(headless=True,args=["--no-sandbox"])
@@ -40,7 +41,7 @@ with sync_playwright() as pw:
        navOffscreen:links.filter(el=>{let r=el.getBoundingClientRect();return r.right>innerWidth+15||r.left < -15}).slice(0,9).map(el=>({text:el.innerText?.slice(0,55),right:Math.round(el.getBoundingClientRect().right)})),
        img:document.images.length};
     }""")
-    r.status=resp.status if resp else None
+    r['status']=resp.status if resp else None
     result["views"].append(r)
    except Exception as e:result["views"].append({"vw":width,"error":str(e)[:150]})
    finally:p.close()
