@@ -1,0 +1,25 @@
+name: Pymatec auditoria candidatas originales
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'automation/audit_candidates_oct13.py'
+      - '.github/workflows/audit-original-candidates.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 14
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Instalar navegador real
+        run: |
+          python -m pip install playwright==1.55.0
+          python -m playwright install --with-deps chromium
+      - name: Auditar responsive originales
+        run: python automation/audit_candidates_oct13.py
