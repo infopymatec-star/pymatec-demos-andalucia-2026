@@ -10,7 +10,12 @@
     "esspora.com",
     "mpmproject.es",
     "daygarden.es",
-    "jardineando.es"
+    "jardineando.es",
+    "tirtrans.es",
+    "instalacioneslaroca.es.tl",
+    "radiadoreslavega.es.tl",
+    "rotanagestores.es.tl",
+    "promocionespered.es.tl"
   ],
   "updated": "2026-10-13",
   "names": [
@@ -24,7 +29,12 @@
     "Grupo Sermafugas",
     "Sistemas Aluminio e Hierros Las Lagunas",
     "Cero21 Construcciones",
-    "Construcciones y Pinturas Dajesur"
+    "Construcciones y Pinturas Dajesur",
+    "TIR TRANS MALAGA 2012 S.L.",
+    "Instalaciones La Roca",
+    "Radiadores La Vega",
+    "Rotana Gestores",
+    "Promociones Pered, S.L."
   ],
   "osm_ids": [],
   "emails": [
@@ -38,7 +48,12 @@
     "sermafugas@gmail.com",
     "sistemaluminiumlaslagunas@hotmail.com",
     "cero21sl@hotmail.com",
-    "dajesur@gmail.com"
+    "dajesur@gmail.com",
+    "jose@tirtrans.es",
+    "instalacioneslaroca@hotmail.com",
+    "radiadoreslavega@live.com",
+    "rotanagestores@gmail.com",
+    "promocionespered@hotmail.com"
   ],
   "events": [
     {
@@ -112,6 +127,46 @@
       "email": "dajesur@gmail.com",
       "status": "demo_web_nueva_rehecha_pending_visual_QA_no_contact",
       "website_inactive": "construccionesdajesur.com"
+    },
+    {
+      "date": "2026-10-13",
+      "name": "TIR TRANS MALAGA 2012 S.L.",
+      "domain": "tirtrans.es",
+      "email": "jose@tirtrans.es",
+      "status": "web_movil_no_responsive_verificada_demo_gitpages_qa_aprobada_borrador_gmail_sin_envio",
+      "slug": "tir-trans-malaga-redisenio"
+    },
+    {
+      "date": "2026-10-13",
+      "name": "Instalaciones La Roca",
+      "domain": "instalacioneslaroca.es.tl",
+      "email": "instalacioneslaroca@hotmail.com",
+      "status": "web_movil_no_responsive_verificada_demo_gitpages_qa_aprobada_borrador_gmail_sin_envio",
+      "slug": "instalaciones-la-roca-redisenio"
+    },
+    {
+      "date": "2026-10-13",
+      "name": "Radiadores La Vega",
+      "domain": "radiadoreslavega.es.tl",
+      "email": "radiadoreslavega@live.com",
+      "status": "web_movil_no_responsive_verificada_demo_gitpages_qa_aprobada_borrador_gmail_sin_envio",
+      "slug": "radiadores-la-vega-redisenio"
+    },
+    {
+      "date": "2026-10-13",
+      "name": "Rotana Gestores",
+      "domain": "rotanagestores.es.tl",
+      "email": "rotanagestores@gmail.com",
+      "status": "web_movil_no_responsive_verificada_demo_gitpages_qa_aprobada_borrador_gmail_sin_envio",
+      "slug": "rotana-gestores-redisenio"
+    },
+    {
+      "date": "2026-10-13",
+      "name": "Promociones Pered, S.L.",
+      "domain": "promocionespered.es.tl",
+      "email": "promocionespered@hotmail.com",
+      "status": "web_movil_no_responsive_verificada_demo_gitpages_qa_aprobada_borrador_gmail_sin_envio",
+      "slug": "promociones-pered-redisenio"
     }
   ],
   "examined_osm_ids": [
