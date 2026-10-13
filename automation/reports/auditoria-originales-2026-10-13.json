@@ -371,7 +371,7 @@
         "title": "Parquet Malaga | Suelos de Parquet Coema",
         "images": 11,
         "logoCandidates": [
-          "https://www.parquetmalaga.net/fotos/463/coema.png?v=2315"
+          "https://www.parquetmalaga.net/fotos/463/coema.png?v=319"
         ],
         "finalUrl": "https://www.parquetmalaga.net/"
       },
@@ -387,7 +387,7 @@
         "title": "Parquet Malaga | Suelos de Parquet Coema",
         "images": 11,
         "logoCandidates": [
-          "https://www.parquetmalaga.net/fotos/463/coema.png?v=9968"
+          "https://www.parquetmalaga.net/fotos/463/coema.png?v=5447"
         ],
         "finalUrl": "https://www.parquetmalaga.net/"
       },
@@ -459,7 +459,7 @@
         "title": "Puertas Metalicas Malaga | Sicilia Hermanos",
         "images": 15,
         "logoCandidates": [
-          "https://www.puertasmetalicasmalaga.es/fotos/437/sicilia-hermanos-puertasmetalicasmalagaes.png?v=9454"
+          "https://www.puertasmetalicasmalaga.es/fotos/437/sicilia-hermanos-puertasmetalicasmalagaes.png?v=4257"
         ],
         "finalUrl": "https://www.puertasmetalicasmalaga.es/"
       },
@@ -473,9 +473,9 @@
         "visibleNavLinks": 7,
         "tinyTextElements": 0,
         "title": "Puertas Metalicas Malaga | Sicilia Hermanos",
-        "images": 12,
+        "images": 13,
         "logoCandidates": [
-          "https://www.puertasmetalicasmalaga.es/fotos/437/sicilia-hermanos-puertasmetalicasmalagaes.png?v=7967"
+          "https://www.puertasmetalicasmalaga.es/fotos/437/sicilia-hermanos-puertasmetalicasmalagaes.png?v=4695"
         ],
         "finalUrl": "https://www.puertasmetalicasmalaga.es/"
       },
@@ -547,7 +547,7 @@
         "title": "▷ Alquiler de Andamios Málaga →【Ibérica de Andamios】",
         "images": 16,
         "logoCandidates": [
-          "https://www.alquilerandamiosmalaga.com/fotos/345/iberica-de-andamios.png?v=7629"
+          "https://www.alquilerandamiosmalaga.com/fotos/345/iberica-de-andamios.png?v=5683"
         ],
         "finalUrl": "https://www.alquilerandamiosmalaga.com/"
       },
@@ -563,7 +563,7 @@
         "title": "▷ Alquiler de Andamios Málaga →【Ibérica de Andamios】",
         "images": 13,
         "logoCandidates": [
-          "https://www.alquilerandamiosmalaga.com/fotos/345/iberica-de-andamios.png?v=4299"
+          "https://www.alquilerandamiosmalaga.com/fotos/345/iberica-de-andamios.png?v=9293"
         ],
         "finalUrl": "https://www.alquilerandamiosmalaga.com/"
       },
@@ -575,7 +575,69 @@
       "url": "https://www.sistemascontraincendiomalaga.es/",
       "checked_at": "2026-10-13",
       "desktop": {
-        "error": "Page.evaluate: TypeError: Cannot read properties of null (reading 'scrollWidth')\n    at eval (eval at evaluate (:291:30), <anonymous>:6:139)\n    at UtilityScript.evaluate"
+        "innerWidth": 1280,
+        "viewport": 1280,
+        "docWidth": 1280,
+        "bodyWidth": 1280,
+        "meta": "width=device-width, initial-scale=1",
+        "offenders": [
+          {
+            "tag": "DIV",
+            "cl": "",
+            "right": 78,
+            "width": 256
+          },
+          {
+            "tag": "DIV",
+            "cl": "",
+            "right": 78,
+            "width": 256
+          },
+          {
+            "tag": "DIV",
+            "cl": "",
+            "right": 78,
+            "width": 256
+          },
+          {
+            "tag": "DIV",
+            "cl": "",
+            "right": 78,
+            "width": 256
+          },
+          {
+            "tag": "DIV",
+            "cl": "",
+            "right": 78,
+            "width": 256
+          },
+          {
+            "tag": "DIV",
+            "cl": "",
+            "right": 78,
+            "width": 256
+          },
+          {
+            "tag": "DIV",
+            "cl": "",
+            "right": 78,
+            "width": 256
+          },
+          {
+            "tag": "DIV",
+            "cl": "",
+            "right": 78,
+            "width": 256
+          }
+        ],
+        "visibleNavLinks": 11,
+        "tinyTextElements": 0,
+        "title": "ᐈ Sistemas contra Incendios Málaga |⇒ MELA",
+        "images": 15,
+        "logoCandidates": [
+          "https://www.sistemascontraincendiomalaga.es/fotos/787/mela.png?v=2837"
+        ],
+        "finalUrl": "https://www.sistemascontraincendiomalaga.es/"
       },
       "mobile": {
         "innerWidth": 400,
@@ -587,9 +649,9 @@
         "visibleNavLinks": 7,
         "tinyTextElements": 0,
         "title": "ᐈ Sistemas contra Incendios Málaga |⇒ MELA",
-        "images": 11,
+        "images": 12,
         "logoCandidates": [
-          "https://www.sistemascontraincendiomalaga.es/fotos/787/mela.png?v=6487"
+          "https://www.sistemascontraincendiomalaga.es/fotos/787/mela.png?v=6238"
         ],
         "finalUrl": "https://www.sistemascontraincendiomalaga.es/"
       },
@@ -778,6 +840,12 @@
             "cl": "VIpgJd-ZVi9od-aZ2wEe-wOHMyf",
             "right": -896,
             "width": 104
+          },
+          {
+            "tag": "svg",
+            "cl": "[object SVGAnimatedString]",
+            "right": -922,
+            "width": 51
           }
         ],
         "visibleNavLinks": 7,
@@ -887,7 +955,7 @@
         "title": "Asoc. Malagueña FS :: Inicio",
         "images": 52,
         "logoCandidates": [
-          ""
+          "https://www.amfutbolsala.com/images/shared/byserversports.png"
         ],
         "finalUrl": "https://www.amfutbolsala.com/mod/soccer/index.aspx"
       },
@@ -1000,7 +1068,7 @@
         "visibleNavLinks": 8,
         "tinyTextElements": 0,
         "title": "Inicio - OFI-BURO Mobiliario de Oficina | Mamparas Divisorias Málaga",
-        "images": 20,
+        "images": 15,
         "logoCandidates": [
           "https://ofiburo.com/wp-content/uploads/2020/04/logo-removebg-preview.png",
           "https://ofiburo.com/wp-content/uploads/2025/02/apple-touch-icon-152x152-1.png"
@@ -1131,13 +1199,13 @@
           },
           {
             "tag": "DIV",
-            "cl": "swiper-slide",
-            "right": 2896,
-            "width": 559
+            "cl": "swiper-lazy-preloader",
+            "right": 2086,
+            "width": 55
           },
           {
-            "tag": "FIGURE",
-            "cl": "swiper-slide-inner",
+            "tag": "DIV",
+            "cl": "swiper-slide",
             "right": 2896,
             "width": 559
           }
@@ -1792,6 +1860,478 @@
       },
       "mobile_fail_evidence": [
         "La anchura CSS móvil es 980px para dispositivo de 390px (meta viewport fija o ausente)"
+      ],
+      "confirmed_nonresponsive": true
+    },
+    {
+      "name": "Miguel y Porcel SL",
+      "url": "https://miguelyporcelsl.es.tl/",
+      "checked_at": "2026-10-13",
+      "desktop": {
+        "innerWidth": 1280,
+        "viewport": 1280,
+        "docWidth": 1280,
+        "bodyWidth": 1280,
+        "meta": null,
+        "offenders": [],
+        "visibleNavLinks": 0,
+        "tinyTextElements": 4,
+        "title": "MIGUEL & PORCEL S.L - Quiénes somos",
+        "images": 3,
+        "logoCandidates": [],
+        "finalUrl": "https://miguelyporcelsl.es.tl/"
+      },
+      "mobile": {
+        "innerWidth": 390,
+        "viewport": 390,
+        "docWidth": 390,
+        "bodyWidth": 390,
+        "meta": "width=device-width, initial-scale=1 maximum-scale=1.0,maximum-scale=1, user-scalable=no",
+        "offenders": [
+          {
+            "tag": "A",
+            "cl": "ui-link-inherit",
+            "right": -217,
+            "width": 55
+          },
+          {
+            "tag": "A",
+            "cl": "ui-link-inherit",
+            "right": -217,
+            "width": 55
+          },
+          {
+            "tag": "A",
+            "cl": "ui-link-inherit",
+            "right": -217,
+            "width": 55
+          },
+          {
+            "tag": "A",
+            "cl": "ui-link-inherit",
+            "right": -217,
+            "width": 55
+          },
+          {
+            "tag": "A",
+            "cl": "ui-link-inherit",
+            "right": -217,
+            "width": 55
+          }
+        ],
+        "visibleNavLinks": 0,
+        "tinyTextElements": 0,
+        "title": "MIGUEL &amp; PORCEL S.L",
+        "images": 0,
+        "logoCandidates": [],
+        "finalUrl": "https://miguelyporcelsl.es.tl/"
+      },
+      "mobile_fail_evidence": [
+        "Elementos fuera de pantalla: 5"
+      ],
+      "confirmed_nonresponsive": true
+    },
+    {
+      "name": "Radiadores La Vega",
+      "url": "https://radiadoreslavega.es.tl/",
+      "checked_at": "2026-10-13",
+      "desktop": {
+        "innerWidth": 1280,
+        "viewport": 1280,
+        "docWidth": 1280,
+        "bodyWidth": 1280,
+        "meta": null,
+        "offenders": [],
+        "visibleNavLinks": 0,
+        "tinyTextElements": 0,
+        "title": "RADIADORES LA VEGA - Home",
+        "images": 1,
+        "logoCandidates": [],
+        "finalUrl": "https://radiadoreslavega.es.tl/"
+      },
+      "mobile": {
+        "innerWidth": 390,
+        "viewport": 390,
+        "docWidth": 390,
+        "bodyWidth": 390,
+        "meta": "width=device-width, initial-scale=1 maximum-scale=1.0,maximum-scale=1, user-scalable=no",
+        "offenders": [
+          {
+            "tag": "A",
+            "cl": "ui-link-inherit",
+            "right": -217,
+            "width": 55
+          },
+          {
+            "tag": "A",
+            "cl": "ui-link-inherit",
+            "right": -217,
+            "width": 55
+          },
+          {
+            "tag": "A",
+            "cl": "ui-link-inherit",
+            "right": -217,
+            "width": 55
+          },
+          {
+            "tag": "A",
+            "cl": "ui-link-inherit",
+            "right": -217,
+            "width": 55
+          },
+          {
+            "tag": "A",
+            "cl": "ui-link-inherit",
+            "right": -217,
+            "width": 55
+          },
+          {
+            "tag": "A",
+            "cl": "ui-link-inherit",
+            "right": -217,
+            "width": 55
+          },
+          {
+            "tag": "A",
+            "cl": "ui-link-inherit",
+            "right": -217,
+            "width": 55
+          },
+          {
+            "tag": "A",
+            "cl": "ui-link-inherit",
+            "right": -217,
+            "width": 55
+          }
+        ],
+        "visibleNavLinks": 0,
+        "tinyTextElements": 0,
+        "title": "RADIADORES LA VEGA",
+        "images": 0,
+        "logoCandidates": [],
+        "finalUrl": "https://radiadoreslavega.es.tl/"
+      },
+      "mobile_fail_evidence": [
+        "Elementos fuera de pantalla: 8"
+      ],
+      "confirmed_nonresponsive": true
+    },
+    {
+      "name": "Rotana Gestores",
+      "url": "https://rotanagestores.es.tl/",
+      "checked_at": "2026-10-13",
+      "desktop": {
+        "innerWidth": 1280,
+        "viewport": 1280,
+        "docWidth": 1280,
+        "bodyWidth": 1280,
+        "meta": null,
+        "offenders": [],
+        "visibleNavLinks": 0,
+        "tinyTextElements": 10,
+        "title": "- Bienvenido",
+        "images": 8,
+        "logoCandidates": [],
+        "finalUrl": "https://rotanagestores.es.tl/"
+      },
+      "mobile": {
+        "innerWidth": 390,
+        "viewport": 390,
+        "docWidth": 390,
+        "bodyWidth": 390,
+        "meta": "width=device-width, initial-scale=1 maximum-scale=1.0,maximum-scale=1, user-scalable=no",
+        "offenders": [
+          {
+            "tag": "A",
+            "cl": "ui-link-inherit",
+            "right": -217,
+            "width": 55
+          },
+          {
+            "tag": "A",
+            "cl": "ui-link-inherit",
+            "right": -217,
+            "width": 55
+          },
+          {
+            "tag": "B",
+            "cl": "",
+            "right": -171,
+            "width": 86
+          },
+          {
+            "tag": "A",
+            "cl": "ui-link-inherit",
+            "right": -217,
+            "width": 55
+          },
+          {
+            "tag": "B",
+            "cl": "",
+            "right": -203,
+            "width": 54
+          },
+          {
+            "tag": "A",
+            "cl": "ui-link-inherit",
+            "right": -217,
+            "width": 55
+          },
+          {
+            "tag": "U",
+            "cl": "",
+            "right": -186,
+            "width": 71
+          },
+          {
+            "tag": "I",
+            "cl": "",
+            "right": -186,
+            "width": 71
+          }
+        ],
+        "visibleNavLinks": 0,
+        "tinyTextElements": 0,
+        "title": "",
+        "images": 1,
+        "logoCandidates": [],
+        "finalUrl": "https://rotanagestores.es.tl/"
+      },
+      "mobile_fail_evidence": [
+        "Elementos fuera de pantalla: 8"
+      ],
+      "confirmed_nonresponsive": true
+    },
+    {
+      "name": "Instalaciones La Roca",
+      "url": "https://instalacioneslaroca.es.tl/",
+      "checked_at": "2026-10-13",
+      "desktop": {
+        "innerWidth": 1280,
+        "viewport": 1280,
+        "docWidth": 1280,
+        "bodyWidth": 1280,
+        "meta": "width=device-width, initial-scale=1.0",
+        "offenders": [
+          {
+            "tag": "DIV",
+            "cl": "webme-slider-image",
+            "right": 1190,
+            "width": 1280
+          },
+          {
+            "tag": "DIV",
+            "cl": "webme-slider-image",
+            "right": 1190,
+            "width": 1280
+          },
+          {
+            "tag": "DIV",
+            "cl": "webme-slider-image",
+            "right": 1190,
+            "width": 1280
+          }
+        ],
+        "visibleNavLinks": 6,
+        "tinyTextElements": 1,
+        "title": "La Roca - Inicio",
+        "images": 27,
+        "logoCandidates": [
+          "https://img.webme.com/pic/i/instalacioneslaroca/aireycalef1.jpg"
+        ],
+        "finalUrl": "https://instalacioneslaroca.es.tl/"
+      },
+      "mobile": {
+        "innerWidth": 833,
+        "viewport": 390,
+        "docWidth": 833,
+        "bodyWidth": 833,
+        "meta": "width=device-width, initial-scale=1.0",
+        "offenders": [],
+        "visibleNavLinks": 1,
+        "tinyTextElements": 0,
+        "title": "La Roca - Inicio",
+        "images": 27,
+        "logoCandidates": [
+          "https://img.webme.com/pic/i/instalacioneslaroca/aireycalef1.jpg"
+        ],
+        "finalUrl": "https://instalacioneslaroca.es.tl/"
+      },
+      "mobile_fail_evidence": [
+        "La anchura CSS móvil es 833px para dispositivo de 390px (meta viewport fija o ausente)"
+      ],
+      "confirmed_nonresponsive": true
+    },
+    {
+      "name": "Promociones Pered",
+      "url": "https://promocionespered.es.tl/",
+      "checked_at": "2026-10-13",
+      "desktop": {
+        "innerWidth": 1280,
+        "viewport": 1280,
+        "docWidth": 1280,
+        "bodyWidth": 1280,
+        "meta": null,
+        "offenders": [],
+        "visibleNavLinks": 0,
+        "tinyTextElements": 0,
+        "title": "PROMOCIONES PERED, S.L. - INICIO",
+        "images": 11,
+        "logoCandidates": [],
+        "finalUrl": "https://promocionespered.es.tl/"
+      },
+      "mobile": {
+        "innerWidth": 390,
+        "viewport": 390,
+        "docWidth": 390,
+        "bodyWidth": 390,
+        "meta": "width=device-width, initial-scale=1 maximum-scale=1.0,maximum-scale=1, user-scalable=no",
+        "offenders": [
+          {
+            "tag": "A",
+            "cl": "ui-link-inherit",
+            "right": -217,
+            "width": 55
+          },
+          {
+            "tag": "A",
+            "cl": "ui-link-inherit",
+            "right": -217,
+            "width": 55
+          },
+          {
+            "tag": "A",
+            "cl": "ui-link-inherit",
+            "right": -217,
+            "width": 55
+          },
+          {
+            "tag": "A",
+            "cl": "ui-link-inherit",
+            "right": -217,
+            "width": 55
+          },
+          {
+            "tag": "A",
+            "cl": "ui-link-inherit",
+            "right": -217,
+            "width": 55
+          },
+          {
+            "tag": "A",
+            "cl": "ui-link-inherit",
+            "right": -217,
+            "width": 55
+          },
+          {
+            "tag": "A",
+            "cl": "ui-link-inherit",
+            "right": -217,
+            "width": 55
+          },
+          {
+            "tag": "A",
+            "cl": "ui-link-inherit",
+            "right": -217,
+            "width": 55
+          }
+        ],
+        "visibleNavLinks": 0,
+        "tinyTextElements": 0,
+        "title": "PROMOCIONES PERED, S.L.",
+        "images": 1,
+        "logoCandidates": [],
+        "finalUrl": "https://promocionespered.es.tl/"
+      },
+      "mobile_fail_evidence": [
+        "Elementos fuera de pantalla: 8"
+      ],
+      "confirmed_nonresponsive": true
+    },
+    {
+      "name": "Peluquería Luna",
+      "url": "https://peluquerialuna.es.tl/",
+      "checked_at": "2026-10-13",
+      "desktop": {
+        "innerWidth": 1280,
+        "viewport": 1280,
+        "docWidth": 1280,
+        "bodyWidth": 1270,
+        "meta": null,
+        "offenders": [],
+        "visibleNavLinks": 0,
+        "tinyTextElements": 0,
+        "title": "- Peluquería Luna",
+        "images": 1,
+        "logoCandidates": [],
+        "finalUrl": "https://peluquerialuna.es.tl/"
+      },
+      "mobile": {
+        "innerWidth": 390,
+        "viewport": 390,
+        "docWidth": 390,
+        "bodyWidth": 390,
+        "meta": "width=device-width, initial-scale=1 maximum-scale=1.0,maximum-scale=1, user-scalable=no",
+        "offenders": [
+          {
+            "tag": "A",
+            "cl": "ui-link-inherit",
+            "right": -217,
+            "width": 55
+          },
+          {
+            "tag": "A",
+            "cl": "ui-link-inherit",
+            "right": -217,
+            "width": 55
+          },
+          {
+            "tag": "B",
+            "cl": "",
+            "right": -133,
+            "width": 124
+          },
+          {
+            "tag": "A",
+            "cl": "ui-link-inherit",
+            "right": -217,
+            "width": 55
+          },
+          {
+            "tag": "B",
+            "cl": "",
+            "right": -89,
+            "width": 168
+          },
+          {
+            "tag": "A",
+            "cl": "ui-link-inherit",
+            "right": -217,
+            "width": 55
+          },
+          {
+            "tag": "B",
+            "cl": "",
+            "right": -200,
+            "width": 57
+          },
+          {
+            "tag": "A",
+            "cl": "ui-link-inherit",
+            "right": -217,
+            "width": 55
+          }
+        ],
+        "visibleNavLinks": 0,
+        "tinyTextElements": 0,
+        "title": "",
+        "images": 2,
+        "logoCandidates": [],
+        "finalUrl": "https://peluquerialuna.es.tl/"
+      },
+      "mobile_fail_evidence": [
+        "Elementos fuera de pantalla: 8"
       ],
       "confirmed_nonresponsive": true
     }
