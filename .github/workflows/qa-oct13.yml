@@ -22,5 +22,5 @@ jobs:
         run: |
           pip install playwright==1.55.0
           python -m playwright install --with-deps chromium
-      - name: Inspeccionar cinco demos: 1280px y 390px, todas las fotos y menus
+      - name: 'Inspeccionar cinco demos: 1280px y 390px, fotos y menus'
         run: python automation/qa_oct13_sites.py
