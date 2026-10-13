@@ -1,0 +1,1799 @@
+{
+  "date": "2026-10-13",
+  "note": "Comprobación browser; solo clasificar no responsive con evidencia en 390 y 1280",
+  "results": [
+    {
+      "name": "TIR TRANS MALAGA",
+      "url": "https://www.tirtrans.es/",
+      "checked_at": "2026-10-13",
+      "desktop": {
+        "innerWidth": 1280,
+        "viewport": 1280,
+        "docWidth": 1280,
+        "bodyWidth": 1280,
+        "meta": "width=1025",
+        "offenders": [],
+        "visibleNavLinks": 0,
+        "tinyTextElements": 0,
+        "title": "TIR TRANS MALAGA 2012 S.L. - Francais",
+        "images": 7,
+        "logoCandidates": [
+          "https://www.tirtrans.es/s/misc/logo.jpg?t=1791604052",
+          "https://cdn.website-start.de/s/img/logo.gif"
+        ],
+        "finalUrl": "https://www.tirtrans.es/"
+      },
+      "mobile": {
+        "innerWidth": 1025,
+        "viewport": 1025,
+        "docWidth": 1025,
+        "bodyWidth": 1025,
+        "meta": "width=1025",
+        "offenders": [],
+        "visibleNavLinks": 0,
+        "tinyTextElements": 0,
+        "title": "TIR TRANS MALAGA 2012 S.L. - Francais",
+        "images": 7,
+        "logoCandidates": [
+          "https://www.tirtrans.es/s/misc/logo.jpg?t=1791604052",
+          "https://cdn.website-start.de/s/img/logo.gif"
+        ],
+        "finalUrl": "https://www.tirtrans.es/"
+      },
+      "mobile_fail_evidence": [
+        "La anchura CSS móvil es 1025px para dispositivo de 390px (meta viewport fija o ausente)"
+      ],
+      "confirmed_nonresponsive": true
+    },
+    {
+      "name": "Aluminios Racero",
+      "url": "https://aluminiosracero.com/",
+      "checked_at": "2026-10-13",
+      "desktop": {
+        "innerWidth": 1280,
+        "viewport": 1280,
+        "docWidth": 1280,
+        "bodyWidth": 1280,
+        "meta": "width=device-width, initial-scale=1",
+        "offenders": [
+          {
+            "tag": "UL",
+            "cl": "wp-block-jetpack-slideshow_swiper-wrapper swiper-wrapper",
+            "right": 21508,
+            "width": 21432
+          },
+          {
+            "tag": "LI",
+            "cl": "wp-block-jetpack-slideshow_slide swiper-slide swiper-slide-next",
+            "right": 2332,
+            "width": 1128
+          },
+          {
+            "tag": "FIGURE",
+            "cl": "",
+            "right": 2332,
+            "width": 1128
+          },
+          {
+            "tag": "LI",
+            "cl": "wp-block-jetpack-slideshow_slide swiper-slide",
+            "right": 3460,
+            "width": 1128
+          },
+          {
+            "tag": "FIGURE",
+            "cl": "",
+            "right": 3460,
+            "width": 1128
+          },
+          {
+            "tag": "LI",
+            "cl": "wp-block-jetpack-slideshow_slide swiper-slide",
+            "right": 4588,
+            "width": 1128
+          },
+          {
+            "tag": "FIGURE",
+            "cl": "",
+            "right": 4588,
+            "width": 1128
+          },
+          {
+            "tag": "LI",
+            "cl": "wp-block-jetpack-slideshow_slide swiper-slide",
+            "right": 5716,
+            "width": 1128
+          }
+        ],
+        "visibleNavLinks": 4,
+        "tinyTextElements": 0,
+        "title": "Aluminios Racero – Carpinteria aluminio",
+        "images": 24,
+        "logoCandidates": [],
+        "finalUrl": "https://aluminiosracero.com/"
+      },
+      "mobile": {
+        "innerWidth": 390,
+        "viewport": 390,
+        "docWidth": 390,
+        "bodyWidth": 390,
+        "meta": "width=device-width",
+        "offenders": [],
+        "visibleNavLinks": 0,
+        "tinyTextElements": 0,
+        "title": "Checking your browser...",
+        "images": 0,
+        "logoCandidates": [],
+        "finalUrl": "https://aluminiosracero.com/"
+      },
+      "mobile_fail_evidence": [],
+      "confirmed_nonresponsive": false
+    },
+    {
+      "name": "Roesca Carpintería Metálica",
+      "url": "https://www.roesca.com/",
+      "checked_at": "2026-10-13",
+      "desktop": {
+        "innerWidth": 1280,
+        "viewport": 1280,
+        "docWidth": 1280,
+        "bodyWidth": 1280,
+        "meta": "width=device-width, initial-scale=1",
+        "offenders": [
+          {
+            "tag": "LI",
+            "cl": "menu-item menu-item-type-post_type menu-item-object-page menu-item-111",
+            "right": -99008,
+            "width": 200
+          },
+          {
+            "tag": "A",
+            "cl": "",
+            "right": -99008,
+            "width": 200
+          },
+          {
+            "tag": "LI",
+            "cl": "menu-item menu-item-type-post_type menu-item-object-page menu-item-110",
+            "right": -99008,
+            "width": 200
+          },
+          {
+            "tag": "A",
+            "cl": "",
+            "right": -99008,
+            "width": 200
+          },
+          {
+            "tag": "LI",
+            "cl": "menu-item menu-item-type-post_type menu-item-object-page menu-item-96",
+            "right": -99008,
+            "width": 200
+          },
+          {
+            "tag": "A",
+            "cl": "",
+            "right": -99008,
+            "width": 200
+          },
+          {
+            "tag": "LI",
+            "cl": "menu-item menu-item-type-post_type menu-item-object-page menu-item-95",
+            "right": -99008,
+            "width": 200
+          },
+          {
+            "tag": "A",
+            "cl": "",
+            "right": -99008,
+            "width": 200
+          }
+        ],
+        "visibleNavLinks": 15,
+        "tinyTextElements": 0,
+        "title": "Carpintería Metálica en Málaga - Roesca",
+        "images": 50,
+        "logoCandidates": [
+          "https://www.roesca.com/wp-content/uploads/2022/10/roesca_logo_white.png"
+        ],
+        "finalUrl": "https://www.roesca.com/"
+      },
+      "mobile": {
+        "innerWidth": 390,
+        "viewport": 390,
+        "docWidth": 390,
+        "bodyWidth": 390,
+        "meta": "width=device-width, initial-scale=1",
+        "offenders": [
+          {
+            "tag": "DIV",
+            "cl": "ti-review-item source-Google ti-image-layout-thumbnail",
+            "right": 483,
+            "width": 115
+          },
+          {
+            "tag": "DIV",
+            "cl": "ti-inner",
+            "right": 475,
+            "width": 99
+          },
+          {
+            "tag": "DIV",
+            "cl": "ti-profile-img",
+            "right": 465,
+            "width": 64
+          },
+          {
+            "tag": "IMG",
+            "cl": "skip-lazy",
+            "right": 465,
+            "width": 64
+          },
+          {
+            "tag": "DIV",
+            "cl": "grecaptcha-badge",
+            "right": 576,
+            "width": 256
+          },
+          {
+            "tag": "DIV",
+            "cl": "grecaptcha-logo",
+            "right": 576,
+            "width": 256
+          },
+          {
+            "tag": "IFRAME",
+            "cl": "",
+            "right": 576,
+            "width": 256
+          }
+        ],
+        "visibleNavLinks": 1,
+        "tinyTextElements": 0,
+        "title": "Carpintería Metálica en Málaga - Roesca",
+        "images": 52,
+        "logoCandidates": [
+          "https://www.roesca.com/wp-content/uploads/2022/10/roesca_logo_white.png"
+        ],
+        "finalUrl": "https://www.roesca.com/"
+      },
+      "mobile_fail_evidence": [
+        "Elementos fuera de pantalla: 7"
+      ],
+      "confirmed_nonresponsive": true
+    },
+    {
+      "name": "KeyStation",
+      "url": "https://keystation.es/",
+      "checked_at": "2026-10-13",
+      "desktop": {
+        "innerWidth": 1280,
+        "viewport": 1280,
+        "docWidth": 1280,
+        "bodyWidth": 1280,
+        "meta": "width=device-width, initial-scale=1",
+        "offenders": [
+          {
+            "tag": "DIV",
+            "cl": "owl-wrapper",
+            "right": 2290,
+            "width": 2220
+          }
+        ],
+        "visibleNavLinks": 7,
+        "tinyTextElements": 0,
+        "title": "Inicio - KeyStation",
+        "images": 5,
+        "logoCandidates": [],
+        "finalUrl": "https://keystation.es/"
+      },
+      "mobile": {
+        "innerWidth": 390,
+        "viewport": 390,
+        "docWidth": 390,
+        "bodyWidth": 390,
+        "meta": "width=device-width, initial-scale=1",
+        "offenders": [
+          {
+            "tag": "DIV",
+            "cl": "owl-wrapper",
+            "right": 1933,
+            "width": 1896
+          },
+          {
+            "tag": "DIV",
+            "cl": "owl-item",
+            "right": 669,
+            "width": 316
+          },
+          {
+            "tag": "DIV",
+            "cl": "single-product-classes",
+            "right": 654,
+            "width": 286
+          },
+          {
+            "tag": "DIV",
+            "cl": "single-product",
+            "right": 653,
+            "width": 285
+          },
+          {
+            "tag": "A",
+            "cl": "",
+            "right": 653,
+            "width": 285
+          },
+          {
+            "tag": "IMG",
+            "cl": "attachment-post-thumbnail size-post-thumbnail wp-post-image",
+            "right": 653,
+            "width": 285
+          },
+          {
+            "tag": "DIV",
+            "cl": "overly",
+            "right": 653,
+            "width": 285
+          },
+          {
+            "tag": "UL",
+            "cl": "",
+            "right": 653,
+            "width": 285
+          }
+        ],
+        "visibleNavLinks": 2,
+        "tinyTextElements": 0,
+        "title": "Inicio - KeyStation",
+        "images": 5,
+        "logoCandidates": [],
+        "finalUrl": "https://keystation.es/"
+      },
+      "mobile_fail_evidence": [
+        "Elementos fuera de pantalla: 8"
+      ],
+      "confirmed_nonresponsive": true
+    },
+    {
+      "name": "Parquet Coema",
+      "url": "https://www.parquetmalaga.net/",
+      "checked_at": "2026-10-13",
+      "desktop": {
+        "innerWidth": 1280,
+        "viewport": 1280,
+        "docWidth": 1280,
+        "bodyWidth": 1280,
+        "meta": "width=device-width, initial-scale=1",
+        "offenders": [],
+        "visibleNavLinks": 10,
+        "tinyTextElements": 0,
+        "title": "Parquet Malaga | Suelos de Parquet Coema",
+        "images": 11,
+        "logoCandidates": [
+          "https://www.parquetmalaga.net/fotos/463/coema.png?v=2315"
+        ],
+        "finalUrl": "https://www.parquetmalaga.net/"
+      },
+      "mobile": {
+        "innerWidth": 400,
+        "viewport": 390,
+        "docWidth": 400,
+        "bodyWidth": 400,
+        "meta": "width=device-width, initial-scale=1",
+        "offenders": [],
+        "visibleNavLinks": 10,
+        "tinyTextElements": 0,
+        "title": "Parquet Malaga | Suelos de Parquet Coema",
+        "images": 11,
+        "logoCandidates": [
+          "https://www.parquetmalaga.net/fotos/463/coema.png?v=9968"
+        ],
+        "finalUrl": "https://www.parquetmalaga.net/"
+      },
+      "mobile_fail_evidence": [],
+      "confirmed_nonresponsive": false
+    },
+    {
+      "name": "Sicilia Hermanos",
+      "url": "https://www.puertasmetalicasmalaga.es/",
+      "checked_at": "2026-10-13",
+      "desktop": {
+        "innerWidth": 1280,
+        "viewport": 1280,
+        "docWidth": 1280,
+        "bodyWidth": 1280,
+        "meta": "width=device-width, initial-scale=1",
+        "offenders": [
+          {
+            "tag": "DIV",
+            "cl": "slick-track",
+            "right": 3840,
+            "width": 5120
+          },
+          {
+            "tag": "DIV",
+            "cl": "slick-slide slick-cloned",
+            "right": 0,
+            "width": 1280
+          },
+          {
+            "tag": "IMG",
+            "cl": "u-imgfull",
+            "right": 0,
+            "width": 1280
+          },
+          {
+            "tag": "DIV",
+            "cl": "row",
+            "right": 0,
+            "width": 1280
+          },
+          {
+            "tag": "DIV",
+            "cl": "slick-slide",
+            "right": 2560,
+            "width": 1280
+          },
+          {
+            "tag": "IMG",
+            "cl": "u-imgfull",
+            "right": 2560,
+            "width": 1280
+          },
+          {
+            "tag": "DIV",
+            "cl": "row",
+            "right": 2560,
+            "width": 1280
+          },
+          {
+            "tag": "DIV",
+            "cl": "slick-slide slick-cloned",
+            "right": 3840,
+            "width": 1280
+          }
+        ],
+        "visibleNavLinks": 12,
+        "tinyTextElements": 2,
+        "title": "Puertas Metalicas Malaga | Sicilia Hermanos",
+        "images": 15,
+        "logoCandidates": [
+          "https://www.puertasmetalicasmalaga.es/fotos/437/sicilia-hermanos-puertasmetalicasmalagaes.png?v=9454"
+        ],
+        "finalUrl": "https://www.puertasmetalicasmalaga.es/"
+      },
+      "mobile": {
+        "innerWidth": 400,
+        "viewport": 390,
+        "docWidth": 400,
+        "bodyWidth": 400,
+        "meta": "width=device-width, initial-scale=1",
+        "offenders": [],
+        "visibleNavLinks": 7,
+        "tinyTextElements": 0,
+        "title": "Puertas Metalicas Malaga | Sicilia Hermanos",
+        "images": 12,
+        "logoCandidates": [
+          "https://www.puertasmetalicasmalaga.es/fotos/437/sicilia-hermanos-puertasmetalicasmalagaes.png?v=7967"
+        ],
+        "finalUrl": "https://www.puertasmetalicasmalaga.es/"
+      },
+      "mobile_fail_evidence": [],
+      "confirmed_nonresponsive": false
+    },
+    {
+      "name": "Ibérica de Andamios",
+      "url": "https://www.alquilerandamiosmalaga.com/",
+      "checked_at": "2026-10-13",
+      "desktop": {
+        "innerWidth": 1280,
+        "viewport": 1280,
+        "docWidth": 1280,
+        "bodyWidth": 1280,
+        "meta": "width=device-width, initial-scale=1",
+        "offenders": [
+          {
+            "tag": "DIV",
+            "cl": "slick-track",
+            "right": 3840,
+            "width": 5120
+          },
+          {
+            "tag": "DIV",
+            "cl": "slick-slide slick-cloned",
+            "right": 0,
+            "width": 1280
+          },
+          {
+            "tag": "IMG",
+            "cl": "u-imgfull",
+            "right": 0,
+            "width": 1280
+          },
+          {
+            "tag": "DIV",
+            "cl": "row",
+            "right": 0,
+            "width": 1280
+          },
+          {
+            "tag": "P",
+            "cl": "o-hero__text",
+            "right": 0,
+            "width": 1280
+          },
+          {
+            "tag": "B",
+            "cl": "",
+            "right": 0,
+            "width": 1280
+          },
+          {
+            "tag": "DIV",
+            "cl": "slick-slide",
+            "right": 2560,
+            "width": 1280
+          },
+          {
+            "tag": "IMG",
+            "cl": "u-imgfull",
+            "right": 2560,
+            "width": 1280
+          }
+        ],
+        "visibleNavLinks": 11,
+        "tinyTextElements": 2,
+        "title": "▷ Alquiler de Andamios Málaga →【Ibérica de Andamios】",
+        "images": 16,
+        "logoCandidates": [
+          "https://www.alquilerandamiosmalaga.com/fotos/345/iberica-de-andamios.png?v=7629"
+        ],
+        "finalUrl": "https://www.alquilerandamiosmalaga.com/"
+      },
+      "mobile": {
+        "innerWidth": 400,
+        "viewport": 390,
+        "docWidth": 400,
+        "bodyWidth": 400,
+        "meta": "width=device-width, initial-scale=1",
+        "offenders": [],
+        "visibleNavLinks": 7,
+        "tinyTextElements": 0,
+        "title": "▷ Alquiler de Andamios Málaga →【Ibérica de Andamios】",
+        "images": 13,
+        "logoCandidates": [
+          "https://www.alquilerandamiosmalaga.com/fotos/345/iberica-de-andamios.png?v=4299"
+        ],
+        "finalUrl": "https://www.alquilerandamiosmalaga.com/"
+      },
+      "mobile_fail_evidence": [],
+      "confirmed_nonresponsive": false
+    },
+    {
+      "name": "MELA sistemas contra incendios",
+      "url": "https://www.sistemascontraincendiomalaga.es/",
+      "checked_at": "2026-10-13",
+      "desktop": {
+        "error": "Page.evaluate: TypeError: Cannot read properties of null (reading 'scrollWidth')\n    at eval (eval at evaluate (:291:30), <anonymous>:6:139)\n    at UtilityScript.evaluate"
+      },
+      "mobile": {
+        "innerWidth": 400,
+        "viewport": 390,
+        "docWidth": 400,
+        "bodyWidth": 400,
+        "meta": "width=device-width, initial-scale=1",
+        "offenders": [],
+        "visibleNavLinks": 7,
+        "tinyTextElements": 0,
+        "title": "ᐈ Sistemas contra Incendios Málaga |⇒ MELA",
+        "images": 11,
+        "logoCandidates": [
+          "https://www.sistemascontraincendiomalaga.es/fotos/787/mela.png?v=6487"
+        ],
+        "finalUrl": "https://www.sistemascontraincendiomalaga.es/"
+      },
+      "mobile_fail_evidence": [],
+      "confirmed_nonresponsive": false
+    },
+    {
+      "name": "Pinturas Gil y Gil",
+      "url": "https://gilygilpintores.es/",
+      "checked_at": "2026-10-13",
+      "desktop": {
+        "innerWidth": 1280,
+        "viewport": 1280,
+        "docWidth": 1280,
+        "bodyWidth": 1280,
+        "meta": "width=device-width, initial-scale=1.0",
+        "offenders": [],
+        "visibleNavLinks": 1,
+        "tinyTextElements": 0,
+        "title": "Pinturas Miguel | Pinturas en Málaga",
+        "images": 5,
+        "logoCandidates": [
+          "https://gilygilpintores.es/Media/pinturasmiguel/dayvo/PINTURAS%20GIL%20Y%20GIL%20-%20EMPRESA%20DE%20PINTORES-LOGO.jpg"
+        ],
+        "finalUrl": "https://gilygilpintores.es/"
+      },
+      "mobile": {
+        "innerWidth": 390,
+        "viewport": 390,
+        "docWidth": 390,
+        "bodyWidth": 390,
+        "meta": "width=device-width, initial-scale=1.0",
+        "offenders": [],
+        "visibleNavLinks": 1,
+        "tinyTextElements": 0,
+        "title": "Pinturas Miguel | Pinturas en Málaga",
+        "images": 5,
+        "logoCandidates": [
+          "https://gilygilpintores.es/Media/pinturasmiguel/dayvo/PINTURAS%20GIL%20Y%20GIL%20-%20EMPRESA%20DE%20PINTORES-LOGO.jpg"
+        ],
+        "finalUrl": "https://gilygilpintores.es/"
+      },
+      "mobile_fail_evidence": [],
+      "confirmed_nonresponsive": false
+    },
+    {
+      "name": "Rafael Bermúdez Abogado",
+      "url": "https://www.rafaelbermudezabogado.es/",
+      "checked_at": "2026-10-13",
+      "desktop": {
+        "innerWidth": 1280,
+        "viewport": 1280,
+        "docWidth": 1280,
+        "bodyWidth": 1280,
+        "meta": "width=device-width, initial-scale=1",
+        "offenders": [
+          {
+            "tag": "LI",
+            "cl": "",
+            "right": 1459,
+            "width": 666
+          },
+          {
+            "tag": "A",
+            "cl": "",
+            "right": 1459,
+            "width": 666
+          },
+          {
+            "tag": "IMG",
+            "cl": "",
+            "right": 1374,
+            "width": 496
+          },
+          {
+            "tag": "LI",
+            "cl": "",
+            "right": 2127,
+            "width": 666
+          },
+          {
+            "tag": "A",
+            "cl": "",
+            "right": 2127,
+            "width": 666
+          },
+          {
+            "tag": "IMG",
+            "cl": "",
+            "right": 2123,
+            "width": 659
+          }
+        ],
+        "visibleNavLinks": 12,
+        "tinyTextElements": 0,
+        "title": "Accidentes de Tráfico - Abogado Teatinos - Málaga",
+        "images": 8,
+        "logoCandidates": [
+          "https://image.jimcdn.com/app/cms/image/transf/dimension=1000x10000:format=png/path/s51fc66fd832426e8/image/i0e295c9ea5aeae25/version/1413474396/image.png"
+        ],
+        "finalUrl": "https://www.rafaelbermudezabogado.es/"
+      },
+      "mobile": {
+        "innerWidth": 390,
+        "viewport": 390,
+        "docWidth": 390,
+        "bodyWidth": 390,
+        "meta": "width=device-width, initial-scale=1",
+        "offenders": [
+          {
+            "tag": "DIV",
+            "cl": "jtpl-mobile-navigation navigation-colors navigation-colors--transparen",
+            "right": 0,
+            "width": 312
+          },
+          {
+            "tag": "DIV",
+            "cl": "jtpl-mobile-navigation-container",
+            "right": 0,
+            "width": 312
+          },
+          {
+            "tag": "DIV",
+            "cl": "",
+            "right": 0,
+            "width": 312
+          },
+          {
+            "tag": "DIV",
+            "cl": "j-nav-variant-nested",
+            "right": 0,
+            "width": 312
+          },
+          {
+            "tag": "UL",
+            "cl": "cc-nav-level-0 j-nav-level-0",
+            "right": 0,
+            "width": 312
+          },
+          {
+            "tag": "LI",
+            "cl": "jmd-nav__list-item-0 cc-nav-current j-nav-current jmd-nav__item--curre",
+            "right": 0,
+            "width": 312
+          },
+          {
+            "tag": "A",
+            "cl": "cc-nav-current j-nav-current jmd-nav__link--current",
+            "right": 0,
+            "width": 312
+          },
+          {
+            "tag": "LI",
+            "cl": "jmd-nav__list-item-0",
+            "right": 0,
+            "width": 312
+          }
+        ],
+        "visibleNavLinks": 2,
+        "tinyTextElements": 0,
+        "title": "Accidentes de Tráfico - Abogado Teatinos - Málaga",
+        "images": 8,
+        "logoCandidates": [
+          "https://image.jimcdn.com/app/cms/image/transf/dimension=640x10000:format=png/path/s51fc66fd832426e8/image/i0e295c9ea5aeae25/version/1413474396/image.png"
+        ],
+        "finalUrl": "https://www.rafaelbermudezabogado.es/"
+      },
+      "mobile_fail_evidence": [
+        "Elementos fuera de pantalla: 8"
+      ],
+      "confirmed_nonresponsive": true
+    },
+    {
+      "name": "Los Pintores Decorativos",
+      "url": "https://lospintoresdecorativos.jimdofree.com/",
+      "checked_at": "2026-10-13",
+      "desktop": {
+        "innerWidth": 1280,
+        "viewport": 1280,
+        "docWidth": 1280,
+        "bodyWidth": 1280,
+        "meta": "width=device-width, initial-scale=1",
+        "offenders": [
+          {
+            "tag": "DIV",
+            "cl": "VIpgJd-ZVi9od-aZ2wEe-wOHMyf",
+            "right": -896,
+            "width": 104
+          }
+        ],
+        "visibleNavLinks": 7,
+        "tinyTextElements": 0,
+        "title": "Pintores en Malaga Torremolinos Benalmadena - Pintor Malaga",
+        "images": 48,
+        "logoCandidates": [],
+        "finalUrl": "https://lospintoresdecorativos.jimdofree.com/"
+      },
+      "mobile": {
+        "innerWidth": 390,
+        "viewport": 390,
+        "docWidth": 390,
+        "bodyWidth": 390,
+        "meta": "width=device-width, initial-scale=1",
+        "offenders": [
+          {
+            "tag": "TABLE",
+            "cl": "",
+            "right": 594,
+            "width": 560
+          },
+          {
+            "tag": "TBODY",
+            "cl": "",
+            "right": 592,
+            "width": 556
+          },
+          {
+            "tag": "TR",
+            "cl": "",
+            "right": 592,
+            "width": 556
+          },
+          {
+            "tag": "TD",
+            "cl": "",
+            "right": 592,
+            "width": 556
+          },
+          {
+            "tag": "P",
+            "cl": "",
+            "right": 590,
+            "width": 552
+          },
+          {
+            "tag": "TR",
+            "cl": "",
+            "right": 592,
+            "width": 556
+          },
+          {
+            "tag": "TD",
+            "cl": "",
+            "right": 592,
+            "width": 556
+          },
+          {
+            "tag": "TABLE",
+            "cl": "",
+            "right": 590,
+            "width": 552
+          }
+        ],
+        "visibleNavLinks": 0,
+        "tinyTextElements": 0,
+        "title": "Pintores en Malaga Torremolinos Benalmadena - Pintor Malaga",
+        "images": 48,
+        "logoCandidates": [],
+        "finalUrl": "https://lospintoresdecorativos.jimdofree.com/"
+      },
+      "mobile_fail_evidence": [
+        "Elementos fuera de pantalla: 8"
+      ],
+      "confirmed_nonresponsive": true
+    },
+    {
+      "name": "Asociación Malagueña Fútbol Sala",
+      "url": "https://www.amfutbolsala.com/",
+      "checked_at": "2026-10-13",
+      "desktop": {
+        "innerWidth": 1280,
+        "viewport": 1280,
+        "docWidth": 1280,
+        "bodyWidth": 1280,
+        "meta": null,
+        "offenders": [],
+        "visibleNavLinks": 0,
+        "tinyTextElements": 1,
+        "title": "Asoc. Malagueña FS :: Inicio",
+        "images": 52,
+        "logoCandidates": [
+          ""
+        ],
+        "finalUrl": "https://www.amfutbolsala.com/mod/soccer/index.aspx"
+      },
+      "mobile": {
+        "innerWidth": 1005,
+        "viewport": 1005,
+        "docWidth": 1005,
+        "bodyWidth": 1005,
+        "meta": null,
+        "offenders": [],
+        "visibleNavLinks": 0,
+        "tinyTextElements": 1,
+        "title": "Asoc. Malagueña FS :: Inicio",
+        "images": 52,
+        "logoCandidates": [
+          ""
+        ],
+        "finalUrl": "https://www.amfutbolsala.com/mod/soccer/index.aspx"
+      },
+      "mobile_fail_evidence": [
+        "La anchura CSS móvil es 1005px para dispositivo de 390px (meta viewport fija o ausente)"
+      ],
+      "confirmed_nonresponsive": true
+    },
+    {
+      "name": "Tecnomampara",
+      "url": "https://tecnomampara.es/",
+      "checked_at": "2026-10-13",
+      "desktop": {
+        "innerWidth": 1280,
+        "viewport": 1280,
+        "docWidth": 1280,
+        "bodyWidth": 1280,
+        "meta": "width=device-width, initial-scale=1",
+        "offenders": [],
+        "visibleNavLinks": 5,
+        "tinyTextElements": 0,
+        "title": "Tecnomampara | Mamparas de Baño y Ducha a Medida en Málaga",
+        "images": 12,
+        "logoCandidates": [
+          "https://tecnomampara.es/wp-content/uploads/2025/08/Logo-tecnomampara.webp"
+        ],
+        "finalUrl": "https://tecnomampara.es/"
+      },
+      "mobile": {
+        "innerWidth": 390,
+        "viewport": 390,
+        "docWidth": 390,
+        "bodyWidth": 390,
+        "meta": "width=device-width, initial-scale=1",
+        "offenders": [],
+        "visibleNavLinks": 1,
+        "tinyTextElements": 0,
+        "title": "Tecnomampara | Mamparas de Baño y Ducha a Medida en Málaga",
+        "images": 12,
+        "logoCandidates": [
+          "https://tecnomampara.es/wp-content/uploads/2025/08/Logo-tecnomampara-768x288.webp"
+        ],
+        "finalUrl": "https://tecnomampara.es/"
+      },
+      "mobile_fail_evidence": [],
+      "confirmed_nonresponsive": false
+    },
+    {
+      "name": "SIER Tecnología",
+      "url": "https://www.sier.es/",
+      "checked_at": "2026-10-13",
+      "desktop": {
+        "innerWidth": 1280,
+        "viewport": 1280,
+        "docWidth": 1280,
+        "bodyWidth": 1280,
+        "meta": null,
+        "offenders": [],
+        "visibleNavLinks": 0,
+        "tinyTextElements": 0,
+        "title": "",
+        "images": 0,
+        "logoCandidates": [],
+        "finalUrl": "chrome-error://chromewebdata/"
+      },
+      "mobile": {
+        "innerWidth": 980,
+        "viewport": 980,
+        "docWidth": 980,
+        "bodyWidth": 980,
+        "meta": null,
+        "offenders": [],
+        "visibleNavLinks": 0,
+        "tinyTextElements": 0,
+        "title": "",
+        "images": 0,
+        "logoCandidates": [],
+        "finalUrl": "chrome-error://chromewebdata/"
+      },
+      "mobile_fail_evidence": [
+        "La anchura CSS móvil es 980px para dispositivo de 390px (meta viewport fija o ausente)"
+      ],
+      "confirmed_nonresponsive": true
+    },
+    {
+      "name": "OFIBURO",
+      "url": "https://ofiburo.com/",
+      "checked_at": "2026-10-13",
+      "desktop": {
+        "innerWidth": 1280,
+        "viewport": 1280,
+        "docWidth": 1280,
+        "bodyWidth": 1280,
+        "meta": "width=device-width,initial-scale=1",
+        "offenders": [],
+        "visibleNavLinks": 0,
+        "tinyTextElements": 0,
+        "title": "Just a moment...",
+        "images": 1,
+        "logoCandidates": [],
+        "finalUrl": "https://ofiburo.com/"
+      },
+      "mobile": {
+        "innerWidth": 390,
+        "viewport": 390,
+        "docWidth": 390,
+        "bodyWidth": 390,
+        "meta": "width=device-width, initial-scale=1",
+        "offenders": [],
+        "visibleNavLinks": 8,
+        "tinyTextElements": 0,
+        "title": "Inicio - OFI-BURO Mobiliario de Oficina | Mamparas Divisorias Málaga",
+        "images": 20,
+        "logoCandidates": [
+          "https://ofiburo.com/wp-content/uploads/2020/04/logo-removebg-preview.png",
+          "https://ofiburo.com/wp-content/uploads/2025/02/apple-touch-icon-152x152-1.png"
+        ],
+        "finalUrl": "https://ofiburo.com/"
+      },
+      "mobile_fail_evidence": [],
+      "confirmed_nonresponsive": false
+    },
+    {
+      "name": "Axar Parquet",
+      "url": "https://www.axarparquet.es/",
+      "checked_at": "2026-10-13",
+      "desktop": {
+        "innerWidth": 1280,
+        "viewport": 1280,
+        "docWidth": 1280,
+        "bodyWidth": 1280,
+        "meta": null,
+        "offenders": [],
+        "visibleNavLinks": 0,
+        "tinyTextElements": 0,
+        "title": "",
+        "images": 0,
+        "logoCandidates": [],
+        "finalUrl": "chrome-error://chromewebdata/"
+      },
+      "mobile": {
+        "innerWidth": 980,
+        "viewport": 980,
+        "docWidth": 980,
+        "bodyWidth": 980,
+        "meta": null,
+        "offenders": [],
+        "visibleNavLinks": 0,
+        "tinyTextElements": 0,
+        "title": "",
+        "images": 0,
+        "logoCandidates": [],
+        "finalUrl": "chrome-error://chromewebdata/"
+      },
+      "mobile_fail_evidence": [
+        "La anchura CSS móvil es 980px para dispositivo de 390px (meta viewport fija o ausente)"
+      ],
+      "confirmed_nonresponsive": true
+    },
+    {
+      "name": "Grupo Lagar",
+      "url": "https://www.grupolagar.es/",
+      "checked_at": "2026-10-13",
+      "desktop": {
+        "innerWidth": 1280,
+        "viewport": 1280,
+        "docWidth": 1280,
+        "bodyWidth": 1280,
+        "meta": "width=device-width, initial-scale=1.0",
+        "offenders": [],
+        "visibleNavLinks": 0,
+        "tinyTextElements": 0,
+        "title": "Error",
+        "images": 0,
+        "logoCandidates": [],
+        "finalUrl": "https://www.grupolagar.es/"
+      },
+      "mobile": {
+        "innerWidth": 390,
+        "viewport": 390,
+        "docWidth": 390,
+        "bodyWidth": 390,
+        "meta": "width=device-width, initial-scale=1.0",
+        "offenders": [],
+        "visibleNavLinks": 0,
+        "tinyTextElements": 0,
+        "title": "Error",
+        "images": 0,
+        "logoCandidates": [],
+        "finalUrl": "https://www.grupolagar.es/"
+      },
+      "mobile_fail_evidence": [],
+      "confirmed_nonresponsive": false
+    },
+    {
+      "name": "Toldos Luz y Color",
+      "url": "https://toldosluzycolor.es/",
+      "checked_at": "2026-10-13",
+      "desktop": {
+        "innerWidth": 1280,
+        "viewport": 1280,
+        "docWidth": 1280,
+        "bodyWidth": 1280,
+        "meta": "width=device-width, initial-scale=1",
+        "offenders": [
+          {
+            "tag": "DIV",
+            "cl": "swiper-slide swiper-slide-next",
+            "right": 1778,
+            "width": 559
+          },
+          {
+            "tag": "FIGURE",
+            "cl": "swiper-slide-inner",
+            "right": 1778,
+            "width": 559
+          },
+          {
+            "tag": "IMG",
+            "cl": "swiper-slide-image swiper-lazy swiper-lazy-loaded",
+            "right": 1778,
+            "width": 559
+          },
+          {
+            "tag": "DIV",
+            "cl": "swiper-slide",
+            "right": 2337,
+            "width": 559
+          },
+          {
+            "tag": "FIGURE",
+            "cl": "swiper-slide-inner",
+            "right": 2337,
+            "width": 559
+          },
+          {
+            "tag": "IMG",
+            "cl": "swiper-slide-image swiper-lazy",
+            "right": 2106,
+            "width": 97
+          },
+          {
+            "tag": "DIV",
+            "cl": "swiper-slide",
+            "right": 2896,
+            "width": 559
+          },
+          {
+            "tag": "FIGURE",
+            "cl": "swiper-slide-inner",
+            "right": 2896,
+            "width": 559
+          }
+        ],
+        "visibleNavLinks": 21,
+        "tinyTextElements": 0,
+        "title": "Toldos y persianas - Luz y Color Málaga - inicio",
+        "images": 30,
+        "logoCandidates": [
+          "https://toldosluzycolor.es/wp-content/uploads/2025/03/logodos.webp",
+          "https://toldosluzycolor.es/wp-content/uploads/2025/03/logodos.webp",
+          "https://toldosluzycolor.es/wp-content/uploads/2025/03/logodos.webp",
+          "https://toldosluzycolor.es/wp-content/uploads/2025/03/logodos.webp"
+        ],
+        "finalUrl": "https://toldosluzycolor.es/"
+      },
+      "mobile": {
+        "innerWidth": 390,
+        "viewport": 390,
+        "docWidth": 390,
+        "bodyWidth": 390,
+        "meta": "width=device-width, initial-scale=1",
+        "offenders": [
+          {
+            "tag": "DIV",
+            "cl": "elementor-image-carousel swiper-wrapper swiper-image-stretch",
+            "right": 51,
+            "width": 288
+          },
+          {
+            "tag": "DIV",
+            "cl": "swiper-slide swiper-slide-duplicate swiper-slide-prev",
+            "right": 51,
+            "width": 288
+          },
+          {
+            "tag": "FIGURE",
+            "cl": "swiper-slide-inner",
+            "right": 51,
+            "width": 288
+          },
+          {
+            "tag": "IMG",
+            "cl": "swiper-slide-image swiper-lazy swiper-lazy-loaded",
+            "right": 51,
+            "width": 288
+          },
+          {
+            "tag": "DIV",
+            "cl": "swiper-slide swiper-slide-next",
+            "right": 627,
+            "width": 288
+          },
+          {
+            "tag": "FIGURE",
+            "cl": "swiper-slide-inner",
+            "right": 627,
+            "width": 288
+          },
+          {
+            "tag": "IMG",
+            "cl": "swiper-slide-image swiper-lazy swiper-lazy-loaded",
+            "right": 627,
+            "width": 288
+          },
+          {
+            "tag": "DIV",
+            "cl": "swiper-slide",
+            "right": 915,
+            "width": 288
+          }
+        ],
+        "visibleNavLinks": 14,
+        "tinyTextElements": 0,
+        "title": "Toldos y persianas - Luz y Color Málaga - inicio",
+        "images": 30,
+        "logoCandidates": [
+          "https://toldosluzycolor.es/wp-content/uploads/2025/03/logodos.webp",
+          "https://toldosluzycolor.es/wp-content/uploads/2025/03/logodos.webp",
+          "https://toldosluzycolor.es/wp-content/uploads/2025/03/logodos.webp",
+          "https://toldosluzycolor.es/wp-content/uploads/2025/03/logodos.webp"
+        ],
+        "finalUrl": "https://toldosluzycolor.es/"
+      },
+      "mobile_fail_evidence": [
+        "Elementos fuera de pantalla: 8"
+      ],
+      "confirmed_nonresponsive": true
+    },
+    {
+      "name": "Toldos Río Mar",
+      "url": "https://riomarsystem.com/",
+      "checked_at": "2026-10-13",
+      "desktop": {
+        "innerWidth": 1280,
+        "viewport": 1280,
+        "docWidth": 1280,
+        "bodyWidth": 1280,
+        "meta": "width=device-width, initial-scale=1",
+        "offenders": [],
+        "visibleNavLinks": 11,
+        "tinyTextElements": 0,
+        "title": "Inicio | Persianas y toldos en Málaga | RIO MAR SYSTEM DESIGN SL",
+        "images": 24,
+        "logoCandidates": [
+          "https://riomarsystem.com/Media/riomarsystem/_Profiles/a2b46a85/f4e27c13/LOGO%20COMPLETO.png?v=638482986523393056"
+        ],
+        "finalUrl": "https://riomarsystem.com/"
+      },
+      "mobile": {
+        "innerWidth": 390,
+        "viewport": 390,
+        "docWidth": 390,
+        "bodyWidth": 390,
+        "meta": "width=device-width, initial-scale=1",
+        "offenders": [
+          {
+            "tag": "I",
+            "cl": "fa fa-phone",
+            "right": -69,
+            "width": 116
+          },
+          {
+            "tag": "I",
+            "cl": "fa fa-whatsapp",
+            "right": 25,
+            "width": 142
+          },
+          {
+            "tag": "I",
+            "cl": "fa fa-info",
+            "right": -101,
+            "width": 148
+          }
+        ],
+        "visibleNavLinks": 1,
+        "tinyTextElements": 0,
+        "title": "Inicio | Persianas y toldos en Málaga | RIO MAR SYSTEM DESIGN SL",
+        "images": 24,
+        "logoCandidates": [
+          "https://riomarsystem.com/Media/riomarsystem/_Profiles/a2b46a85/f4e27c13/LOGO%20COMPLETO.png?v=638482986523393056"
+        ],
+        "finalUrl": "https://riomarsystem.com/"
+      },
+      "mobile_fail_evidence": [
+        "Elementos fuera de pantalla: 3"
+      ],
+      "confirmed_nonresponsive": true
+    },
+    {
+      "name": "Muebles y Persianas Salmasol",
+      "url": "https://salmasol.com/",
+      "checked_at": "2026-10-13",
+      "desktop": {
+        "innerWidth": 1280,
+        "viewport": 1280,
+        "docWidth": 1280,
+        "bodyWidth": 1280,
+        "meta": "width=device-width, initial-scale=1.0",
+        "offenders": [],
+        "visibleNavLinks": 5,
+        "tinyTextElements": 0,
+        "title": "Salmasol | Construcción y Reformas en Costa del Sol",
+        "images": 22,
+        "logoCandidates": [],
+        "finalUrl": "https://salmasol.com/"
+      },
+      "mobile": {
+        "innerWidth": 390,
+        "viewport": 390,
+        "docWidth": 390,
+        "bodyWidth": 390,
+        "meta": "width=device-width, initial-scale=1.0",
+        "offenders": [
+          {
+            "tag": "DIV",
+            "cl": "elementskit-menu-container elementskit-menu-offcanvas-elements element",
+            "right": -40,
+            "width": 350
+          },
+          {
+            "tag": "UL",
+            "cl": "elementskit-navbar-nav elementskit-menu-po-center submenu-click-on-ico",
+            "right": -40,
+            "width": 350
+          },
+          {
+            "tag": "LI",
+            "cl": "menu-item menu-item-type-post_type menu-item-object-page menu-item-hom",
+            "right": -40,
+            "width": 350
+          },
+          {
+            "tag": "A",
+            "cl": "ekit-menu-nav-link active",
+            "right": -40,
+            "width": 350
+          },
+          {
+            "tag": "LI",
+            "cl": "menu-item menu-item-type-post_type menu-item-object-page menu-item-249",
+            "right": -40,
+            "width": 350
+          },
+          {
+            "tag": "A",
+            "cl": "ekit-menu-nav-link",
+            "right": -40,
+            "width": 350
+          },
+          {
+            "tag": "LI",
+            "cl": "menu-item menu-item-type-post_type menu-item-object-page menu-item-408",
+            "right": -40,
+            "width": 350
+          },
+          {
+            "tag": "A",
+            "cl": "ekit-menu-nav-link",
+            "right": -40,
+            "width": 350
+          }
+        ],
+        "visibleNavLinks": 6,
+        "tinyTextElements": 0,
+        "title": "Salmasol | Construcción y Reformas en Costa del Sol",
+        "images": 18,
+        "logoCandidates": [],
+        "finalUrl": "https://salmasol.com/"
+      },
+      "mobile_fail_evidence": [
+        "Elementos fuera de pantalla: 8"
+      ],
+      "confirmed_nonresponsive": true
+    },
+    {
+      "name": "Aluminios Chemasol",
+      "url": "https://www.chemasol.es/",
+      "checked_at": "2026-10-13",
+      "desktop": {
+        "innerWidth": 1280,
+        "viewport": 1280,
+        "docWidth": 1280,
+        "bodyWidth": 1280,
+        "meta": "initial-scale=1, minimum-scale=1, maximum-scale=5, viewport-fit=cover",
+        "offenders": [
+          {
+            "tag": "DIV",
+            "cl": "u_hamburger-drawer hamburger-drawer layout-drawer",
+            "right": 1728,
+            "width": 448
+          },
+          {
+            "tag": "DIV",
+            "cl": "u_1807823336 dmRespRow middleDrawerRow",
+            "right": 1728,
+            "width": 448
+          },
+          {
+            "tag": "DIV",
+            "cl": "dmRespColsWrapper",
+            "right": 1678,
+            "width": 348
+          },
+          {
+            "tag": "DIV",
+            "cl": "dmRespCol small-12 u_1900178052 medium-12 large-12",
+            "right": 1678,
+            "width": 348
+          },
+          {
+            "tag": "DIV",
+            "cl": "dmRespRow u_1331342989",
+            "right": 1728,
+            "width": 448
+          }
+        ],
+        "visibleNavLinks": 11,
+        "tinyTextElements": 0,
+        "title": "Inicio | Chemasol | Málaga",
+        "images": 46,
+        "logoCandidates": [
+          "",
+          ""
+        ],
+        "finalUrl": "https://www.chemasol.es/"
+      },
+      "mobile": {
+        "innerWidth": 390,
+        "viewport": 390,
+        "docWidth": 390,
+        "bodyWidth": 390,
+        "meta": "width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=5, viewport-fit=cover",
+        "offenders": [
+          {
+            "tag": "DIV",
+            "cl": "u_mobile-hamburger-drawer hamburger-drawer layout-drawer",
+            "right": 780,
+            "width": 390
+          },
+          {
+            "tag": "DIV",
+            "cl": "dmRespRow u_1841855579",
+            "right": 780,
+            "width": 390
+          },
+          {
+            "tag": "DIV",
+            "cl": "dmRespColsWrapper",
+            "right": 760,
+            "width": 350
+          },
+          {
+            "tag": "DIV",
+            "cl": "u_1522241733 dmRespCol small-12 medium-12 large-12",
+            "right": 760,
+            "width": 350
+          },
+          {
+            "tag": "DIV",
+            "cl": "u_1660692188 imageWidget align-center",
+            "right": 527,
+            "width": 117
+          },
+          {
+            "tag": "A",
+            "cl": "",
+            "right": 527,
+            "width": 117
+          },
+          {
+            "tag": "IMG",
+            "cl": "",
+            "right": 527,
+            "width": 117
+          },
+          {
+            "tag": "DIV",
+            "cl": "u_1533398674 dmRespRow middleDrawerRow",
+            "right": 780,
+            "width": 390
+          }
+        ],
+        "visibleNavLinks": 11,
+        "tinyTextElements": 0,
+        "title": "Inicio | Chemasol | Málaga",
+        "images": 47,
+        "logoCandidates": [
+          "",
+          ""
+        ],
+        "finalUrl": "https://www.chemasol.es/"
+      },
+      "mobile_fail_evidence": [
+        "Elementos fuera de pantalla: 8"
+      ],
+      "confirmed_nonresponsive": true
+    },
+    {
+      "name": "Acricema",
+      "url": "https://www.acricema.es/",
+      "checked_at": "2026-10-13",
+      "desktop": {
+        "innerWidth": 1280,
+        "viewport": 1280,
+        "docWidth": 1280,
+        "bodyWidth": 1280,
+        "meta": "initial-scale=1, minimum-scale=1, maximum-scale=5, viewport-fit=cover",
+        "offenders": [],
+        "visibleNavLinks": 5,
+        "tinyTextElements": 0,
+        "title": "Inicio",
+        "images": 21,
+        "logoCandidates": [
+          "https://dd-cdn.multiscreensite.com/1und1/1und1-logo8.svg"
+        ],
+        "finalUrl": "https://www.acricema.es/"
+      },
+      "mobile": {
+        "innerWidth": 390,
+        "viewport": 390,
+        "docWidth": 390,
+        "bodyWidth": 390,
+        "meta": "width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=5, viewport-fit=cover",
+        "offenders": [],
+        "visibleNavLinks": 0,
+        "tinyTextElements": 0,
+        "title": "Inicio",
+        "images": 21,
+        "logoCandidates": [
+          "https://le-cdn.website-editor.net/s/c0cfbcde878c427e9c76ca003f4546fe/dms3rep/multi/opt/Acricema+Banner+1+small-25fffdfa-640w.png?Expires=1794299293&Signature=NVv4HWRlfrWieJbzX4g29foTn-8QXN0WaHHyWH98P9NpvRAN82YCHMGzs7G8UdIL4oX4PmoLgiysghjppqyN6W~dzynrbBW63aW6gMHdmsS1aCtg-yM56k5W~BhHibWynQogKCFkeAYQtO3AF2TQVDPNT6ES5Jx4ryd8vtSFJzOJa30AKm2XFKZ~izCY-ri4svSRgLj28P2hv~ge1vsIpgsCYl3rCTQ7cFzbFiuQWaPNbCy9ls4Z~LrlGrc3-CTTjy6T3dfLVWZLb~GQzNRgDZn1DaCaSBHqnq173X9eV2TyLkhS3JJ4cQK1j0~kBkrPDf-hGEnzKfxpGR~n5c~7AA__&Key-Pair-Id=K2NXBXLF010TJW",
+          "https://dd-cdn.multiscreensite.com/1und1/1und1-logo8.svg"
+        ],
+        "finalUrl": "https://www.acricema.es/"
+      },
+      "mobile_fail_evidence": [],
+      "confirmed_nonresponsive": false
+    },
+    {
+      "name": "JMG Construcciones",
+      "url": "https://jmgconstrucciones.es/",
+      "checked_at": "2026-10-13",
+      "desktop": {
+        "innerWidth": 1280,
+        "viewport": 1280,
+        "docWidth": 1280,
+        "bodyWidth": 1280,
+        "meta": "width=device-width, initial-scale=1, viewport-fit=cover",
+        "offenders": [],
+        "visibleNavLinks": 4,
+        "tinyTextElements": 0,
+        "title": "JMG CONSTRUCCIONES",
+        "images": 18,
+        "logoCandidates": [
+          "https://files.123inventatuweb.com/47/e1/47e14d0a-90b2-41fd-a377-2f54061325ac.png"
+        ],
+        "finalUrl": "https://jmgconstrucciones.es/"
+      },
+      "mobile": {
+        "innerWidth": 390,
+        "viewport": 390,
+        "docWidth": 390,
+        "bodyWidth": 390,
+        "meta": "width=device-width, initial-scale=1, viewport-fit=cover",
+        "offenders": [],
+        "visibleNavLinks": 4,
+        "tinyTextElements": 0,
+        "title": "JMG CONSTRUCCIONES",
+        "images": 18,
+        "logoCandidates": [
+          "https://files.123inventatuweb.com/47/e1/47e14d0a-90b2-41fd-a377-2f54061325ac.png"
+        ],
+        "finalUrl": "https://jmgconstrucciones.es/"
+      },
+      "mobile_fail_evidence": [],
+      "confirmed_nonresponsive": false
+    },
+    {
+      "name": "Pinturas Sola",
+      "url": "https://www.pinturassola.com/",
+      "checked_at": "2026-10-13",
+      "desktop": {
+        "innerWidth": 1280,
+        "viewport": 1280,
+        "docWidth": 1280,
+        "bodyWidth": 1280,
+        "meta": null,
+        "offenders": [],
+        "visibleNavLinks": 0,
+        "tinyTextElements": 0,
+        "title": "",
+        "images": 0,
+        "logoCandidates": [],
+        "finalUrl": "chrome-error://chromewebdata/"
+      },
+      "mobile": {
+        "innerWidth": 980,
+        "viewport": 980,
+        "docWidth": 980,
+        "bodyWidth": 980,
+        "meta": null,
+        "offenders": [],
+        "visibleNavLinks": 0,
+        "tinyTextElements": 0,
+        "title": "",
+        "images": 0,
+        "logoCandidates": [],
+        "finalUrl": "chrome-error://chromewebdata/"
+      },
+      "mobile_fail_evidence": [
+        "La anchura CSS móvil es 980px para dispositivo de 390px (meta viewport fija o ausente)"
+      ],
+      "confirmed_nonresponsive": true
+    },
+    {
+      "name": "Muebles Almacenes Remar",
+      "url": "https://www.mueblesremar.es/",
+      "checked_at": "2026-10-13",
+      "desktop": {
+        "innerWidth": 1280,
+        "viewport": 1280,
+        "docWidth": 1280,
+        "bodyWidth": 1280,
+        "meta": null,
+        "offenders": [],
+        "visibleNavLinks": 0,
+        "tinyTextElements": 0,
+        "title": "",
+        "images": 0,
+        "logoCandidates": [],
+        "finalUrl": "chrome-error://chromewebdata/"
+      },
+      "mobile": {
+        "innerWidth": 980,
+        "viewport": 980,
+        "docWidth": 980,
+        "bodyWidth": 980,
+        "meta": null,
+        "offenders": [],
+        "visibleNavLinks": 0,
+        "tinyTextElements": 0,
+        "title": "",
+        "images": 0,
+        "logoCandidates": [],
+        "finalUrl": "chrome-error://chromewebdata/"
+      },
+      "mobile_fail_evidence": [
+        "La anchura CSS móvil es 980px para dispositivo de 390px (meta viewport fija o ausente)"
+      ],
+      "confirmed_nonresponsive": true
+    },
+    {
+      "name": "Toldos La Costa",
+      "url": "https://www.toldoslacosta.com/",
+      "checked_at": "2026-10-13",
+      "desktop": {
+        "innerWidth": 1280,
+        "viewport": 1280,
+        "docWidth": 1280,
+        "bodyWidth": 1280,
+        "meta": null,
+        "offenders": [],
+        "visibleNavLinks": 0,
+        "tinyTextElements": 0,
+        "title": "",
+        "images": 0,
+        "logoCandidates": [],
+        "finalUrl": "chrome-error://chromewebdata/"
+      },
+      "mobile": {
+        "innerWidth": 980,
+        "viewport": 980,
+        "docWidth": 980,
+        "bodyWidth": 980,
+        "meta": null,
+        "offenders": [],
+        "visibleNavLinks": 0,
+        "tinyTextElements": 0,
+        "title": "",
+        "images": 0,
+        "logoCandidates": [],
+        "finalUrl": "chrome-error://chromewebdata/"
+      },
+      "mobile_fail_evidence": [
+        "La anchura CSS móvil es 980px para dispositivo de 390px (meta viewport fija o ausente)"
+      ],
+      "confirmed_nonresponsive": true
+    },
+    {
+      "name": "Limpiezas Costa del Sol",
+      "url": "https://www.limpiezascostadelsol.es/",
+      "checked_at": "2026-10-13",
+      "desktop": {
+        "innerWidth": 1280,
+        "viewport": 1280,
+        "docWidth": 1280,
+        "bodyWidth": 1280,
+        "meta": "width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=1",
+        "offenders": [],
+        "visibleNavLinks": 0,
+        "tinyTextElements": 0,
+        "title": "Account Suspended",
+        "images": 0,
+        "logoCandidates": [],
+        "finalUrl": "https://www.limpiezascostadelsol.es/cgi-sys/suspendedpage.cgi"
+      },
+      "mobile": {
+        "innerWidth": 390,
+        "viewport": 390,
+        "docWidth": 390,
+        "bodyWidth": 390,
+        "meta": "width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=1",
+        "offenders": [],
+        "visibleNavLinks": 0,
+        "tinyTextElements": 0,
+        "title": "Account Suspended",
+        "images": 0,
+        "logoCandidates": [],
+        "finalUrl": "https://www.limpiezascostadelsol.es/cgi-sys/suspendedpage.cgi"
+      },
+      "mobile_fail_evidence": [],
+      "confirmed_nonresponsive": false
+    },
+    {
+      "name": "Persianas Roldán",
+      "url": "https://www.persianasroldan.com/",
+      "checked_at": "2026-10-13",
+      "desktop": {
+        "innerWidth": 1280,
+        "viewport": 1280,
+        "docWidth": 1280,
+        "bodyWidth": 1280,
+        "meta": null,
+        "offenders": [],
+        "visibleNavLinks": 0,
+        "tinyTextElements": 0,
+        "title": "",
+        "images": 0,
+        "logoCandidates": [],
+        "finalUrl": "chrome-error://chromewebdata/"
+      },
+      "mobile": {
+        "innerWidth": 980,
+        "viewport": 980,
+        "docWidth": 980,
+        "bodyWidth": 980,
+        "meta": null,
+        "offenders": [],
+        "visibleNavLinks": 0,
+        "tinyTextElements": 0,
+        "title": "",
+        "images": 0,
+        "logoCandidates": [],
+        "finalUrl": "chrome-error://chromewebdata/"
+      },
+      "mobile_fail_evidence": [
+        "La anchura CSS móvil es 980px para dispositivo de 390px (meta viewport fija o ausente)"
+      ],
+      "confirmed_nonresponsive": true
+    },
+    {
+      "name": "Empresa Ronda Cerrajeros",
+      "url": "https://www.cerrajeriaronda.es/",
+      "checked_at": "2026-10-13",
+      "desktop": {
+        "innerWidth": 1280,
+        "viewport": 1280,
+        "docWidth": 1280,
+        "bodyWidth": 1280,
+        "meta": null,
+        "offenders": [],
+        "visibleNavLinks": 0,
+        "tinyTextElements": 0,
+        "title": "",
+        "images": 0,
+        "logoCandidates": [],
+        "finalUrl": "chrome-error://chromewebdata/"
+      },
+      "mobile": {
+        "innerWidth": 980,
+        "viewport": 980,
+        "docWidth": 980,
+        "bodyWidth": 980,
+        "meta": null,
+        "offenders": [],
+        "visibleNavLinks": 0,
+        "tinyTextElements": 0,
+        "title": "",
+        "images": 0,
+        "logoCandidates": [],
+        "finalUrl": "chrome-error://chromewebdata/"
+      },
+      "mobile_fail_evidence": [
+        "La anchura CSS móvil es 980px para dispositivo de 390px (meta viewport fija o ausente)"
+      ],
+      "confirmed_nonresponsive": true
+    }
+  ]
+}
