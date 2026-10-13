@@ -5,13 +5,66 @@
     "laureanoramos.es",
     "logarze.es",
     "oryxobrasyservicios.com",
-    "bonelaintegra.com"
+    "bonelaintegra.com",
+    "reformarbella.es",
+    "esspora.com",
+    "mpmproject.es",
+    "daygarden.es",
+    "jardineando.es"
   ],
   "updated": "2026-10-13",
-  "names": [],
+  "names": [
+    "ReforMarbella",
+    "Esspora",
+    "MPM Obras & Reformas",
+    "DayGarden",
+    "Jardineando"
+  ],
   "osm_ids": [],
-  "emails": [],
-  "events": [],
+  "emails": [
+    "info@reformarbella.es",
+    "info@esspora.com",
+    "info@mpmproject.es",
+    "info@daygarden.es",
+    "info@jardineando.es"
+  ],
+  "events": [
+    {
+      "date": "2026-10-13",
+      "name": "ReforMarbella",
+      "domain": "reformarbella.es",
+      "email": "info@reformarbella.es",
+      "status": "demo_published_and_gmail_draft_created_no_send"
+    },
+    {
+      "date": "2026-10-13",
+      "name": "Esspora",
+      "domain": "esspora.com",
+      "email": "info@esspora.com",
+      "status": "demo_published_and_gmail_draft_created_no_send"
+    },
+    {
+      "date": "2026-10-13",
+      "name": "MPM Obras & Reformas",
+      "domain": "mpmproject.es",
+      "email": "info@mpmproject.es",
+      "status": "demo_published_and_gmail_draft_created_no_send"
+    },
+    {
+      "date": "2026-10-13",
+      "name": "DayGarden",
+      "domain": "daygarden.es",
+      "email": "info@daygarden.es",
+      "status": "demo_published_and_gmail_draft_created_no_send"
+    },
+    {
+      "date": "2026-10-13",
+      "name": "Jardineando",
+      "domain": "jardineando.es",
+      "email": "info@jardineando.es",
+      "status": "demo_published_and_gmail_draft_created_no_send"
+    }
+  ],
   "examined_osm_ids": [
     "node:4851165346",
     "node:9805703672"
