@@ -34,6 +34,14 @@ SITES=[
 ("Persianas Roldán","https://www.persianasroldan.com/"),
 ("Empresa Ronda Cerrajeros","https://www.cerrajeriaronda.es/"),
 ]
+SITES.extend([
+ ("Miguel y Porcel SL","https://miguelyporcelsl.es.tl/"),
+ ("Radiadores La Vega","https://radiadoreslavega.es.tl/"),
+ ("Rotana Gestores","https://rotanagestores.es.tl/"),
+ ("Instalaciones La Roca","https://instalacioneslaroca.es.tl/"),
+ ("Promociones Pered","https://promocionespered.es.tl/"),
+ ("Peluquería Luna","https://peluquerialuna.es.tl/"),
+])
 JS="""() => {
  const els=[...document.querySelectorAll('body *')].filter(e=>{const s=getComputedStyle(e),r=e.getBoundingClientRect();return s.display!=='none'&&s.visibility!=='hidden'&&r.width>50&&r.height>10});
  const offenders=els.filter(e=>{const r=e.getBoundingClientRect();return r.right>innerWidth+15||r.left< -20}).slice(0,8).map(e=>({tag:e.tagName,cl:String(e.className).slice(0,70),right:Math.round(e.getBoundingClientRect().right),width:Math.round(e.getBoundingClientRect().width)}));
