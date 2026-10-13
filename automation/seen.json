@@ -23,7 +23,8 @@
     "Cerrajería Galacho",
     "Grupo Sermafugas",
     "Sistemas Aluminio e Hierros Las Lagunas",
-    "Cero21 Construcciones"
+    "Cero21 Construcciones",
+    "Construcciones y Pinturas Dajesur"
   ],
   "osm_ids": [],
   "emails": [
@@ -36,7 +37,8 @@
     "cerrajeriagalacho@hotmail.com",
     "sermafugas@gmail.com",
     "sistemaluminiumlaslagunas@hotmail.com",
-    "cero21sl@hotmail.com"
+    "cero21sl@hotmail.com",
+    "dajesur@gmail.com"
   ],
   "events": [
     {
@@ -103,6 +105,13 @@
       "name": "Cero21 Construcciones",
       "email": "cero21sl@hotmail.com",
       "status": "three_page_demo_published_verified_gmail_draft_created_no_send"
+    },
+    {
+      "date": "2026-10-13",
+      "name": "Construcciones y Pinturas Dajesur",
+      "email": "dajesur@gmail.com",
+      "status": "demo_web_nueva_rehecha_pending_visual_QA_no_contact",
+      "website_inactive": "construccionesdajesur.com"
     }
   ],
   "examined_osm_ids": [
