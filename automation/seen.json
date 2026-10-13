@@ -18,7 +18,12 @@
     "Esspora",
     "MPM Obras & Reformas",
     "DayGarden",
-    "Jardineando"
+    "Jardineando",
+    "Málaga Costa Reformas Integrales",
+    "Cerrajería Galacho",
+    "Grupo Sermafugas",
+    "Sistemas Aluminio e Hierros Las Lagunas",
+    "Cero21 Construcciones"
   ],
   "osm_ids": [],
   "emails": [
@@ -26,7 +31,12 @@
     "info@esspora.com",
     "info@mpmproject.es",
     "info@daygarden.es",
-    "info@jardineando.es"
+    "info@jardineando.es",
+    "malagacostareformasintegrales@gmail.com",
+    "cerrajeriagalacho@hotmail.com",
+    "sermafugas@gmail.com",
+    "sistemaluminiumlaslagunas@hotmail.com",
+    "cero21sl@hotmail.com"
   ],
   "events": [
     {
@@ -63,6 +73,36 @@
       "domain": "jardineando.es",
       "email": "info@jardineando.es",
       "status": "demo_published_and_gmail_draft_created_no_send"
+    },
+    {
+      "date": "2026-10-13",
+      "name": "Málaga Costa Reformas Integrales",
+      "email": "malagacostareformasintegrales@gmail.com",
+      "status": "three_demo_pages_committed_publication_pending_email_draft_pending"
+    },
+    {
+      "date": "2026-10-13",
+      "name": "Cerrajería Galacho",
+      "email": "cerrajeriagalacho@hotmail.com",
+      "status": "three_demo_pages_committed_publication_pending_email_draft_pending"
+    },
+    {
+      "date": "2026-10-13",
+      "name": "Grupo Sermafugas",
+      "email": "sermafugas@gmail.com",
+      "status": "three_demo_pages_committed_publication_pending_email_draft_pending"
+    },
+    {
+      "date": "2026-10-13",
+      "name": "Sistemas Aluminio e Hierros Las Lagunas",
+      "email": "sistemaluminiumlaslagunas@hotmail.com",
+      "status": "three_demo_pages_committed_publication_pending_email_draft_pending"
+    },
+    {
+      "date": "2026-10-13",
+      "name": "Cero21 Construcciones",
+      "email": "cero21sl@hotmail.com",
+      "status": "three_demo_pages_committed_publication_pending_email_draft_pending"
     }
   ],
   "examined_osm_ids": [
