@@ -126,3 +126,31 @@ jobs:
       # Recheck model email and expanded corporate exclusions after updates.
       # Final: comprobar que incluso las candidatas descartadas se registran para no repetirlas.
       # Validación final antes del primer día laborable programado.
+
+  publish_on_push:
+    name: Publicar demos del repositorio
+    if: github.event_name == 'push'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/configure-pages@v5
+      - name: Preparar contenido Pages
+        run: |
+          mkdir -p _site
+          unzip -q -o site.zip -d _site
+          cp -R auto-demos _site/auto-demos
+          touch _site/.nojekyll
+          printf 'User-agent: *\nDisallow: /\n' > _site/robots.txt
+          test -f _site/index.html
+      - uses: actions/upload-pages-artifact@v4
+        with:
+          path: _site
+      - uses: actions/deploy-pages@v4
+        id: deployment
