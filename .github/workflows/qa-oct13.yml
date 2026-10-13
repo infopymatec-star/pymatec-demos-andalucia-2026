@@ -1,0 +1,26 @@
+name: QA visual de las cinco demos de octubre
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'auto-demos/**'
+      - 'automation/qa_oct13_sites.py'
+      - '.github/workflows/qa-oct13.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Instalar Chromium y Playwright
+        run: |
+          pip install playwright==1.55.0
+          python -m playwright install --with-deps chromium
+      - name: Inspeccionar cinco demos: 1280px y 390px, todas las fotos y menus
+        run: python automation/qa_oct13_sites.py
