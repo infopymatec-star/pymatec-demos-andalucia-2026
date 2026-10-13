@@ -1,0 +1,26 @@
+name: QA Sermafugas rediseño integral
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'auto-demos/grupo-sermafugas/**'
+      - 'automation/qa_sermafugas.py'
+      - '.github/workflows/qa-sermafugas.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  qa:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Instalar Chromium
+        run: |
+          python -m pip install playwright==1.55.0
+          python -m playwright install --with-deps chromium
+      - name: 'Auditar Sermafugas: 12 páginas, 390/1280, logo, fotos y enlaces'
+        run: python automation/qa_sermafugas.py
