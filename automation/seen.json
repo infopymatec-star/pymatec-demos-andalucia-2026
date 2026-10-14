@@ -26,7 +26,8 @@
     "multiserviciosmonge.es.tl",
     "ingenieriadelolivar.es.tl",
     "ceyve.es.tl",
-    "pulidosfc.es.tl"
+    "pulidosfc.es.tl",
+    "talleresluismarin.es.tl"
   ],
   "updated": "2026-10-14",
   "names": [
@@ -56,7 +57,8 @@
     "Multiservicios Monge",
     "Ingeniería del Olivar",
     "Construcciones CEYVE",
-    "Pulidos F.C."
+    "Pulidos F.C.",
+    "Talleres Luis Marín"
   ],
   "osm_ids": [
     "node:12857335247"
@@ -88,7 +90,8 @@
     "juanitomonge@hotmail.com",
     "raorpe@hotmail.com",
     "construccionesceyve@hotmail.com",
-    "cantifc@hotmail.com"
+    "cantifc@hotmail.com",
+    "taller_luismarin@hotmail.es"
   ],
   "events": [
     {
@@ -230,13 +233,14 @@
       "email": "fontgava2016@gmail.com",
       "domain": "fontgava.es.tl",
       "slug": "fontgava",
-      "status": "live_demo_accessible_gmail_draft_created_and_read_back_no_send_mobile_original_unverified",
+      "status": "demo_redisenada_y_borrador_no_calificado_para_campana_no_responsive",
       "price": "99 EUR + VAT",
       "source": "original business website",
       "draft_id": "r1725157017033214847",
       "message_id": "1a139eb1d67eadd6",
       "link": "https://infopymatec-star.github.io/pymatec-demos-andalucia-2026/auto-demos/fontgava/",
-      "qa_note": "GitHub Pages and email link verified, original mobile viewport failure not objectively established"
+      "qa_note": "GitHub Pages and email link verified, original mobile viewport failure not objectively established",
+      "qualification": "no responsive no acreditado según auditoría en 390px"
     },
     {
       "date": "2026-10-14",
@@ -349,6 +353,16 @@
       "message_id": "1a139eb57ca6d4bd",
       "link": "https://infopymatec-star.github.io/pymatec-demos-andalucia-2026/auto-demos/pulidos-fc/",
       "qa_note": "GitHub Pages and email link verified, original mobile viewport failure not objectively established"
+    },
+    {
+      "date": "2026-10-14",
+      "name": "Talleres Luis Marín",
+      "domain": "talleresluismarin.es.tl",
+      "email": "taller_luismarin@hotmail.es",
+      "slug": "talleres-luis-marin",
+      "status": "demo_individual_redisenada_publicacion_y_validacion_en_proceso_borrador_pendiente_no_send",
+      "price": "99 EUR + VAT",
+      "source": "web corporativa original"
     }
   ],
   "examined_osm_ids": [
