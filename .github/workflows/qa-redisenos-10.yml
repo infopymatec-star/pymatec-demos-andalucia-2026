@@ -14,6 +14,7 @@ on:
       - 'auto-demos/ingenieria-del-olivar/**'
       - 'auto-demos/construcciones-ceyve/**'
       - 'auto-demos/pulidos-fc/**'
+      - 'auto-demos/talleres-luis-marin/**'
       - 'automation/qa_redisenos_10.py'
       - '.github/workflows/qa-redisenos-10.yml'
 concurrency:
