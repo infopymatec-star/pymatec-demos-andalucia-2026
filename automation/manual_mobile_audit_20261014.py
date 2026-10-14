@@ -3,19 +3,12 @@ import json, pathlib, datetime, re
 from playwright.sync_api import sync_playwright
 
 SITES = [
-    ("carpinteria-sarria-contreras", "https://carpinteriasarriacontreras.es.tl/"),
-    ("fontgava", "https://fontgava.es.tl/"),
-    ("paco-lopez-multiservicios", "https://pacolopezmultiservicios.es.tl/"),
-    ("centro-master-fp", "https://master-fp.es.tl/"),
-    ("manolo-peluqueria-caballero", "https://lapeluqueriadelcaballero.es.tl/"),
-    ("aluminios-aludecor-marbella", "https://aludecormarbella.es.tl/"),
-    ("pipo-park-fuengirola", "https://pipopark.es.tl/"),
-    ("carmen-burgos-psicologia", "https://carmenburgos.es.tl/"),
-    ("aip-clima-sevilla", "https://aipclima.es.tl/"),
-    ("manitas-sevilla-salva", "https://manitassevilla.es.tl/"),
+ ("mg-montajes-e-instalaciones-cordoba", "https://montajesgeneralesmg.es.tl/"),
+ ("climacons-sevilla", "https://climacons.es.tl/"),
+ ("marmoles-rodriguez-carvajal", "https://marmolesrocar.es.tl/"),
 ]
-OUT = pathlib.Path("automation/reports/2026-10-14-mobile-audit.json")
-SHOTS = pathlib.Path("automation/reports/2026-10-14-mobile-shots")
+OUT = pathlib.Path("automation/reports/2026-10-14-mobile-audit-part2.json")
+SHOTS = pathlib.Path("automation/reports/2026-10-14-mobile-shots-part2")
 SHOTS.mkdir(parents=True, exist_ok=True)
 MEASURE = """() => {
  const w=window.innerWidth, doc=document.documentElement, body=document.body;
