@@ -59,11 +59,12 @@ with sync_playwright() as p:
       if checks["sourceWords"]:errs.append("Exposición indebida de auditoría de fuentes")
       for href in checks["links"]:
        if href.startswith("#") and not page.locator(href).count():errs.append("Ancla ausente "+href)
+      # Captura limpia ANTES de desplegar el menú; comprobar el menú después.
+      page.screenshot(path=str(OUT.parent/f"qa-{slug}-{view}.png"),full_page=True,timeout=30000)
       if view=="mobile":
        page.locator("details.mobile-menu summary").click(timeout=4000)
        if not page.locator("details.mobile-menu[open] .mob-links a").count():errs.append("Menú móvil no abre")
       record.update({"status":"pass" if not errs else "fail","metrics":checks,"errors":errs})
-      page.screenshot(path=str(OUT.parent/f"qa-{slug}-{view}.png"),full_page=True,timeout=30000)
       break
      except Exception as ex:
       record.update({"status":"error","errors":[type(ex).__name__+": "+str(ex)[:240]]})
