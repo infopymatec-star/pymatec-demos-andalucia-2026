@@ -15,9 +15,10 @@
     "instalacioneslaroca.es.tl",
     "radiadoreslavega.es.tl",
     "rotanagestores.es.tl",
-    "promocionespered.es.tl"
+    "promocionespered.es.tl",
+    "fontanerosestepona.es"
   ],
-  "updated": "2026-10-13",
+  "updated": "2026-10-14",
   "names": [
     "ReforMarbella",
     "Esspora",
@@ -34,9 +35,12 @@
     "Instalaciones La Roca",
     "Radiadores La Vega",
     "Rotana Gestores",
-    "Promociones Pered, S.L."
+    "Promociones Pered, S.L.",
+    "Fontanero Estepona Soluciones"
   ],
-  "osm_ids": [],
+  "osm_ids": [
+    "node:12857335247"
+  ],
   "emails": [
     "info@reformarbella.es",
     "info@esspora.com",
@@ -53,7 +57,8 @@
     "instalacioneslaroca@hotmail.com",
     "radiadoreslavega@live.com",
     "rotanagestores@gmail.com",
-    "promocionespered@hotmail.com"
+    "promocionespered@hotmail.com",
+    "info@fontanerosestepona.es"
   ],
   "events": [
     {
@@ -167,15 +172,26 @@
       "email": "promocionespered@hotmail.com",
       "status": "web_movil_no_responsive_verificada_demo_gitpages_qa_aprobada_borrador_gmail_sin_envio",
       "slug": "promociones-pered-redisenio"
+    },
+    {
+      "date": "2026-10-14",
+      "name": "Fontanero Estepona Soluciones",
+      "group": "web-mejorable",
+      "link": "https://infopymatec-star.github.io/pymatec-demos-andalucia-2026/auto-demos/fontanero-estepona-soluciones-ef963c/",
+      "email_status": "prepared-not-sent"
     }
   ],
   "examined_osm_ids": [
     "node:4851165346",
-    "node:9805703672"
+    "node:9805703672",
+    "node:12857335247"
   ],
-  "examined_domains": [],
+  "examined_domains": [
+    "fontanerosestepona.es"
+  ],
   "examined_names": [
     "Vidriokam",
-    "m&s Renovierungen · Vermietungen"
+    "m&s Renovierungen · Vermietungen",
+    "Fontanero Estepona Soluciones"
   ]
 }

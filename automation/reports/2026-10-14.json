@@ -1,0 +1,30 @@
+{
+  "date": "2026-10-14",
+  "city": "Estepona",
+  "target": 5,
+  "count": 1,
+  "status": "generated_pending_publication",
+  "entries": [
+    {
+      "name": "Fontanero Estepona Soluciones",
+      "website": "https://fontanerosestepona.es/",
+      "email": "info@fontanerosestepona.es",
+      "osm_id": "node:12857335247",
+      "city": "Estepona",
+      "source": "https://www.openstreetmap.org/node/12857335247",
+      "group": "web-mejorable",
+      "verified_url": "https://fontanerosestepona.es/",
+      "activity": "Fontanería",
+      "website_signals": [
+        "Ancho HTML fijo detectado"
+      ],
+      "folder": "fontanero-estepona-soluciones-ef963c",
+      "demo_url": "https://infopymatec-star.github.io/pymatec-demos-andalucia-2026/auto-demos/fontanero-estepona-soluciones-ef963c/"
+    }
+  ],
+  "limitations": [
+    "Fuente pública temporalmente no accesible: ReadTimeout"
+  ],
+  "commercial_emails_sent": 0,
+  "summary_email_sent": false
+}
