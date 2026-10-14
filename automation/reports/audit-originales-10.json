@@ -648,7 +648,7 @@
     {
       "name": "Talleres Luis Marín",
       "url": "https://talleresluismarin.es.tl/",
-      "mobileStatus": "unknown_error",
+      "mobileStatus": "no_responsive_verified",
       "httpStatus": 200,
       "evidence": [
         "layout viewport 980px en dispositivo de 390px (reescala)",
@@ -743,9 +743,10 @@
         ],
         "anchors": 3
       },
-      "error": "Page.screenshot: Timeout 18000ms exceeded.\nCall log:\n  - taking page screenshot\n  - waiting for fonts to load...\n"
+      "screenshotStatus": "no disponible: timeout al cargar fuentes externas",
+      "note": "Se recogieron mediciones objetivas del DOM antes de que caducara la captura. El error de la captura no invalida las mediciones de viewport y elementos."
     }
   ],
   "total": 11,
-  "confirmedCount": 9
+  "confirmedCount": 10
 }
