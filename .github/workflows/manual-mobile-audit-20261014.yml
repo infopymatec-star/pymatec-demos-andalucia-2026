@@ -1,4 +1,4 @@
-name: Auditoria movil manual diez empresas 2026-10-14
+name: Auditoria movil complementaria tres empresas 2026-10-14
 on:
   push:
     paths:
@@ -28,7 +28,7 @@ jobs:
         run: |
           git config user.name 'pymatec-bot'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add automation/reports/2026-10-14-mobile-audit.json
+          git add automation/reports/2026-10-14-mobile-audit-part2.json
           if ! git diff --cached --quiet; then
             git commit -m 'Informe de pruebas moviles reales diez empresas [skip ci]'
             git push origin HEAD:main
@@ -36,6 +36,6 @@ jobs:
       - uses: actions/upload-artifact@v4
         if: always()
         with:
-          name: pantallazos-diez-empresas-20261014
-          path: automation/reports/2026-10-14-mobile-shots/
+          name: pantallazos-tres-empresas-20261014
+          path: automation/reports/2026-10-14-mobile-shots-part2/
           retention-days: 7
