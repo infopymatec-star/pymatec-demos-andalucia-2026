@@ -219,13 +219,16 @@
       "email": "carpinteriasarria@gmail.com",
       "domain": "carpinteriasarriacontreras.es.tl",
       "slug": "carpinteria-sarria-contreras",
-      "status": "live_demo_accessible_gmail_draft_created_and_read_back_no_send_mobile_original_unverified",
-      "price": "99 EUR + VAT",
+      "status": "verified_original_nonresponsive_mob_390_premium_design_deployed_qa_playwright_pass_gmail_draft_readback_not_sent",
+      "price": "Desde 99 EUR + IVA por one-page básica",
       "source": "original business website",
       "draft_id": "r-501450959928029082",
-      "message_id": "1a139eb17032181c",
+      "message_id": "1a13a2a857de2b7d",
       "link": "https://infopymatec-star.github.io/pymatec-demos-andalucia-2026/auto-demos/carpinteria-sarria-contreras/",
-      "qa_note": "GitHub Pages and email link verified, original mobile viewport failure not objectively established"
+      "qa_note": "GitHub Pages and email link verified, original mobile viewport failure not objectively established",
+      "original_viewport_width": 1001,
+      "qualifies_nonresponsive": true,
+      "qa": "Chromium 390px y 1280px, imágenes naturalWidth>0 y no overflow (workflow 38556200015)"
     },
     {
       "date": "2026-10-14",
@@ -233,14 +236,16 @@
       "email": "fontgava2016@gmail.com",
       "domain": "fontgava.es.tl",
       "slug": "fontgava",
-      "status": "demo_redisenada_y_borrador_no_calificado_para_campana_no_responsive",
+      "status": "no_qualified_nonresponsive_redesign_reference_only_internal_draft_NO_SEND",
       "price": "99 EUR + VAT",
       "source": "original business website",
       "draft_id": "r1725157017033214847",
       "message_id": "1a139eb1d67eadd6",
       "link": "https://infopymatec-star.github.io/pymatec-demos-andalucia-2026/auto-demos/fontgava/",
       "qa_note": "GitHub Pages and email link verified, original mobile viewport failure not objectively established",
-      "qualification": "no responsive no acreditado según auditoría en 390px"
+      "qualification": "no responsive no acreditado según auditoría en 390px",
+      "qualifies_nonresponsive": false,
+      "note": "La página original no mostró fallos móviles suficientes en auditoría. Draft de Gmail marcado NO ENVIAR."
     },
     {
       "date": "2026-10-14",
@@ -248,13 +253,16 @@
       "email": "multiserviciospacolopez@gmail.com",
       "domain": "pacolopezmultiservicios.es.tl",
       "slug": "paco-lopez-multiservicios",
-      "status": "live_demo_accessible_gmail_draft_created_and_read_back_no_send_mobile_original_unverified",
-      "price": "99 EUR + VAT",
+      "status": "verified_original_nonresponsive_mob_390_premium_design_deployed_qa_playwright_pass_gmail_draft_readback_not_sent",
+      "price": "Desde 99 EUR + IVA por one-page básica",
       "source": "original business website",
       "draft_id": "r4105414798109742082",
-      "message_id": "1a139eb2380835cd",
+      "message_id": "1a13a2a91461da36",
       "link": "https://infopymatec-star.github.io/pymatec-demos-andalucia-2026/auto-demos/paco-lopez-multiservicios/",
-      "qa_note": "GitHub Pages and email link verified, original mobile viewport failure not objectively established"
+      "qa_note": "GitHub Pages and email link verified, original mobile viewport failure not objectively established",
+      "original_viewport_width": 980,
+      "qualifies_nonresponsive": true,
+      "qa": "Chromium 390px y 1280px, imágenes naturalWidth>0 y no overflow (workflow 38556200015)"
     },
     {
       "date": "2026-10-14",
@@ -262,13 +270,16 @@
       "email": "centromasterfp@gmail.com",
       "domain": "master-fp.es.tl",
       "slug": "centro-master-fp",
-      "status": "live_demo_accessible_gmail_draft_created_and_read_back_no_send_mobile_original_unverified",
-      "price": "99 EUR + VAT",
+      "status": "verified_original_nonresponsive_mob_390_premium_design_deployed_qa_playwright_pass_gmail_draft_readback_not_sent",
+      "price": "Desde 99 EUR + IVA por one-page básica",
       "source": "original business website",
       "draft_id": "r6661342087413283674",
-      "message_id": "1a139eb2bc21327c",
+      "message_id": "1a13a2a9f5b6a48b",
       "link": "https://infopymatec-star.github.io/pymatec-demos-andalucia-2026/auto-demos/centro-master-fp/",
-      "qa_note": "GitHub Pages and email link verified, original mobile viewport failure not objectively established"
+      "qa_note": "GitHub Pages and email link verified, original mobile viewport failure not objectively established",
+      "original_viewport_width": 1001,
+      "qualifies_nonresponsive": true,
+      "qa": "Chromium 390px y 1280px, imágenes naturalWidth>0 y no overflow (workflow 38556200015)"
     },
     {
       "date": "2026-10-14",
@@ -276,13 +287,16 @@
       "email": "aludecormarbella@hotmail.com",
       "domain": "aludecormarbella.es.tl",
       "slug": "aludecor-marbella",
-      "status": "live_demo_accessible_gmail_draft_created_and_read_back_no_send_mobile_original_unverified",
-      "price": "99 EUR + VAT",
+      "status": "verified_original_nonresponsive_mob_390_premium_design_deployed_qa_playwright_pass_gmail_draft_readback_not_sent",
+      "price": "Desde 99 EUR + IVA por one-page básica",
       "source": "original business website",
       "draft_id": "r-1123735801895852005",
-      "message_id": "1a139eb30dd95528",
+      "message_id": "1a13a2aab51537d9",
       "link": "https://infopymatec-star.github.io/pymatec-demos-andalucia-2026/auto-demos/aludecor-marbella/",
-      "qa_note": "GitHub Pages and email link verified, original mobile viewport failure not objectively established"
+      "qa_note": "GitHub Pages and email link verified, original mobile viewport failure not objectively established",
+      "original_viewport_width": 1001,
+      "qualifies_nonresponsive": true,
+      "qa": "Chromium 390px y 1280px, imágenes naturalWidth>0 y no overflow (workflow 38556200015)"
     },
     {
       "date": "2026-10-14",
@@ -290,13 +304,16 @@
       "email": "lapeluqueriadelcaballero@hotmail.com",
       "domain": "lapeluqueriadelcaballero.es.tl",
       "slug": "manolo-peluqueria-caballero",
-      "status": "live_demo_accessible_gmail_draft_created_and_read_back_no_send_mobile_original_unverified",
-      "price": "99 EUR + VAT",
+      "status": "verified_original_nonresponsive_mob_390_premium_design_deployed_qa_playwright_pass_gmail_draft_readback_not_sent",
+      "price": "Desde 99 EUR + IVA por one-page básica",
       "source": "original business website",
       "draft_id": "r-816674828250252046",
-      "message_id": "1a139eb38e5f02e0",
+      "message_id": "1a13a2ab6c250521",
       "link": "https://infopymatec-star.github.io/pymatec-demos-andalucia-2026/auto-demos/manolo-peluqueria-caballero/",
-      "qa_note": "GitHub Pages and email link verified, original mobile viewport failure not objectively established"
+      "qa_note": "GitHub Pages and email link verified, original mobile viewport failure not objectively established",
+      "original_viewport_width": 1216,
+      "qualifies_nonresponsive": true,
+      "qa": "Chromium 390px y 1280px, imágenes naturalWidth>0 y no overflow (workflow 38556200015)"
     },
     {
       "date": "2026-10-14",
@@ -304,13 +321,16 @@
       "email": "juanitomonge@hotmail.com",
       "domain": "multiserviciosmonge.es.tl",
       "slug": "multiservicios-monge",
-      "status": "live_demo_accessible_gmail_draft_created_and_read_back_no_send_mobile_original_unverified",
-      "price": "99 EUR + VAT",
+      "status": "verified_original_nonresponsive_mob_390_premium_design_deployed_qa_playwright_pass_gmail_draft_readback_not_sent",
+      "price": "Desde 99 EUR + IVA por one-page básica",
       "source": "original business website",
       "draft_id": "r-7367775750962333678",
-      "message_id": "1a139eb3f95e7ca8",
+      "message_id": "1a13a2ac43f1aeca",
       "link": "https://infopymatec-star.github.io/pymatec-demos-andalucia-2026/auto-demos/multiservicios-monge/",
-      "qa_note": "GitHub Pages and email link verified, original mobile viewport failure not objectively established"
+      "qa_note": "GitHub Pages and email link verified, original mobile viewport failure not objectively established",
+      "original_viewport_width": 980,
+      "qualifies_nonresponsive": true,
+      "qa": "Chromium 390px y 1280px, imágenes naturalWidth>0 y no overflow (workflow 38556200015)"
     },
     {
       "date": "2026-10-14",
@@ -318,13 +338,16 @@
       "email": "raorpe@hotmail.com",
       "domain": "ingenieriadelolivar.es.tl",
       "slug": "ingenieria-del-olivar",
-      "status": "live_demo_accessible_gmail_draft_created_and_read_back_no_send_mobile_original_unverified",
-      "price": "99 EUR + VAT",
+      "status": "verified_original_nonresponsive_mob_390_premium_design_deployed_qa_playwright_pass_gmail_draft_readback_not_sent",
+      "price": "Desde 99 EUR + IVA por one-page básica",
       "source": "original business website",
       "draft_id": "r-275914355988199662",
-      "message_id": "1a139eb4aaef4e22",
+      "message_id": "1a13a2ad53f236b9",
       "link": "https://infopymatec-star.github.io/pymatec-demos-andalucia-2026/auto-demos/ingenieria-del-olivar/",
-      "qa_note": "GitHub Pages and email link verified, original mobile viewport failure not objectively established"
+      "qa_note": "GitHub Pages and email link verified, original mobile viewport failure not objectively established",
+      "original_viewport_width": 980,
+      "qualifies_nonresponsive": true,
+      "qa": "Chromium 390px y 1280px, imágenes naturalWidth>0 y no overflow (workflow 38556200015)"
     },
     {
       "date": "2026-10-14",
@@ -332,13 +355,16 @@
       "email": "construccionesceyve@hotmail.com",
       "domain": "ceyve.es.tl",
       "slug": "construcciones-ceyve",
-      "status": "live_demo_accessible_gmail_draft_created_and_read_back_no_send_mobile_original_unverified",
-      "price": "99 EUR + VAT",
+      "status": "verified_original_nonresponsive_mob_390_premium_design_deployed_qa_playwright_pass_gmail_draft_readback_not_sent",
+      "price": "Desde 99 EUR + IVA por one-page básica",
       "source": "original business website",
       "draft_id": "r6397535884012566145",
-      "message_id": "1a139eb507f98b25",
+      "message_id": "1a13a2ade2d388e1",
       "link": "https://infopymatec-star.github.io/pymatec-demos-andalucia-2026/auto-demos/construcciones-ceyve/",
-      "qa_note": "GitHub Pages and email link verified, original mobile viewport failure not objectively established"
+      "qa_note": "GitHub Pages and email link verified, original mobile viewport failure not objectively established",
+      "original_viewport_width": 1005,
+      "qualifies_nonresponsive": true,
+      "qa": "Chromium 390px y 1280px, imágenes naturalWidth>0 y no overflow (workflow 38556200015)"
     },
     {
       "date": "2026-10-14",
@@ -346,13 +372,16 @@
       "email": "cantifc@hotmail.com",
       "domain": "pulidosfc.es.tl",
       "slug": "pulidos-fc",
-      "status": "live_demo_accessible_gmail_draft_created_and_read_back_no_send_mobile_original_unverified",
-      "price": "99 EUR + VAT",
+      "status": "verified_original_nonresponsive_mob_390_premium_design_deployed_qa_playwright_pass_gmail_draft_readback_not_sent",
+      "price": "Desde 99 EUR + IVA por one-page básica",
       "source": "original business website",
       "draft_id": "r-2505218919421013058",
-      "message_id": "1a139eb57ca6d4bd",
+      "message_id": "1a13a2aed8d9354e",
       "link": "https://infopymatec-star.github.io/pymatec-demos-andalucia-2026/auto-demos/pulidos-fc/",
-      "qa_note": "GitHub Pages and email link verified, original mobile viewport failure not objectively established"
+      "qa_note": "GitHub Pages and email link verified, original mobile viewport failure not objectively established",
+      "original_viewport_width": 1001,
+      "qualifies_nonresponsive": true,
+      "qa": "Chromium 390px y 1280px, imágenes naturalWidth>0 y no overflow (workflow 38556200015)"
     },
     {
       "date": "2026-10-14",
@@ -360,9 +389,14 @@
       "domain": "talleresluismarin.es.tl",
       "email": "taller_luismarin@hotmail.es",
       "slug": "talleres-luis-marin",
-      "status": "demo_individual_redisenada_publicacion_y_validacion_en_proceso_borrador_pendiente_no_send",
-      "price": "99 EUR + VAT",
-      "source": "web corporativa original"
+      "status": "verified_original_nonresponsive_mob_390_premium_design_deployed_qa_playwright_pass_gmail_draft_readback_not_sent",
+      "price": "Desde 99 EUR + IVA por one-page básica",
+      "source": "web corporativa original",
+      "original_viewport_width": 980,
+      "qualifies_nonresponsive": true,
+      "draft_id": "r1601786121975468608",
+      "message_id": "1a13a2af81a9cf1c",
+      "qa": "Chromium 390px y 1280px, imágenes naturalWidth>0 y no overflow (workflow 38556200015)"
     }
   ],
   "examined_osm_ids": [
