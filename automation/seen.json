@@ -16,7 +16,17 @@
     "radiadoreslavega.es.tl",
     "rotanagestores.es.tl",
     "promocionespered.es.tl",
-    "fontanerosestepona.es"
+    "fontanerosestepona.es",
+    "carpinteriasarriacontreras.es.tl",
+    "fontgava.es.tl",
+    "pacolopezmultiservicios.es.tl",
+    "master-fp.es.tl",
+    "aludecormarbella.es.tl",
+    "lapeluqueriadelcaballero.es.tl",
+    "multiserviciosmonge.es.tl",
+    "ingenieriadelolivar.es.tl",
+    "ceyve.es.tl",
+    "pulidosfc.es.tl"
   ],
   "updated": "2026-10-14",
   "names": [
@@ -36,7 +46,17 @@
     "Radiadores La Vega",
     "Rotana Gestores",
     "Promociones Pered, S.L.",
-    "Fontanero Estepona Soluciones"
+    "Fontanero Estepona Soluciones",
+    "Carpintería Sarria Contreras",
+    "Fontgava",
+    "Paco López Multiservicios",
+    "Centro Máster FP",
+    "Aludecor Marbella",
+    "Manolo La Peluquería del Caballero",
+    "Multiservicios Monge",
+    "Ingeniería del Olivar",
+    "Construcciones CEYVE",
+    "Pulidos F.C."
   ],
   "osm_ids": [
     "node:12857335247"
@@ -58,7 +78,17 @@
     "radiadoreslavega@live.com",
     "rotanagestores@gmail.com",
     "promocionespered@hotmail.com",
-    "info@fontanerosestepona.es"
+    "info@fontanerosestepona.es",
+    "carpinteriasarria@gmail.com",
+    "fontgava2016@gmail.com",
+    "multiserviciospacolopez@gmail.com",
+    "centromasterfp@gmail.com",
+    "aludecormarbella@hotmail.com",
+    "lapeluqueriadelcaballero@hotmail.com",
+    "juanitomonge@hotmail.com",
+    "raorpe@hotmail.com",
+    "construccionesceyve@hotmail.com",
+    "cantifc@hotmail.com"
   ],
   "events": [
     {
@@ -179,6 +209,106 @@
       "group": "web-mejorable",
       "link": "https://infopymatec-star.github.io/pymatec-demos-andalucia-2026/auto-demos/fontanero-estepona-soluciones-ef963c/",
       "email_status": "prepared-not-sent"
+    },
+    {
+      "date": "2026-10-14",
+      "name": "Carpintería Sarria Contreras",
+      "email": "carpinteriasarria@gmail.com",
+      "domain": "carpinteriasarriacontreras.es.tl",
+      "slug": "carpinteria-sarria-contreras",
+      "status": "one_page_demo_committed_github_pages_deploy_pending_mobile_original_not_proven_draft_pending_no_send",
+      "price": "99 EUR + VAT",
+      "source": "original business website"
+    },
+    {
+      "date": "2026-10-14",
+      "name": "Fontgava",
+      "email": "fontgava2016@gmail.com",
+      "domain": "fontgava.es.tl",
+      "slug": "fontgava",
+      "status": "one_page_demo_committed_github_pages_deploy_pending_mobile_original_not_proven_draft_pending_no_send",
+      "price": "99 EUR + VAT",
+      "source": "original business website"
+    },
+    {
+      "date": "2026-10-14",
+      "name": "Paco López Multiservicios",
+      "email": "multiserviciospacolopez@gmail.com",
+      "domain": "pacolopezmultiservicios.es.tl",
+      "slug": "paco-lopez-multiservicios",
+      "status": "one_page_demo_committed_github_pages_deploy_pending_mobile_original_not_proven_draft_pending_no_send",
+      "price": "99 EUR + VAT",
+      "source": "original business website"
+    },
+    {
+      "date": "2026-10-14",
+      "name": "Centro Máster FP",
+      "email": "centromasterfp@gmail.com",
+      "domain": "master-fp.es.tl",
+      "slug": "centro-master-fp",
+      "status": "one_page_demo_committed_github_pages_deploy_pending_mobile_original_not_proven_draft_pending_no_send",
+      "price": "99 EUR + VAT",
+      "source": "original business website"
+    },
+    {
+      "date": "2026-10-14",
+      "name": "Aludecor Marbella",
+      "email": "aludecormarbella@hotmail.com",
+      "domain": "aludecormarbella.es.tl",
+      "slug": "aludecor-marbella",
+      "status": "one_page_demo_committed_github_pages_deploy_pending_mobile_original_not_proven_draft_pending_no_send",
+      "price": "99 EUR + VAT",
+      "source": "original business website"
+    },
+    {
+      "date": "2026-10-14",
+      "name": "Manolo La Peluquería del Caballero",
+      "email": "lapeluqueriadelcaballero@hotmail.com",
+      "domain": "lapeluqueriadelcaballero.es.tl",
+      "slug": "manolo-peluqueria-caballero",
+      "status": "one_page_demo_committed_github_pages_deploy_pending_mobile_original_not_proven_draft_pending_no_send",
+      "price": "99 EUR + VAT",
+      "source": "original business website"
+    },
+    {
+      "date": "2026-10-14",
+      "name": "Multiservicios Monge",
+      "email": "juanitomonge@hotmail.com",
+      "domain": "multiserviciosmonge.es.tl",
+      "slug": "multiservicios-monge",
+      "status": "one_page_demo_committed_github_pages_deploy_pending_mobile_original_not_proven_draft_pending_no_send",
+      "price": "99 EUR + VAT",
+      "source": "original business website"
+    },
+    {
+      "date": "2026-10-14",
+      "name": "Ingeniería del Olivar",
+      "email": "raorpe@hotmail.com",
+      "domain": "ingenieriadelolivar.es.tl",
+      "slug": "ingenieria-del-olivar",
+      "status": "one_page_demo_committed_github_pages_deploy_pending_mobile_original_not_proven_draft_pending_no_send",
+      "price": "99 EUR + VAT",
+      "source": "original business website"
+    },
+    {
+      "date": "2026-10-14",
+      "name": "Construcciones CEYVE",
+      "email": "construccionesceyve@hotmail.com",
+      "domain": "ceyve.es.tl",
+      "slug": "construcciones-ceyve",
+      "status": "one_page_demo_committed_github_pages_deploy_pending_mobile_original_not_proven_draft_pending_no_send",
+      "price": "99 EUR + VAT",
+      "source": "original business website"
+    },
+    {
+      "date": "2026-10-14",
+      "name": "Pulidos F.C.",
+      "email": "cantifc@hotmail.com",
+      "domain": "pulidosfc.es.tl",
+      "slug": "pulidos-fc",
+      "status": "one_page_demo_committed_github_pages_deploy_pending_mobile_original_not_proven_draft_pending_no_send",
+      "price": "99 EUR + VAT",
+      "source": "original business website"
     }
   ],
   "examined_osm_ids": [
