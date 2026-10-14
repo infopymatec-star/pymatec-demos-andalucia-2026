@@ -7,7 +7,7 @@ from playwright.sync_api import sync_playwright
 
 SLUGS = ["carpinteria-sarria-contreras","fontgava","paco-lopez-multiservicios",
 "centro-master-fp","aludecor-marbella","manolo-peluqueria-caballero",
-"multiservicios-monge","ingenieria-del-olivar","construcciones-ceyve","pulidos-fc"]
+"multiservicios-monge","ingenieria-del-olivar","construcciones-ceyve","pulidos-fc","talleres-luis-marin"]
 BASE = "https://infopymatec-star.github.io/pymatec-demos-andalucia-2026/auto-demos/"
 OUT = Path(__file__).resolve().parents[1]/"automation"/"reports"/"qa-redisenos-10.json"
 OUT.parent.mkdir(parents=True,exist_ok=True)
