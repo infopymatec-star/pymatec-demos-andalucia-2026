@@ -1,0 +1,64 @@
+name: QA visual de las diez webs rediseñadas
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'auto-demos/_assets/studio-v2.css'
+      - 'auto-demos/carpinteria-sarria-contreras/**'
+      - 'auto-demos/fontgava/**'
+      - 'auto-demos/paco-lopez-multiservicios/**'
+      - 'auto-demos/centro-master-fp/**'
+      - 'auto-demos/aludecor-marbella/**'
+      - 'auto-demos/manolo-peluqueria-caballero/**'
+      - 'auto-demos/multiservicios-monge/**'
+      - 'auto-demos/ingenieria-del-olivar/**'
+      - 'auto-demos/construcciones-ceyve/**'
+      - 'auto-demos/pulidos-fc/**'
+      - 'automation/qa_redisenos_10.py'
+      - '.github/workflows/qa-redisenos-10.yml'
+concurrency:
+  group: qa-redisenos-10
+  cancel-in-progress: true
+permissions:
+  contents: write
+jobs:
+  qa-live:
+    runs-on: ubuntu-latest
+    timeout-minutes: 28
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Instalar Playwright y Chromium
+        run: |
+          python -m pip install playwright==1.55.0
+          python -m playwright install --with-deps chromium
+      - name: Verificar veinte vistas y todas las fotos publicadas
+        id: test
+        continue-on-error: true
+        run: python automation/qa_redisenos_10.py
+      - name: Guardar informe y capturas
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: qa-redisenos-10
+          path: |
+            automation/reports/qa-redisenos-10.json
+            automation/reports/qa-*-mobile.png
+            automation/reports/qa-*-desktop.png
+          if-no-files-found: warn
+      - name: Conservar informe QA en repositorio
+        if: always()
+        run: |
+          if [ -f automation/reports/qa-redisenos-10.json ]; then
+            git config user.name 'pymatec-qa-bot'
+            git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+            git add automation/reports/qa-redisenos-10.json
+            git commit -m "QA visual de 10 demos: informe Playwright [skip ci]" || true
+            git pull --rebase origin main || true
+            git push origin HEAD:main || true
+          fi
+      - name: Marcar error cuando algo no supere el QA
+        if: steps.test.outcome == 'failure'
+        run: exit 1
