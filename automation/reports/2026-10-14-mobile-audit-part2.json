@@ -1,0 +1,627 @@
+{
+  "run_date": "2026-10-14",
+  "auditor": "Playwright Chromium browser",
+  "sites": [
+    {
+      "slug": "mg-montajes-e-instalaciones-cordoba",
+      "url": "https://montajesgeneralesmg.es.tl/",
+      "checks": {
+        "390": {
+          "windowWidth": 390,
+          "scrollWidth": 1071,
+          "bodyScrollWidth": 1066,
+          "hasViewportMeta": false,
+          "spillElements": [
+            {
+              "tag": "TABLE",
+              "text": " MG \"MONTAJES E INSTALACIONES\" Navegación Home Contacto Home",
+              "left": 5,
+              "right": 1071,
+              "width": 1066
+            },
+            {
+              "tag": "TABLE",
+              "text": " MG \"MONTAJES E INSTALACIONES\" Navegación Home Contacto Home",
+              "left": 5,
+              "right": 1068,
+              "width": 1063
+            },
+            {
+              "tag": "TABLE",
+              "text": " MG \"MONTAJES E INSTALACIONES\"",
+              "left": 5,
+              "right": 926,
+              "width": 921
+            },
+            {
+              "tag": "TABLE",
+              "text": "Navegación Home Contacto Home MONTAJES INSTALACIONES EMPRESA",
+              "left": 5,
+              "right": 1068,
+              "width": 1063
+            },
+            {
+              "tag": "TABLE",
+              "text": " Home MONTAJES INSTALACIONES EMPRESA DEDICADA AL SECTOR DE L",
+              "left": 190,
+              "right": 758,
+              "width": 568
+            },
+            {
+              "tag": "TABLE",
+              "text": " Home MONTAJES INSTALACIONES EMPRESA DEDICADA AL SECTOR DE L",
+              "left": 190,
+              "right": 758,
+              "width": 568
+            },
+            {
+              "tag": "TABLE",
+              "text": " Home",
+              "left": 190,
+              "right": 758,
+              "width": 568
+            },
+            {
+              "tag": "TABLE",
+              "text": " MONTAJES INSTALACIONES EMPRESA DEDICADA AL SECTOR DE LAS IN",
+              "left": 190,
+              "right": 758,
+              "width": 568
+            },
+            {
+              "tag": "TABLE",
+              "text": " MONTAJES INSTALACIONES EMPRESA DEDICADA AL SECTOR DE LAS IN",
+              "left": 190,
+              "right": 758,
+              "width": 568
+            },
+            {
+              "tag": "DIV",
+              "text": " MONTAJES INSTALACIONES EMPRESA DEDICADA AL SECTOR DE LAS IN",
+              "left": 207,
+              "right": 741,
+              "width": 534
+            },
+            {
+              "tag": "IMG",
+              "text": "",
+              "left": 377,
+              "right": 570,
+              "width": 193
+            },
+            {
+              "tag": "DIV",
+              "text": " ",
+              "left": 207,
+              "right": 741,
+              "width": 534
+            },
+            {
+              "tag": "IMG",
+              "text": "",
+              "left": 289,
+              "right": 514,
+              "width": 225
+            },
+            {
+              "tag": "IMG",
+              "text": "",
+              "left": 514,
+              "right": 659,
+              "width": 145
+            },
+            {
+              "tag": "IMG",
+              "text": "",
+              "left": 207,
+              "right": 427,
+              "width": 220
+            },
+            {
+              "tag": "IMG",
+              "text": "",
+              "left": 427,
+              "right": 644,
+              "width": 217
+            },
+            {
+              "tag": "IMG",
+              "text": "",
+              "left": 207,
+              "right": 438,
+              "width": 231
+            },
+            {
+              "tag": "IMG",
+              "text": "",
+              "left": 438,
+              "right": 685,
+              "width": 247
+            }
+          ],
+          "images": [
+            {
+              "src": "https://theme.webme.com/designs/iceblue/images/navi_ende.gif",
+              "loaded": true,
+              "naturalWidth": 185
+            },
+            {
+              "src": "https://img.webme.com/pic/m/montajesgeneralesmg/mgazulgrisok.jpg",
+              "loaded": true,
+              "naturalWidth": 225
+            },
+            {
+              "src": "https://img.webme.com/pic/m/montajesgeneralesmg/apieco-2.png",
+              "loaded": true,
+              "naturalWidth": 400
+            },
+            {
+              "src": "https://img.webme.com/pic/m/montajesgeneralesmg/escudo.jpg",
+              "loaded": true,
+              "naturalWidth": 400
+            },
+            {
+              "src": "https://img.webme.com/pic/m/montajesgeneralesmg/2.jpg",
+              "loaded": true,
+              "naturalWidth": 400
+            },
+            {
+              "src": "https://img.webme.com/pic/m/montajesgeneralesmg/3.jpg",
+              "loaded": true,
+              "naturalWidth": 400
+            },
+            {
+              "src": "https://img.webme.com/pic/m/montajesgeneralesmg/6.jpg",
+              "loaded": true,
+              "naturalWidth": 400
+            },
+            {
+              "src": "https://img.webme.com/pic/m/montajesgeneralesmg/4.jpg",
+              "loaded": true,
+              "naturalWidth": 400
+            },
+            {
+              "src": "https://img.webme.com/pic/m/montajesgeneralesmg/escudo.jpg",
+              "loaded": true,
+              "naturalWidth": 400
+            },
+            {
+              "src": "https://img.webme.com/pic/m/montajesgeneralesmg/ingenieria488.jpg",
+              "loaded": true,
+              "naturalWidth": 400
+            },
+            {
+              "src": "https://img.webme.com/pic/m/montajesgeneralesmg/ingenieria.jpg",
+              "loaded": true,
+              "naturalWidth": 400
+            },
+            {
+              "src": "https://img.webme.com/pic/m/montajesgeneralesmg/ingenieria1212.jpg",
+              "loaded": true,
+              "naturalWidth": 256
+            }
+          ],
+          "headings": [
+            "tiempo en Córdoba"
+          ],
+          "title": "MG \"MONTAJES E INSTALACIONES\" - Home",
+          "httpStatus": 200
+        },
+        "1280": {
+          "windowWidth": 1280,
+          "scrollWidth": 1280,
+          "bodyScrollWidth": 1270,
+          "hasViewportMeta": false,
+          "spillElements": [],
+          "images": [
+            {
+              "src": "https://theme.webme.com/designs/iceblue/images/navi_ende.gif",
+              "loaded": true,
+              "naturalWidth": 185
+            },
+            {
+              "src": "https://img.webme.com/pic/m/montajesgeneralesmg/mgazulgrisok.jpg",
+              "loaded": true,
+              "naturalWidth": 225
+            },
+            {
+              "src": "https://img.webme.com/pic/m/montajesgeneralesmg/apieco-2.png",
+              "loaded": true,
+              "naturalWidth": 400
+            },
+            {
+              "src": "https://img.webme.com/pic/m/montajesgeneralesmg/escudo.jpg",
+              "loaded": true,
+              "naturalWidth": 400
+            },
+            {
+              "src": "https://img.webme.com/pic/m/montajesgeneralesmg/2.jpg",
+              "loaded": true,
+              "naturalWidth": 400
+            },
+            {
+              "src": "https://img.webme.com/pic/m/montajesgeneralesmg/3.jpg",
+              "loaded": true,
+              "naturalWidth": 400
+            },
+            {
+              "src": "https://img.webme.com/pic/m/montajesgeneralesmg/6.jpg",
+              "loaded": true,
+              "naturalWidth": 400
+            },
+            {
+              "src": "https://img.webme.com/pic/m/montajesgeneralesmg/4.jpg",
+              "loaded": true,
+              "naturalWidth": 400
+            },
+            {
+              "src": "https://img.webme.com/pic/m/montajesgeneralesmg/escudo.jpg",
+              "loaded": true,
+              "naturalWidth": 400
+            },
+            {
+              "src": "https://img.webme.com/pic/m/montajesgeneralesmg/ingenieria488.jpg",
+              "loaded": true,
+              "naturalWidth": 400
+            },
+            {
+              "src": "https://img.webme.com/pic/m/montajesgeneralesmg/ingenieria.jpg",
+              "loaded": true,
+              "naturalWidth": 400
+            },
+            {
+              "src": "https://img.webme.com/pic/m/montajesgeneralesmg/ingenieria1212.jpg",
+              "loaded": true,
+              "naturalWidth": 256
+            }
+          ],
+          "headings": [
+            "tiempo en Córdoba"
+          ],
+          "title": "MG \"MONTAJES E INSTALACIONES\" - Home",
+          "httpStatus": 200
+        }
+      },
+      "mobile_overflow_px": 681,
+      "mobile_failed": true,
+      "conclusion": "nonresponsive_verified"
+    },
+    {
+      "slug": "climacons-sevilla",
+      "url": "https://climacons.es.tl/",
+      "checks": {
+        "390": {
+          "windowWidth": 390,
+          "scrollWidth": 920,
+          "bodyScrollWidth": 912,
+          "hasViewportMeta": false,
+          "spillElements": [
+            {
+              "tag": "TABLE",
+              "text": " La filosofía de empresa de Climacons S.L.U. se fundamenta e",
+              "left": 8,
+              "right": 920,
+              "width": 912
+            },
+            {
+              "tag": "IMG",
+              "text": "",
+              "left": 766,
+              "right": 918,
+              "width": 152
+            },
+            {
+              "tag": "DIV",
+              "text": " La filosofía de empresa de Climacons S.L.U. se fundamenta e",
+              "left": 170,
+              "right": 766,
+              "width": 596
+            },
+            {
+              "tag": "DIV",
+              "text": " La filosofía de empresa de Climacons S.L.U. se fundamenta e",
+              "left": 185,
+              "right": 751,
+              "width": 566
+            },
+            {
+              "tag": "IMG",
+              "text": "",
+              "left": 194,
+              "right": 751,
+              "width": 557
+            },
+            {
+              "tag": "TABLE",
+              "text": "DATOS DE CONTACTO C/ Leiría, 13 41010 Sevilla 650952288 9540",
+              "left": 766,
+              "right": 920,
+              "width": 154
+            },
+            {
+              "tag": "DIV",
+              "text": "DATOS DE CONTACTO C/ Leiría, 13 41010 Sevilla 650952288 9540",
+              "left": 766,
+              "right": 920,
+              "width": 154
+            },
+            {
+              "tag": "IMG",
+              "text": "",
+              "left": 766,
+              "right": 919,
+              "width": 153
+            },
+            {
+              "tag": "DIV",
+              "text": "Hoy habia 4 visitantes (5 clics a subpáginas) ¡Aqui en esta ",
+              "left": 8,
+              "right": 908,
+              "width": 900
+            }
+          ],
+          "images": [
+            {
+              "src": "https://theme.webme.com/designs/flash/images/rightlabel.jpg",
+              "loaded": true,
+              "naturalWidth": 152
+            },
+            {
+              "src": "https://img.webme.com/pic/c/climacons/cabecera.jpg",
+              "loaded": true,
+              "naturalWidth": 945
+            },
+            {
+              "src": "https://theme.webme.com/designs/flash/images/leftcolumnbottom.jpg",
+              "loaded": true,
+              "naturalWidth": 153
+            }
+          ],
+          "headings": [],
+          "title": "CLIMACONS S.L. - INICIO",
+          "httpStatus": 200
+        },
+        "1280": {
+          "windowWidth": 1280,
+          "scrollWidth": 1280,
+          "bodyScrollWidth": 1264,
+          "hasViewportMeta": false,
+          "spillElements": [],
+          "images": [
+            {
+              "src": "https://theme.webme.com/designs/flash/images/rightlabel.jpg",
+              "loaded": true,
+              "naturalWidth": 152
+            },
+            {
+              "src": "https://img.webme.com/pic/c/climacons/cabecera.jpg",
+              "loaded": true,
+              "naturalWidth": 945
+            },
+            {
+              "src": "https://theme.webme.com/designs/flash/images/leftcolumnbottom.jpg",
+              "loaded": true,
+              "naturalWidth": 153
+            }
+          ],
+          "headings": [],
+          "title": "CLIMACONS S.L. - INICIO",
+          "httpStatus": 200
+        }
+      },
+      "mobile_overflow_px": 530,
+      "mobile_failed": true,
+      "conclusion": "nonresponsive_verified"
+    },
+    {
+      "slug": "marmoles-rodriguez-carvajal",
+      "url": "https://marmolesrocar.es.tl/",
+      "checks": {
+        "390": {
+          "windowWidth": 390,
+          "scrollWidth": 1005,
+          "bodyScrollWidth": 1000,
+          "hasViewportMeta": false,
+          "spillElements": [
+            {
+              "tag": "TABLE",
+              "text": " MÁRMOLES RODRÍGUEZ CARVAJAL MÁRMOLES RODRÍGUEZ CARVAJAL NUE",
+              "left": 5,
+              "right": 1005,
+              "width": 1000
+            },
+            {
+              "tag": "TABLE",
+              "text": " MÁRMOLES RODRÍGUEZ CARVAJAL MÁRMOLES RODRÍGUEZ CARVAJAL NUE",
+              "left": 5,
+              "right": 926,
+              "width": 921
+            },
+            {
+              "tag": "TABLE",
+              "text": " MÁRMOLES RODRÍGUEZ CARVAJAL",
+              "left": 5,
+              "right": 926,
+              "width": 921
+            },
+            {
+              "tag": "TABLE",
+              "text": "MÁRMOLES RODRÍGUEZ CARVAJAL NUESTRA EMPRESA CONTACTO PRODUCT",
+              "left": 5,
+              "right": 926,
+              "width": 921
+            },
+            {
+              "tag": "TABLE",
+              "text": " NUESTRA EMPRESA Síguenos en www.facebook.com/marmoles.carva",
+              "left": 190,
+              "right": 758,
+              "width": 568
+            },
+            {
+              "tag": "TABLE",
+              "text": " NUESTRA EMPRESA Síguenos en www.facebook.com/marmoles.carva",
+              "left": 190,
+              "right": 758,
+              "width": 568
+            },
+            {
+              "tag": "TABLE",
+              "text": " NUESTRA EMPRESA",
+              "left": 190,
+              "right": 758,
+              "width": 568
+            },
+            {
+              "tag": "TABLE",
+              "text": " Síguenos en www.facebook.com/marmoles.carvajal Contacta por",
+              "left": 190,
+              "right": 758,
+              "width": 568
+            },
+            {
+              "tag": "TABLE",
+              "text": " Síguenos en www.facebook.com/marmoles.carvajal Contacta por",
+              "left": 190,
+              "right": 758,
+              "width": 568
+            },
+            {
+              "tag": "DIV",
+              "text": " Síguenos en www.facebook.com/marmoles.carvajal Contacta por",
+              "left": 199,
+              "right": 749,
+              "width": 550
+            },
+            {
+              "tag": "DIV",
+              "text": " Síguenos en www.facebook.com/marmoles.carvajal Contacta por",
+              "left": 199,
+              "right": 749,
+              "width": 550
+            },
+            {
+              "tag": "A",
+              "text": "www.facebook.com/marmoles.carvajal",
+              "left": 385,
+              "right": 657,
+              "width": 272
+            },
+            {
+              "tag": "IMG",
+              "text": "",
+              "left": 199,
+              "right": 749,
+              "width": 550
+            },
+            {
+              "tag": "A",
+              "text": "Encimeras de cocina y baño",
+              "left": 366,
+              "right": 582,
+              "width": 215
+            },
+            {
+              "tag": "A",
+              "text": "Platos de ducha a medida",
+              "left": 376,
+              "right": 572,
+              "width": 197
+            },
+            {
+              "tag": "A",
+              "text": "Encimeras de baño",
+              "left": 401,
+              "right": 547,
+              "width": 147
+            },
+            {
+              "tag": "A",
+              "text": "Lavabos de mármol",
+              "left": 399,
+              "right": 549,
+              "width": 150
+            },
+            {
+              "tag": "A",
+              "text": "Escaleras de mármol y granito",
+              "left": 358,
+              "right": 590,
+              "width": 232
+            }
+          ],
+          "images": [
+            {
+              "src": "https://theme.webme.com/designs/iceblue/images/navi_ende.gif",
+              "loaded": true,
+              "naturalWidth": 185
+            },
+            {
+              "src": "https://img.webme.com/pic/m/marmolesrocar/CARTEL%20CAMPO%20DE%20FUTBOL.JPG",
+              "loaded": true,
+              "naturalWidth": 400
+            },
+            {
+              "src": "https://img.webme.com/pic/m/marmolesrocar/284040_251465608197065_124318227578471_1093429_6798789_n.jpg",
+              "loaded": true,
+              "naturalWidth": 400
+            },
+            {
+              "src": "https://img.webme.com/pic/m/marmolesrocar/IMG_0713.JPG",
+              "loaded": true,
+              "naturalWidth": 400
+            },
+            {
+              "src": "https://img.webme.com/pic/m/marmolesrocar/IMG-20170526-WA0006.jpg",
+              "loaded": true,
+              "naturalWidth": 400
+            }
+          ],
+          "headings": [],
+          "title": "MÁRMOLES RODRÍGUEZ CARVAJAL - NUESTRA EMPRESA",
+          "httpStatus": 200
+        },
+        "1280": {
+          "windowWidth": 1280,
+          "scrollWidth": 1280,
+          "bodyScrollWidth": 1270,
+          "hasViewportMeta": false,
+          "spillElements": [],
+          "images": [
+            {
+              "src": "https://theme.webme.com/designs/iceblue/images/navi_ende.gif",
+              "loaded": true,
+              "naturalWidth": 185
+            },
+            {
+              "src": "https://img.webme.com/pic/m/marmolesrocar/CARTEL%20CAMPO%20DE%20FUTBOL.JPG",
+              "loaded": true,
+              "naturalWidth": 400
+            },
+            {
+              "src": "https://img.webme.com/pic/m/marmolesrocar/284040_251465608197065_124318227578471_1093429_6798789_n.jpg",
+              "loaded": true,
+              "naturalWidth": 400
+            },
+            {
+              "src": "https://img.webme.com/pic/m/marmolesrocar/IMG_0713.JPG",
+              "loaded": true,
+              "naturalWidth": 400
+            },
+            {
+              "src": "https://img.webme.com/pic/m/marmolesrocar/IMG-20170526-WA0006.jpg",
+              "loaded": true,
+              "naturalWidth": 400
+            }
+          ],
+          "headings": [],
+          "title": "MÁRMOLES RODRÍGUEZ CARVAJAL - NUESTRA EMPRESA",
+          "httpStatus": 200
+        }
+      },
+      "mobile_overflow_px": 615,
+      "mobile_failed": true,
+      "conclusion": "nonresponsive_verified"
+    }
+  ]
+}
