@@ -16,7 +16,8 @@ CASES=[
 ("Multiservicios Monge","https://multiserviciosmonge.es.tl/"),
 ("Ingeniería del Olivar","https://ingenieriadelolivar.es.tl/"),
 ("Construcciones CEYVE","https://ceyve.es.tl/"),
-("Pulidos F.C.","https://pulidosfc.es.tl/")
+("Pulidos F.C.","https://pulidosfc.es.tl/"),
+("Talleres Luis Marín","https://talleresluismarin.es.tl/")
 ]
 report={"date":datetime.now(timezone.utc).isoformat(),"results":[],"total":len(CASES)}
 with sync_playwright() as p:
