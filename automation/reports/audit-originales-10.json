@@ -1,0 +1,651 @@
+{
+  "date": "2026-10-14T11:19:23.510751+00:00",
+  "results": [
+    {
+      "name": "Carpintería Sarria Contreras",
+      "url": "https://carpinteriasarriacontreras.es.tl/",
+      "mobileStatus": "no_responsive_verified",
+      "httpStatus": 200,
+      "evidence": [
+        "layout viewport 1001px en dispositivo de 390px (reescala)",
+        "12 elementos de texto fuera de 390px"
+      ],
+      "metrics": {
+        "innerWidth": 1001,
+        "visualWidth": 1000.0000610351562,
+        "clientWidth": 980,
+        "scrollWidth": 1000,
+        "bodyScroll": 1001,
+        "viewportMeta": null,
+        "linksOffscreen": [
+          {
+            "t": "Este sitio web fue creado gratuitamente con P",
+            "left": 14,
+            "right": 987
+          }
+        ],
+        "textOffscreen": [
+          {
+            "tag": "TD",
+            "left": 0,
+            "right": 1000
+          },
+          {
+            "tag": "TD",
+            "left": 0,
+            "right": 1000
+          },
+          {
+            "tag": "TD",
+            "left": 0,
+            "right": 1000
+          },
+          {
+            "tag": "TD",
+            "left": 396,
+            "right": 1000
+          },
+          {
+            "tag": "TD",
+            "left": 396,
+            "right": 1000
+          },
+          {
+            "tag": "TD",
+            "left": 0,
+            "right": 1000
+          },
+          {
+            "tag": "TD",
+            "left": 272,
+            "right": 798
+          },
+          {
+            "tag": "TD",
+            "left": 272,
+            "right": 798
+          },
+          {
+            "tag": "TD",
+            "left": 290,
+            "right": 789
+          },
+          {
+            "tag": "TD",
+            "left": 789,
+            "right": 798
+          },
+          {
+            "tag": "TD",
+            "left": 272,
+            "right": 798
+          },
+          {
+            "tag": "TD",
+            "left": 274,
+            "right": 796
+          }
+        ],
+        "anchors": 6
+      }
+    },
+    {
+      "name": "Fontgava",
+      "url": "https://fontgava.es.tl/",
+      "mobileStatus": "not_proven_nonresponsive",
+      "httpStatus": 200,
+      "evidence": [],
+      "metrics": {
+        "innerWidth": 390,
+        "visualWidth": 390,
+        "clientWidth": 390,
+        "scrollWidth": 390,
+        "bodyScroll": 390,
+        "viewportMeta": "width=device-width, initial-scale=1.0",
+        "linksOffscreen": [],
+        "textOffscreen": [],
+        "anchors": 28
+      }
+    },
+    {
+      "name": "Paco López Multiservicios",
+      "url": "https://pacolopezmultiservicios.es.tl/",
+      "mobileStatus": "no_responsive_verified",
+      "httpStatus": 200,
+      "evidence": [
+        "layout viewport 980px en dispositivo de 390px (reescala)"
+      ],
+      "metrics": {
+        "innerWidth": 980,
+        "visualWidth": 980,
+        "clientWidth": 980,
+        "scrollWidth": 980,
+        "bodyScroll": 980,
+        "viewportMeta": null,
+        "linksOffscreen": [
+          {
+            "t": "Entre y recuerde visitar las ofertas....     ",
+            "left": 83,
+            "right": 897
+          }
+        ],
+        "textOffscreen": [
+          {
+            "tag": "TD",
+            "left": 2,
+            "right": 978
+          }
+        ],
+        "anchors": 1
+      }
+    },
+    {
+      "name": "Centro Máster FP",
+      "url": "https://master-fp.es.tl/",
+      "mobileStatus": "no_responsive_verified",
+      "httpStatus": 200,
+      "evidence": [
+        "layout viewport 1001px en dispositivo de 390px (reescala)",
+        "3 enlaces relevantes fuera de 390px",
+        "12 elementos de texto fuera de 390px"
+      ],
+      "metrics": {
+        "innerWidth": 1001,
+        "visualWidth": 1000.0000610351562,
+        "clientWidth": 980,
+        "scrollWidth": 1000,
+        "bodyScroll": 1001,
+        "viewportMeta": null,
+        "linksOffscreen": [
+          {
+            "t": "centromasterfp@gmail.com",
+            "left": 471,
+            "right": 650
+          },
+          {
+            "t": "centromasterfp@gmail.com",
+            "left": 281,
+            "right": 495
+          },
+          {
+            "t": "Este sitio web fue creado gratuitamente con P",
+            "left": 14,
+            "right": 987
+          }
+        ],
+        "textOffscreen": [
+          {
+            "tag": "TD",
+            "left": 0,
+            "right": 1000
+          },
+          {
+            "tag": "TD",
+            "left": 0,
+            "right": 1000
+          },
+          {
+            "tag": "TD",
+            "left": 0,
+            "right": 1000
+          },
+          {
+            "tag": "TD",
+            "left": 396,
+            "right": 1000
+          },
+          {
+            "tag": "TD",
+            "left": 396,
+            "right": 1000
+          },
+          {
+            "tag": "TD",
+            "left": 0,
+            "right": 1000
+          },
+          {
+            "tag": "TD",
+            "left": 272,
+            "right": 798
+          },
+          {
+            "tag": "TD",
+            "left": 272,
+            "right": 798
+          },
+          {
+            "tag": "TD",
+            "left": 290,
+            "right": 789
+          },
+          {
+            "tag": "TD",
+            "left": 789,
+            "right": 798
+          },
+          {
+            "tag": "TD",
+            "left": 272,
+            "right": 798
+          },
+          {
+            "tag": "TD",
+            "left": 274,
+            "right": 796
+          }
+        ],
+        "anchors": 10
+      }
+    },
+    {
+      "name": "Aludecor Marbella",
+      "url": "https://aludecormarbella.es.tl/",
+      "mobileStatus": "no_responsive_verified",
+      "httpStatus": 200,
+      "evidence": [
+        "layout viewport 1001px en dispositivo de 390px (reescala)"
+      ],
+      "metrics": {
+        "innerWidth": 1001,
+        "visualWidth": 1000.0000610351562,
+        "clientWidth": 960,
+        "scrollWidth": 1001,
+        "bodyScroll": 1000,
+        "viewportMeta": "width=device-width, width=960",
+        "linksOffscreen": [
+          {
+            "t": "Este sitio web fue creado gratuitamente con P",
+            "left": 14,
+            "right": 987
+          }
+        ],
+        "textOffscreen": [
+          {
+            "tag": "H1",
+            "left": 240,
+            "right": 950
+          },
+          {
+            "tag": "P",
+            "left": 240,
+            "right": 950
+          }
+        ],
+        "anchors": 38
+      }
+    },
+    {
+      "name": "Manolo La Peluquería del Caballero",
+      "url": "https://lapeluqueriadelcaballero.es.tl/",
+      "mobileStatus": "no_responsive_verified",
+      "httpStatus": 200,
+      "evidence": [
+        "layout viewport 1216px en dispositivo de 390px (reescala)",
+        "4 enlaces relevantes fuera de 390px"
+      ],
+      "metrics": {
+        "innerWidth": 1216,
+        "visualWidth": 1215.0001220703125,
+        "clientWidth": 980,
+        "scrollWidth": 1216,
+        "bodyScroll": 1215,
+        "viewportMeta": null,
+        "linksOffscreen": [
+          {
+            "t": "CONTACTO Y HORARIOS",
+            "left": 253,
+            "right": 437
+          },
+          {
+            "t": "UBICACIÓN",
+            "left": 485,
+            "right": 571
+          },
+          {
+            "t": "Tweets por el @Manolo_LPDC.",
+            "left": 378,
+            "right": 602
+          },
+          {
+            "t": "Este sitio web fue creado gratuitamente con P",
+            "left": 14,
+            "right": 1202
+          }
+        ],
+        "textOffscreen": [
+          {
+            "tag": "H1",
+            "left": 1,
+            "right": 1039
+          },
+          {
+            "tag": "H1",
+            "left": 32,
+            "right": 992
+          }
+        ],
+        "anchors": 6
+      }
+    },
+    {
+      "name": "Multiservicios Monge",
+      "url": "https://multiserviciosmonge.es.tl/",
+      "mobileStatus": "no_responsive_verified",
+      "httpStatus": 200,
+      "evidence": [
+        "layout viewport 980px en dispositivo de 390px (reescala)"
+      ],
+      "metrics": {
+        "innerWidth": 980,
+        "visualWidth": 980,
+        "clientWidth": 980,
+        "scrollWidth": 980,
+        "bodyScroll": 980,
+        "viewportMeta": null,
+        "linksOffscreen": [
+          {
+            "t": "PINCHA AQUI",
+            "left": 397,
+            "right": 583
+          }
+        ],
+        "textOffscreen": [
+          {
+            "tag": "TD",
+            "left": 289,
+            "right": 691
+          },
+          {
+            "tag": "P",
+            "left": 290,
+            "right": 690
+          }
+        ],
+        "anchors": 1
+      }
+    },
+    {
+      "name": "Ingeniería del Olivar",
+      "url": "https://ingenieriadelolivar.es.tl/",
+      "mobileStatus": "no_responsive_verified",
+      "httpStatus": 200,
+      "evidence": [
+        "layout viewport 980px en dispositivo de 390px (reescala)",
+        "12 elementos de texto fuera de 390px"
+      ],
+      "metrics": {
+        "innerWidth": 980,
+        "visualWidth": 980,
+        "clientWidth": 980,
+        "scrollWidth": 980,
+        "bodyScroll": 980,
+        "viewportMeta": null,
+        "linksOffscreen": [
+          {
+            "t": "Este sitio web fue creado gratuitamente con P",
+            "left": 14,
+            "right": 966
+          }
+        ],
+        "textOffscreen": [
+          {
+            "tag": "TD",
+            "left": 90,
+            "right": 890
+          },
+          {
+            "tag": "TD",
+            "left": 90,
+            "right": 890
+          },
+          {
+            "tag": "TD",
+            "left": 90,
+            "right": 890
+          },
+          {
+            "tag": "TD",
+            "left": 90,
+            "right": 890
+          },
+          {
+            "tag": "TD",
+            "left": 281,
+            "right": 692
+          },
+          {
+            "tag": "TD",
+            "left": 281,
+            "right": 692
+          },
+          {
+            "tag": "TD",
+            "left": 281,
+            "right": 692
+          },
+          {
+            "tag": "TD",
+            "left": 294,
+            "right": 679
+          },
+          {
+            "tag": "TD",
+            "left": 294,
+            "right": 679
+          },
+          {
+            "tag": "TD",
+            "left": 294,
+            "right": 679
+          },
+          {
+            "tag": "TD",
+            "left": 281,
+            "right": 692
+          },
+          {
+            "tag": "TD",
+            "left": 692,
+            "right": 702
+          }
+        ],
+        "anchors": 9
+      }
+    },
+    {
+      "name": "Construcciones CEYVE",
+      "url": "https://ceyve.es.tl/",
+      "mobileStatus": "no_responsive_verified",
+      "httpStatus": 200,
+      "evidence": [
+        "layout viewport 1005px en dispositivo de 390px (reescala)",
+        "12 elementos de texto fuera de 390px"
+      ],
+      "metrics": {
+        "innerWidth": 1005,
+        "visualWidth": 1005,
+        "clientWidth": 980,
+        "scrollWidth": 1005,
+        "bodyScroll": 1000,
+        "viewportMeta": null,
+        "linksOffscreen": [
+          {
+            "t": "Este sitio web fue creado gratuitamente con P",
+            "left": 14,
+            "right": 991
+          }
+        ],
+        "textOffscreen": [
+          {
+            "tag": "TD",
+            "left": 5,
+            "right": 926
+          },
+          {
+            "tag": "TD",
+            "left": 5,
+            "right": 926
+          },
+          {
+            "tag": "TD",
+            "left": 207,
+            "right": 926
+          },
+          {
+            "tag": "TD",
+            "left": 207,
+            "right": 926
+          },
+          {
+            "tag": "TD",
+            "left": 5,
+            "right": 926
+          },
+          {
+            "tag": "TD",
+            "left": 190,
+            "right": 758
+          },
+          {
+            "tag": "TD",
+            "left": 190,
+            "right": 758
+          },
+          {
+            "tag": "TD",
+            "left": 190,
+            "right": 758
+          },
+          {
+            "tag": "TD",
+            "left": 210,
+            "right": 758
+          },
+          {
+            "tag": "TD",
+            "left": 210,
+            "right": 758
+          },
+          {
+            "tag": "TD",
+            "left": 190,
+            "right": 758
+          },
+          {
+            "tag": "TD",
+            "left": 190,
+            "right": 758
+          }
+        ],
+        "anchors": 3
+      }
+    },
+    {
+      "name": "Pulidos F.C.",
+      "url": "https://pulidosfc.es.tl/",
+      "mobileStatus": "no_responsive_verified",
+      "httpStatus": 200,
+      "evidence": [
+        "layout viewport 1001px en dispositivo de 390px (reescala)",
+        "4 enlaces relevantes fuera de 390px",
+        "12 elementos de texto fuera de 390px"
+      ],
+      "metrics": {
+        "innerWidth": 1001,
+        "visualWidth": 1000.0000610351562,
+        "clientWidth": 960,
+        "scrollWidth": 1001,
+        "bodyScroll": 1000,
+        "viewportMeta": "width=device-width, width=960",
+        "linksOffscreen": [
+          {
+            "t": "Trabajos Realizados",
+            "left": 335,
+            "right": 572
+          },
+          {
+            "t": "Consejos",
+            "left": 577,
+            "right": 731
+          },
+          {
+            "t": "Contacto",
+            "left": 736,
+            "right": 892
+          },
+          {
+            "t": "Este sitio web fue creado gratuitamente con P",
+            "left": 14,
+            "right": 987
+          }
+        ],
+        "textOffscreen": [
+          {
+            "tag": "H1",
+            "left": 40,
+            "right": 640
+          },
+          {
+            "tag": "H2",
+            "left": 40,
+            "right": 640
+          },
+          {
+            "tag": "P",
+            "left": 40,
+            "right": 640
+          },
+          {
+            "tag": "P",
+            "left": 40,
+            "right": 640
+          },
+          {
+            "tag": "P",
+            "left": 40,
+            "right": 640
+          },
+          {
+            "tag": "P",
+            "left": 40,
+            "right": 640
+          },
+          {
+            "tag": "P",
+            "left": 40,
+            "right": 640
+          },
+          {
+            "tag": "P",
+            "left": 40,
+            "right": 640
+          },
+          {
+            "tag": "P",
+            "left": 40,
+            "right": 640
+          },
+          {
+            "tag": "P",
+            "left": 40,
+            "right": 640
+          },
+          {
+            "tag": "P",
+            "left": 40,
+            "right": 640
+          },
+          {
+            "tag": "P",
+            "left": 40,
+            "right": 640
+          }
+        ],
+        "anchors": 8
+      }
+    }
+  ],
+  "total": 10,
+  "confirmedCount": 9
+}
