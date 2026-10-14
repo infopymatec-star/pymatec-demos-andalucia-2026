@@ -1,0 +1,1607 @@
+{
+  "run_date": "2026-10-14",
+  "auditor": "Playwright Chromium browser",
+  "sites": [
+    {
+      "slug": "carpinteria-sarria-contreras",
+      "url": "https://carpinteriasarriacontreras.es.tl/",
+      "checks": {
+        "390": {
+          "windowWidth": 390,
+          "scrollWidth": 1000,
+          "bodyScrollWidth": 1000,
+          "hasViewportMeta": false,
+          "spillElements": [
+            {
+              "tag": "TABLE",
+              "text": " carpinteriasarriacontreras Contacto CONTACTA COCINAS PUERTA",
+              "left": 0,
+              "right": 1000,
+              "width": 1000
+            },
+            {
+              "tag": "TABLE",
+              "text": " carpinteriasarriacontreras ",
+              "left": 0,
+              "right": 1000,
+              "width": 1000
+            },
+            {
+              "tag": "TABLE",
+              "text": " carpinteriasarriacontreras ",
+              "left": 0,
+              "right": 1000,
+              "width": 1000
+            },
+            {
+              "tag": "TABLE",
+              "text": " Contacto CONTACTA COCINAS PUERTAS ArMARIOS CONTACTA Bienben",
+              "left": 0,
+              "right": 1000,
+              "width": 1000
+            },
+            {
+              "tag": "TABLE",
+              "text": " CONTACTA Bienbenidos a CARPINTERIA SARRIA CONTRERAS Cree y ",
+              "left": 272,
+              "right": 798,
+              "width": 526
+            },
+            {
+              "tag": "TABLE",
+              "text": " CONTACTA ",
+              "left": 272,
+              "right": 798,
+              "width": 526
+            },
+            {
+              "tag": "TABLE",
+              "text": " Bienbenidos a CARPINTERIA SARRIA CONTRERAS Cree y diseñe su",
+              "left": 272,
+              "right": 798,
+              "width": 526
+            },
+            {
+              "tag": "TABLE",
+              "text": " ",
+              "left": 276,
+              "right": 796,
+              "width": 520
+            },
+            {
+              "tag": "TABLE",
+              "text": "Bienbenidos a CARPINTERIA SARRIA CONTRERAS Cree y diseñe su ",
+              "left": 276,
+              "right": 796,
+              "width": 520
+            },
+            {
+              "tag": "DIV",
+              "text": "Bienbenidos a CARPINTERIA SARRIA CONTRERAS Cree y diseñe su ",
+              "left": 281,
+              "right": 791,
+              "width": 510
+            },
+            {
+              "tag": "H1",
+              "text": "Bienbenidos a CARPINTERIA SARRIA CONTRERAS ",
+              "left": 281,
+              "right": 791,
+              "width": 510
+            },
+            {
+              "tag": "DIV",
+              "text": " ",
+              "left": 281,
+              "right": 791,
+              "width": 510
+            },
+            {
+              "tag": "H1",
+              "text": " ",
+              "left": 281,
+              "right": 791,
+              "width": 510
+            },
+            {
+              "tag": "TABLE",
+              "text": " Juan Antonio Sarria e HIjos. Todo para el exterior de su vi",
+              "left": 808,
+              "right": 990,
+              "width": 182
+            },
+            {
+              "tag": "TABLE",
+              "text": " Juan Antonio Sarria e HIjos. ",
+              "left": 808,
+              "right": 990,
+              "width": 182
+            },
+            {
+              "tag": "TABLE",
+              "text": " ",
+              "left": 808,
+              "right": 990,
+              "width": 182
+            },
+            {
+              "tag": "TABLE",
+              "text": " Todo para el exterior de su vivienda: En Aluminio ",
+              "left": 808,
+              "right": 990,
+              "width": 182
+            },
+            {
+              "tag": "TABLE",
+              "text": " Toldos convencional, toldos de pérgolas, mesas y sillas par",
+              "left": 808,
+              "right": 990,
+              "width": 182
+            }
+          ],
+          "images": [
+            {
+              "src": "https://theme.webme.com/designs/butterfly/images_rot/head.gif",
+              "loaded": true,
+              "naturalWidth": 5
+            },
+            {
+              "src": "https://theme.webme.com/designs/butterfly/images_rot/head.gif",
+              "loaded": true,
+              "naturalWidth": 5
+            },
+            {
+              "src": "https://theme.webme.com/designs/butterfly/images_rot/head.gif",
+              "loaded": true,
+              "naturalWidth": 5
+            },
+            {
+              "src": "https://theme.webme.com/designs/butterfly/images_rot/head.gif",
+              "loaded": true,
+              "naturalWidth": 5
+            },
+            {
+              "src": "https://theme.webme.com/designs/butterfly/images_rot/head.gif",
+              "loaded": true,
+              "naturalWidth": 5
+            },
+            {
+              "src": "https://theme.webme.com/designs/butterfly/images_rot/head.gif",
+              "loaded": true,
+              "naturalWidth": 5
+            },
+            {
+              "src": "https://theme.webme.com/designs/butterfly/images_rot/head.gif",
+              "loaded": true,
+              "naturalWidth": 5
+            }
+          ],
+          "headings": [
+            "Bienbenidos a\nCARPINTERIA SARRIA CONTRERAS",
+            ""
+          ],
+          "title": "carpinteriasarriacontreras - CONTACTA",
+          "httpStatus": 200
+        },
+        "1280": {
+          "windowWidth": 1280,
+          "scrollWidth": 1280,
+          "bodyScrollWidth": 1280,
+          "hasViewportMeta": false,
+          "spillElements": [],
+          "images": [
+            {
+              "src": "https://theme.webme.com/designs/butterfly/images_rot/head.gif",
+              "loaded": true,
+              "naturalWidth": 5
+            },
+            {
+              "src": "https://theme.webme.com/designs/butterfly/images_rot/head.gif",
+              "loaded": true,
+              "naturalWidth": 5
+            },
+            {
+              "src": "https://theme.webme.com/designs/butterfly/images_rot/head.gif",
+              "loaded": true,
+              "naturalWidth": 5
+            },
+            {
+              "src": "https://theme.webme.com/designs/butterfly/images_rot/head.gif",
+              "loaded": true,
+              "naturalWidth": 5
+            },
+            {
+              "src": "https://theme.webme.com/designs/butterfly/images_rot/head.gif",
+              "loaded": true,
+              "naturalWidth": 5
+            },
+            {
+              "src": "https://theme.webme.com/designs/butterfly/images_rot/head.gif",
+              "loaded": true,
+              "naturalWidth": 5
+            },
+            {
+              "src": "https://theme.webme.com/designs/butterfly/images_rot/head.gif",
+              "loaded": true,
+              "naturalWidth": 5
+            }
+          ],
+          "headings": [
+            "Bienbenidos a\nCARPINTERIA SARRIA CONTRERAS",
+            ""
+          ],
+          "title": "carpinteriasarriacontreras - CONTACTA",
+          "httpStatus": 200
+        }
+      },
+      "mobile_overflow_px": 610,
+      "mobile_failed": true,
+      "conclusion": "nonresponsive_verified"
+    },
+    {
+      "slug": "fontgava",
+      "url": "https://fontgava.es.tl/",
+      "checks": {
+        "390": {
+          "windowWidth": 390,
+          "scrollWidth": 390,
+          "bodyScrollWidth": 390,
+          "hasViewportMeta": true,
+          "spillElements": [],
+          "images": [
+            {
+              "src": "https://3.bp.blogspot.com/_blABMJBbYJs/St4MA2ljxiI/AAAAAAAAHKw/Snejr0WLmjs/S1600-R/english.png",
+              "loaded": true,
+              "naturalWidth": 16
+            },
+            {
+              "src": "https://4.bp.blogspot.com/_blABMJBbYJs/St4LgVWSqMI/AAAAAAAAHKg/1Jk3tP83P_Q/S1600-R/aleman.png",
+              "loaded": true,
+              "naturalWidth": 16
+            },
+            {
+              "src": "https://3.bp.blogspot.com/_blABMJBbYJs/St4Lu4jP_TI/AAAAAAAAHKo/xr9fM0CgYhM/S1600-R/francesbn.png",
+              "loaded": true,
+              "naturalWidth": 16
+            },
+            {
+              "src": "https://2.bp.blogspot.com/_blABMJBbYJs/St4MLqyTu-I/AAAAAAAAHK4/8vFHEZjW81s/S1600-R/portugal.png",
+              "loaded": true,
+              "naturalWidth": 16
+            },
+            {
+              "src": "https://4.bp.blogspot.com/_blABMJBbYJs/St4MuuWlktI/AAAAAAAAHLA/1U24IF22wDs/S1600-R/italiano.png",
+              "loaded": true,
+              "naturalWidth": 16
+            },
+            {
+              "src": "https://img.webme.com/pic/f/fontgava/LOGO%20PEQUE%C3%91O.jpg",
+              "loaded": true,
+              "naturalWidth": 500
+            }
+          ],
+          "headings": [],
+          "title": "fontgava - página de inicio",
+          "httpStatus": 200
+        },
+        "1280": {
+          "windowWidth": 1280,
+          "scrollWidth": 1280,
+          "bodyScrollWidth": 1280,
+          "hasViewportMeta": true,
+          "spillElements": [],
+          "images": [
+            {
+              "src": "https://3.bp.blogspot.com/_blABMJBbYJs/St4MA2ljxiI/AAAAAAAAHKw/Snejr0WLmjs/S1600-R/english.png",
+              "loaded": true,
+              "naturalWidth": 16
+            },
+            {
+              "src": "https://4.bp.blogspot.com/_blABMJBbYJs/St4LgVWSqMI/AAAAAAAAHKg/1Jk3tP83P_Q/S1600-R/aleman.png",
+              "loaded": true,
+              "naturalWidth": 16
+            },
+            {
+              "src": "https://3.bp.blogspot.com/_blABMJBbYJs/St4Lu4jP_TI/AAAAAAAAHKo/xr9fM0CgYhM/S1600-R/francesbn.png",
+              "loaded": true,
+              "naturalWidth": 16
+            },
+            {
+              "src": "https://2.bp.blogspot.com/_blABMJBbYJs/St4MLqyTu-I/AAAAAAAAHK4/8vFHEZjW81s/S1600-R/portugal.png",
+              "loaded": true,
+              "naturalWidth": 16
+            },
+            {
+              "src": "https://4.bp.blogspot.com/_blABMJBbYJs/St4MuuWlktI/AAAAAAAAHLA/1U24IF22wDs/S1600-R/italiano.png",
+              "loaded": true,
+              "naturalWidth": 16
+            },
+            {
+              "src": "https://img.webme.com/pic/f/fontgava/LOGO%20PEQUE%C3%91O.jpg",
+              "loaded": true,
+              "naturalWidth": 500
+            }
+          ],
+          "headings": [],
+          "title": "fontgava - página de inicio",
+          "httpStatus": 200
+        }
+      },
+      "mobile_overflow_px": 0,
+      "mobile_failed": false,
+      "conclusion": "not_proven_nonresponsive"
+    },
+    {
+      "slug": "paco-lopez-multiservicios",
+      "url": "https://pacolopezmultiservicios.es.tl/",
+      "checks": {
+        "390": {
+          "windowWidth": 390,
+          "scrollWidth": 406,
+          "bodyScrollWidth": 406,
+          "hasViewportMeta": false,
+          "spillElements": [],
+          "images": [
+            {
+              "src": "https://img.webme.com/pic/p/pacolopezmultiservicios/logo.png",
+              "loaded": true,
+              "naturalWidth": 400
+            }
+          ],
+          "headings": [],
+          "title": "Paco Lopez MultiServicios - La Empresa",
+          "httpStatus": 200
+        },
+        "1280": {
+          "windowWidth": 1280,
+          "scrollWidth": 1280,
+          "bodyScrollWidth": 1280,
+          "hasViewportMeta": false,
+          "spillElements": [],
+          "images": [
+            {
+              "src": "https://img.webme.com/pic/p/pacolopezmultiservicios/logo.png",
+              "loaded": true,
+              "naturalWidth": 400
+            }
+          ],
+          "headings": [],
+          "title": "Paco Lopez MultiServicios - La Empresa",
+          "httpStatus": 200
+        }
+      },
+      "mobile_overflow_px": 16,
+      "mobile_failed": false,
+      "conclusion": "not_proven_nonresponsive"
+    },
+    {
+      "slug": "centro-master-fp",
+      "url": "https://master-fp.es.tl/",
+      "checks": {
+        "390": {
+          "windowWidth": 390,
+          "scrollWidth": 1000,
+          "bodyScrollWidth": 1000,
+          "hasViewportMeta": false,
+          "spillElements": [
+            {
+              "tag": "TABLE",
+              "text": " master-fp CENTRO DE FORMACIÓN TÉCNICA Y PROFESIONAL MÁSTER ",
+              "left": 0,
+              "right": 1000,
+              "width": 1000
+            },
+            {
+              "tag": "TABLE",
+              "text": " master-fp ",
+              "left": 0,
+              "right": 1000,
+              "width": 1000
+            },
+            {
+              "tag": "TABLE",
+              "text": " master-fp ",
+              "left": 0,
+              "right": 1000,
+              "width": 1000
+            },
+            {
+              "tag": "TABLE",
+              "text": " CENTRO DE FORMACIÓN TÉCNICA Y PROFESIONAL MÁSTER FP INICIO ",
+              "left": 0,
+              "right": 1000,
+              "width": 1000
+            },
+            {
+              "tag": "TABLE",
+              "text": " INICIO C)Lope de Vega 7 (detrás del INEM) Estepona (Málaga)",
+              "left": 272,
+              "right": 798,
+              "width": 526
+            },
+            {
+              "tag": "TABLE",
+              "text": " INICIO ",
+              "left": 272,
+              "right": 798,
+              "width": 526
+            },
+            {
+              "tag": "TABLE",
+              "text": " C)Lope de Vega 7 (detrás del INEM) Estepona (Málaga) Tlf. 6",
+              "left": 272,
+              "right": 798,
+              "width": 526
+            },
+            {
+              "tag": "TABLE",
+              "text": " ",
+              "left": 276,
+              "right": 796,
+              "width": 520
+            },
+            {
+              "tag": "TABLE",
+              "text": " C)Lope de Vega 7 (detrás del INEM) Estepona (Málaga) Tlf. 6",
+              "left": 276,
+              "right": 796,
+              "width": 520
+            },
+            {
+              "tag": "DIV",
+              "text": " C)Lope de Vega 7 (detrás del INEM) Estepona (Málaga) Tlf. 6",
+              "left": 281,
+              "right": 791,
+              "width": 510
+            },
+            {
+              "tag": "DIV",
+              "text": " C)Lope de Vega 7 (detrás del INEM) Estepona (Málaga) Tlf. 6",
+              "left": 281,
+              "right": 791,
+              "width": 510
+            },
+            {
+              "tag": "IMG",
+              "text": "",
+              "left": 336,
+              "right": 736,
+              "width": 400
+            },
+            {
+              "tag": "A",
+              "text": "centromasterfp@gmail.com",
+              "left": 471,
+              "right": 650,
+              "width": 179
+            },
+            {
+              "tag": "DIV",
+              "text": "En nuestro Centro de Enseñanza Secundaria, Técnica y Profesi",
+              "left": 281,
+              "right": 791,
+              "width": 510
+            },
+            {
+              "tag": "DIV",
+              "text": "En nuestro Centro de Enseñanza Secundaria, Técnica y Profesi",
+              "left": 281,
+              "right": 791,
+              "width": 510
+            },
+            {
+              "tag": "DIV",
+              "text": " Las clases o cursos que le ofrecemos son: ",
+              "left": 281,
+              "right": 791,
+              "width": 510
+            },
+            {
+              "tag": "DIV",
+              "text": " ",
+              "left": 281,
+              "right": 791,
+              "width": 510
+            },
+            {
+              "tag": "DIV",
+              "text": "Las clases o cursos que le ofrecemos son: ",
+              "left": 281,
+              "right": 791,
+              "width": 510
+            }
+          ],
+          "images": [
+            {
+              "src": "https://theme.webme.com/designs/butterfly/images_blau/head.gif",
+              "loaded": true,
+              "naturalWidth": 5
+            },
+            {
+              "src": "https://theme.webme.com/designs/butterfly/images_blau/head.gif",
+              "loaded": true,
+              "naturalWidth": 5
+            },
+            {
+              "src": "https://img.webme.com/pic/m/master-fp/logoweb.gif",
+              "loaded": true,
+              "naturalWidth": 400
+            },
+            {
+              "src": "https://img.webme.com/pic/m/master-fp/entrada.gif",
+              "loaded": true,
+              "naturalWidth": 400
+            },
+            {
+              "src": "https://img.webme.com/pic/m/master-fp/grande.gif",
+              "loaded": true,
+              "naturalWidth": 400
+            },
+            {
+              "src": "https://img.webme.com/pic/m/master-fp/mediana.gif",
+              "loaded": true,
+              "naturalWidth": 400
+            },
+            {
+              "src": "https://img.webme.com/pic/m/master-fp/chica.gif",
+              "loaded": true,
+              "naturalWidth": 400
+            },
+            {
+              "src": "https://theme.webme.com/designs/butterfly/images_blau/head.gif",
+              "loaded": true,
+              "naturalWidth": 5
+            },
+            {
+              "src": "https://theme.webme.com/designs/butterfly/images_blau/head.gif",
+              "loaded": true,
+              "naturalWidth": 5
+            },
+            {
+              "src": "https://theme.webme.com/designs/butterfly/images_blau/head.gif",
+              "loaded": true,
+              "naturalWidth": 5
+            },
+            {
+              "src": "https://theme.webme.com/designs/butterfly/images_blau/head.gif",
+              "loaded": true,
+              "naturalWidth": 5
+            }
+          ],
+          "headings": [],
+          "title": "master-fp - INICIO",
+          "httpStatus": 200
+        },
+        "1280": {
+          "windowWidth": 1280,
+          "scrollWidth": 1280,
+          "bodyScrollWidth": 1280,
+          "hasViewportMeta": false,
+          "spillElements": [],
+          "images": [
+            {
+              "src": "https://theme.webme.com/designs/butterfly/images_blau/head.gif",
+              "loaded": true,
+              "naturalWidth": 5
+            },
+            {
+              "src": "https://theme.webme.com/designs/butterfly/images_blau/head.gif",
+              "loaded": true,
+              "naturalWidth": 5
+            },
+            {
+              "src": "https://img.webme.com/pic/m/master-fp/logoweb.gif",
+              "loaded": true,
+              "naturalWidth": 400
+            },
+            {
+              "src": "https://img.webme.com/pic/m/master-fp/entrada.gif",
+              "loaded": true,
+              "naturalWidth": 400
+            },
+            {
+              "src": "https://img.webme.com/pic/m/master-fp/grande.gif",
+              "loaded": true,
+              "naturalWidth": 400
+            },
+            {
+              "src": "https://img.webme.com/pic/m/master-fp/mediana.gif",
+              "loaded": true,
+              "naturalWidth": 400
+            },
+            {
+              "src": "https://img.webme.com/pic/m/master-fp/chica.gif",
+              "loaded": true,
+              "naturalWidth": 400
+            },
+            {
+              "src": "https://theme.webme.com/designs/butterfly/images_blau/head.gif",
+              "loaded": true,
+              "naturalWidth": 5
+            },
+            {
+              "src": "https://theme.webme.com/designs/butterfly/images_blau/head.gif",
+              "loaded": true,
+              "naturalWidth": 5
+            },
+            {
+              "src": "https://theme.webme.com/designs/butterfly/images_blau/head.gif",
+              "loaded": true,
+              "naturalWidth": 5
+            },
+            {
+              "src": "https://theme.webme.com/designs/butterfly/images_blau/head.gif",
+              "loaded": true,
+              "naturalWidth": 5
+            }
+          ],
+          "headings": [],
+          "title": "master-fp - INICIO",
+          "httpStatus": 200
+        }
+      },
+      "mobile_overflow_px": 610,
+      "mobile_failed": true,
+      "conclusion": "nonresponsive_verified"
+    },
+    {
+      "slug": "manolo-peluqueria-caballero",
+      "url": "https://lapeluqueriadelcaballero.es.tl/",
+      "checks": {
+        "390": {
+          "windowWidth": 390,
+          "scrollWidth": 1215,
+          "bodyScrollWidth": 1215,
+          "hasViewportMeta": false,
+          "spillElements": [
+            {
+              "tag": "DIV",
+              "text": "HISTORIA EQUIPO CONTACTO Y HORARIOS UBICACIÓN HISTORIA En el",
+              "left": 0,
+              "right": 1215,
+              "width": 1215
+            },
+            {
+              "tag": "DIV",
+              "text": "HISTORIA EQUIPO CONTACTO Y HORARIOS UBICACIÓN HISTORIA En el",
+              "left": 0,
+              "right": 1040,
+              "width": 1040
+            },
+            {
+              "tag": "HEADER",
+              "text": "HISTORIA EQUIPO CONTACTO Y HORARIOS UBICACIÓN",
+              "left": 0,
+              "right": 1040,
+              "width": 1040
+            },
+            {
+              "tag": "H1",
+              "text": "",
+              "left": 1,
+              "right": 1039,
+              "width": 1038
+            },
+            {
+              "tag": "NAV",
+              "text": "HISTORIA EQUIPO CONTACTO Y HORARIOS UBICACIÓN",
+              "left": 1,
+              "right": 1039,
+              "width": 1038
+            },
+            {
+              "tag": "A",
+              "text": "CONTACTO Y HORARIOS",
+              "left": 253,
+              "right": 437,
+              "width": 184
+            },
+            {
+              "tag": "A",
+              "text": "UBICACIÓN",
+              "left": 485,
+              "right": 571,
+              "width": 86
+            },
+            {
+              "tag": "DIV",
+              "text": "",
+              "left": 1,
+              "right": 1039,
+              "width": 1038
+            },
+            {
+              "tag": "SECTION",
+              "text": "HISTORIA En el año 1957 Manuel Ríos Santo, abuelo de Manolo ",
+              "left": 0,
+              "right": 1024,
+              "width": 1024
+            },
+            {
+              "tag": "H1",
+              "text": "HISTORIA",
+              "left": 32,
+              "right": 992,
+              "width": 960
+            },
+            {
+              "tag": "DIV",
+              "text": "En el año 1957 Manuel Ríos Santo, abuelo de Manolo (propieta",
+              "left": 32,
+              "right": 992,
+              "width": 960
+            },
+            {
+              "tag": "DIV",
+              "text": " A finales de 2013 comenzó la formación y la acabó a finales",
+              "left": 32,
+              "right": 992,
+              "width": 960
+            },
+            {
+              "tag": "DIV",
+              "text": "FOTOS AL ACABAR EL DIA DE LA INAUGURACIÓN EL ÚLTIMO FIN DE S",
+              "left": 32,
+              "right": 992,
+              "width": 960
+            },
+            {
+              "tag": "IMG",
+              "text": "",
+              "left": 212,
+              "right": 812,
+              "width": 600
+            },
+            {
+              "tag": "IMG",
+              "text": "",
+              "left": 262,
+              "right": 762,
+              "width": 500
+            },
+            {
+              "tag": "DIV",
+              "text": " ",
+              "left": 32,
+              "right": 992,
+              "width": 960
+            },
+            {
+              "tag": "DIV",
+              "text": " ___________________________________________________________",
+              "left": 32,
+              "right": 992,
+              "width": 960
+            },
+            {
+              "tag": "IMG",
+              "text": "",
+              "left": 32,
+              "right": 992,
+              "width": 960
+            }
+          ],
+          "images": [
+            {
+              "src": "https://img.webme.com/pic/l/lapeluqueriadelcaballero/mosaico%20web.jpg",
+              "loaded": true,
+              "naturalWidth": 900
+            },
+            {
+              "src": "https://img.webme.com/pic/l/lapeluqueriadelcaballero/20150401_154023.jpg",
+              "loaded": true,
+              "naturalWidth": 2560
+            },
+            {
+              "src": "https://img.webme.com/pic/l/lapeluqueriadelcaballero/peluqueria%20manolo.jpg",
+              "loaded": true,
+              "naturalWidth": 2112
+            }
+          ],
+          "headings": [
+            "",
+            "HISTORIA"
+          ],
+          "title": "lapeluqueriadelcaballero - HISTORIA",
+          "httpStatus": 200
+        },
+        "1280": {
+          "windowWidth": 1280,
+          "scrollWidth": 1280,
+          "bodyScrollWidth": 1280,
+          "hasViewportMeta": false,
+          "spillElements": [],
+          "images": [
+            {
+              "src": "https://img.webme.com/pic/l/lapeluqueriadelcaballero/mosaico%20web.jpg",
+              "loaded": true,
+              "naturalWidth": 900
+            },
+            {
+              "src": "https://img.webme.com/pic/l/lapeluqueriadelcaballero/20150401_154023.jpg",
+              "loaded": true,
+              "naturalWidth": 2560
+            },
+            {
+              "src": "https://img.webme.com/pic/l/lapeluqueriadelcaballero/peluqueria%20manolo.jpg",
+              "loaded": true,
+              "naturalWidth": 2112
+            }
+          ],
+          "headings": [
+            "",
+            "HISTORIA"
+          ],
+          "title": "lapeluqueriadelcaballero - HISTORIA",
+          "httpStatus": 200
+        }
+      },
+      "mobile_overflow_px": 825,
+      "mobile_failed": true,
+      "conclusion": "nonresponsive_verified"
+    },
+    {
+      "slug": "aluminios-aludecor-marbella",
+      "url": "https://aludecormarbella.es.tl/",
+      "checks": {
+        "390": {
+          "windowWidth": 390,
+          "scrollWidth": 1000,
+          "bodyScrollWidth": 1000,
+          "hasViewportMeta": true,
+          "spillElements": [
+            {
+              "tag": "DIV",
+              "text": "ALUMINIOS ALUDECOR MARBELLA (DESDE AÑO 1988) PRESUPUESTO alu",
+              "left": 0,
+              "right": 810,
+              "width": 810
+            },
+            {
+              "tag": "DIV",
+              "text": "ALUMINIOS ALUDECOR MARBELLA (DESDE AÑO 1988) PRESUPUESTO alu",
+              "left": 0,
+              "right": 810,
+              "width": 810
+            },
+            {
+              "tag": "DIV",
+              "text": "ALUMINIOS ALUDECOR MARBELLA (DESDE AÑO 1988) PRESUPUESTO alu",
+              "left": 20,
+              "right": 790,
+              "width": 770
+            },
+            {
+              "tag": "DIV",
+              "text": "ALUMINIOS ALUDECOR MARBELLA (DESDE AÑO 1988) PRESUPUESTO alu",
+              "left": 20,
+              "right": 742,
+              "width": 722
+            },
+            {
+              "tag": "DIV",
+              "text": "ALUMINIOS ALUDECOR MARBELLA (DESDE AÑO 1988) PRESUPUESTO alu",
+              "left": 20,
+              "right": 542,
+              "width": 522
+            },
+            {
+              "tag": "DIV",
+              "text": "ALUMINIOS ALUDECOR MARBELLA",
+              "left": 20,
+              "right": 542,
+              "width": 522
+            },
+            {
+              "tag": "DIV",
+              "text": "(DESDE AÑO 1988) PRESUPUESTO aludecormarbella@hotmail.com",
+              "left": 20,
+              "right": 542,
+              "width": 522
+            },
+            {
+              "tag": "DIV",
+              "text": "",
+              "left": 20,
+              "right": 790,
+              "width": 770
+            },
+            {
+              "tag": "DIV",
+              "text": "",
+              "left": 770,
+              "right": 790,
+              "width": 20
+            },
+            {
+              "tag": "DIV",
+              "text": "BIENVENIDOS MAPA SITUACIÓN Contacto Libro de visitantes OJO ",
+              "left": 0,
+              "right": 1000,
+              "width": 1000
+            },
+            {
+              "tag": "DIV",
+              "text": "BIENVENIDOS INTRODUCCIÓN Aluminios Aludecor Marbella es hoy ",
+              "left": 190,
+              "right": 1000,
+              "width": 810
+            },
+            {
+              "tag": "DIV",
+              "text": "BIENVENIDOS INTRODUCCIÓN Aluminios Aludecor Marbella es hoy ",
+              "left": 240,
+              "right": 950,
+              "width": 710
+            },
+            {
+              "tag": "H1",
+              "text": "BIENVENIDOS",
+              "left": 240,
+              "right": 950,
+              "width": 710
+            },
+            {
+              "tag": "IMG",
+              "text": "",
+              "left": 240,
+              "right": 640,
+              "width": 400
+            },
+            {
+              "tag": "DIV",
+              "text": "Hoy habia 33229 visitantes¡Aqui en esta página!",
+              "left": 0,
+              "right": 810,
+              "width": 810
+            }
+          ],
+          "images": [
+            {
+              "src": "https://img.webme.com/pic/a/aludecormarbella/tarjetaludecor.jpg",
+              "loaded": true,
+              "naturalWidth": 400
+            },
+            {
+              "src": "https://img.webme.com/pic/a/aludecormarbella/fachadaaludecor.jpg",
+              "loaded": true,
+              "naturalWidth": 400
+            }
+          ],
+          "headings": [
+            "BIENVENIDOS"
+          ],
+          "title": "ALUMINIOS ALUDECOR MARBELLA - BIENVENIDOS",
+          "httpStatus": 200
+        },
+        "1280": {
+          "windowWidth": 1280,
+          "scrollWidth": 1280,
+          "bodyScrollWidth": 1280,
+          "hasViewportMeta": true,
+          "spillElements": [],
+          "images": [
+            {
+              "src": "https://img.webme.com/pic/a/aludecormarbella/tarjetaludecor.jpg",
+              "loaded": true,
+              "naturalWidth": 400
+            },
+            {
+              "src": "https://img.webme.com/pic/a/aludecormarbella/fachadaaludecor.jpg",
+              "loaded": true,
+              "naturalWidth": 400
+            }
+          ],
+          "headings": [
+            "BIENVENIDOS"
+          ],
+          "title": "ALUMINIOS ALUDECOR MARBELLA - BIENVENIDOS",
+          "httpStatus": 200
+        }
+      },
+      "mobile_overflow_px": 610,
+      "mobile_failed": true,
+      "conclusion": "nonresponsive_verified"
+    },
+    {
+      "slug": "pipo-park-fuengirola",
+      "url": "https://pipopark.es.tl/",
+      "checks": {
+        "390": {
+          "windowWidth": 390,
+          "scrollWidth": 1005,
+          "bodyScrollWidth": 1000,
+          "hasViewportMeta": false,
+          "spillElements": [
+            {
+              "tag": "TABLE",
+              "text": " PIPO PARK Navegación Inicio => Tour virtual => Libro de vis",
+              "left": 5,
+              "right": 1005,
+              "width": 1000
+            },
+            {
+              "tag": "TABLE",
+              "text": " PIPO PARK Navegación Inicio => Tour virtual => Libro de vis",
+              "left": 5,
+              "right": 926,
+              "width": 921
+            },
+            {
+              "tag": "TABLE",
+              "text": " PIPO PARK",
+              "left": 5,
+              "right": 926,
+              "width": 921
+            },
+            {
+              "tag": "TABLE",
+              "text": "Navegación Inicio => Tour virtual => Libro de visitantes => ",
+              "left": 5,
+              "right": 926,
+              "width": 921
+            },
+            {
+              "tag": "TABLE",
+              "text": " Inicio PARQUE INFANTIL, CAFETERIA, SALON DE CELEBRACIONES V",
+              "left": 190,
+              "right": 758,
+              "width": 568
+            },
+            {
+              "tag": "TABLE",
+              "text": " Inicio PARQUE INFANTIL, CAFETERIA, SALON DE CELEBRACIONES V",
+              "left": 190,
+              "right": 758,
+              "width": 568
+            },
+            {
+              "tag": "TABLE",
+              "text": " Inicio",
+              "left": 190,
+              "right": 758,
+              "width": 568
+            },
+            {
+              "tag": "TABLE",
+              "text": " PARQUE INFANTIL, CAFETERIA, SALON DE CELEBRACIONES Ven a pa",
+              "left": 190,
+              "right": 758,
+              "width": 568
+            },
+            {
+              "tag": "TABLE",
+              "text": " PARQUE INFANTIL, CAFETERIA, SALON DE CELEBRACIONES Ven a pa",
+              "left": 190,
+              "right": 758,
+              "width": 568
+            },
+            {
+              "tag": "DIV",
+              "text": " PARQUE INFANTIL, CAFETERIA, SALON DE CELEBRACIONES Ven a pa",
+              "left": 207,
+              "right": 741,
+              "width": 534
+            },
+            {
+              "tag": "H2",
+              "text": " ",
+              "left": 207,
+              "right": 741,
+              "width": 534
+            },
+            {
+              "tag": "IMG",
+              "text": "Pipo Park",
+              "left": 351,
+              "right": 601,
+              "width": 250
+            },
+            {
+              "tag": "TABLE",
+              "text": " Hoy habia 3 visitantes (8 clics a subpáginas) ¡Aqui en esta",
+              "left": 190,
+              "right": 758,
+              "width": 568
+            },
+            {
+              "tag": "TABLE",
+              "text": "Sobre nosotros Pipo Park * Cafetería y Parque Infantil para ",
+              "left": 758,
+              "right": 926,
+              "width": 168
+            },
+            {
+              "tag": "TABLE",
+              "text": "Facebook botón-like ",
+              "left": 758,
+              "right": 926,
+              "width": 168
+            }
+          ],
+          "images": [
+            {
+              "src": "https://theme.webme.com/designs/iceblue/images/navi_ende.gif",
+              "loaded": true,
+              "naturalWidth": 185
+            },
+            {
+              "src": "https://img.webme.com/pic/p/pipopark/logo_pipo_.png",
+              "loaded": true,
+              "naturalWidth": 1784
+            }
+          ],
+          "headings": [
+            ""
+          ],
+          "title": "PIPO PARK - Inicio",
+          "httpStatus": 200
+        },
+        "1280": {
+          "windowWidth": 1280,
+          "scrollWidth": 1280,
+          "bodyScrollWidth": 1270,
+          "hasViewportMeta": false,
+          "spillElements": [],
+          "images": [
+            {
+              "src": "https://theme.webme.com/designs/iceblue/images/navi_ende.gif",
+              "loaded": true,
+              "naturalWidth": 185
+            },
+            {
+              "src": "https://img.webme.com/pic/p/pipopark/logo_pipo_.png",
+              "loaded": true,
+              "naturalWidth": 1784
+            }
+          ],
+          "headings": [
+            ""
+          ],
+          "title": "PIPO PARK - Inicio",
+          "httpStatus": 200
+        }
+      },
+      "mobile_overflow_px": 615,
+      "mobile_failed": true,
+      "conclusion": "nonresponsive_verified"
+    },
+    {
+      "slug": "carmen-burgos-psicologia",
+      "url": "https://carmenburgos.es.tl/",
+      "checks": {
+        "390": {
+          "windowWidth": 390,
+          "scrollWidth": 1000,
+          "bodyScrollWidth": 1000,
+          "hasViewportMeta": true,
+          "spillElements": [
+            {
+              "tag": "DIV",
+              "text": "PSICOLOGA TERAPIA INDIVIDUAL TERAPIA DE PAREJA ORIENTACION P",
+              "left": 0,
+              "right": 810,
+              "width": 810
+            },
+            {
+              "tag": "DIV",
+              "text": "",
+              "left": 0,
+              "right": 810,
+              "width": 810
+            },
+            {
+              "tag": "DIV",
+              "text": "",
+              "left": 20,
+              "right": 790,
+              "width": 770
+            },
+            {
+              "tag": "DIV",
+              "text": "",
+              "left": 20,
+              "right": 790,
+              "width": 770
+            },
+            {
+              "tag": "DIV",
+              "text": "PSICOLOGA TERAPIA INDIVIDUAL TERAPIA DE PAREJA ORIENTACION P",
+              "left": 0,
+              "right": 810,
+              "width": 810
+            },
+            {
+              "tag": "A",
+              "text": "TERAPIA DE PAREJA",
+              "left": 385,
+              "right": 598,
+              "width": 213
+            },
+            {
+              "tag": "A",
+              "text": "SERVICIOS Y PRECIOS",
+              "left": 414,
+              "right": 641,
+              "width": 228
+            },
+            {
+              "tag": "A",
+              "text": "UBICACION",
+              "left": 646,
+              "right": 802,
+              "width": 156
+            },
+            {
+              "tag": "DIV",
+              "text": "INICIO TERAPIA PSICOLÓGICA PROFESIONAL Sesiones Telefónicas ",
+              "left": 0,
+              "right": 1000,
+              "width": 1000
+            },
+            {
+              "tag": "DIV",
+              "text": "INICIO TERAPIA PSICOLÓGICA PROFESIONAL Sesiones Telefónicas ",
+              "left": 0,
+              "right": 1000,
+              "width": 1000
+            },
+            {
+              "tag": "DIV",
+              "text": "INICIO TERAPIA PSICOLÓGICA PROFESIONAL Sesiones Telefónicas ",
+              "left": 50,
+              "right": 950,
+              "width": 900
+            },
+            {
+              "tag": "DIV",
+              "text": "",
+              "left": 50,
+              "right": 950,
+              "width": 900
+            },
+            {
+              "tag": "DIV",
+              "text": "",
+              "left": 50,
+              "right": 950,
+              "width": 900
+            },
+            {
+              "tag": "H1",
+              "text": "INICIO",
+              "left": 50,
+              "right": 950,
+              "width": 900
+            },
+            {
+              "tag": "IMG",
+              "text": "",
+              "left": 300,
+              "right": 700,
+              "width": 400
+            },
+            {
+              "tag": "H2",
+              "text": "TERAPIA PSICOLÓGICA PROFESIONAL Sesiones Telefónicas o Prese",
+              "left": 50,
+              "right": 950,
+              "width": 900
+            },
+            {
+              "tag": "IMG",
+              "text": "",
+              "left": 300,
+              "right": 700,
+              "width": 400
+            },
+            {
+              "tag": "DIV",
+              "text": " ",
+              "left": 50,
+              "right": 950,
+              "width": 900
+            }
+          ],
+          "images": [
+            {
+              "src": "https://img.webme.com/pic/c/carmenburgos/Despacho-horizontal%20sin%20flor-.jpg",
+              "loaded": true,
+              "naturalWidth": 400
+            },
+            {
+              "src": "https://img.webme.com/pic/c/carmenburgos/IMG_20240923_083744.jpg",
+              "loaded": true,
+              "naturalWidth": 400
+            },
+            {
+              "src": "https://img.webme.com/pic/c/carmenburgos/-consulta-fachada.jpg",
+              "loaded": true,
+              "naturalWidth": 330
+            }
+          ],
+          "headings": [
+            "INICIO",
+            "TERAPIA PSICOLÓGICA PROFESIONAL\nSesiones Telefónicas o Presenciales en Consulta   \nTe atenderá Dª Carmen Burgos, Psicóloga sanitaria, para ayudarte a superar tus problemas y mejorar personalmente.",
+            "INFÓRMATE SIN COMPROMISO O PIDE CITA  \npor Whatsapp o llamada telefónica\n\nTel. (+34) 676 44 05 04"
+          ],
+          "title": "PSICÓLOGA BENALMÁDENA - INICIO",
+          "httpStatus": 200
+        },
+        "1280": {
+          "windowWidth": 1280,
+          "scrollWidth": 1280,
+          "bodyScrollWidth": 1280,
+          "hasViewportMeta": true,
+          "spillElements": [],
+          "images": [
+            {
+              "src": "https://img.webme.com/pic/c/carmenburgos/Despacho-horizontal%20sin%20flor-.jpg",
+              "loaded": true,
+              "naturalWidth": 400
+            },
+            {
+              "src": "https://img.webme.com/pic/c/carmenburgos/IMG_20240923_083744.jpg",
+              "loaded": true,
+              "naturalWidth": 400
+            },
+            {
+              "src": "https://img.webme.com/pic/c/carmenburgos/-consulta-fachada.jpg",
+              "loaded": true,
+              "naturalWidth": 330
+            }
+          ],
+          "headings": [
+            "INICIO",
+            "TERAPIA PSICOLÓGICA PROFESIONAL\nSesiones Telefónicas o Presenciales en Consulta   \nTe atenderá Dª Carmen Burgos, Psicóloga sanitaria, para ayudarte a superar tus problemas y mejorar personalmente.",
+            "INFÓRMATE SIN COMPROMISO O PIDE CITA  \npor Whatsapp o llamada telefónica\n\nTel. (+34) 676 44 05 04"
+          ],
+          "title": "PSICÓLOGA BENALMÁDENA - INICIO",
+          "httpStatus": 200
+        }
+      },
+      "mobile_overflow_px": 610,
+      "mobile_failed": true,
+      "conclusion": "nonresponsive_verified"
+    },
+    {
+      "slug": "aip-clima-sevilla",
+      "url": "https://aipclima.es.tl/",
+      "checks": {
+        "390": {
+          "windowWidth": 390,
+          "scrollWidth": 1005,
+          "bodyScrollWidth": 1000,
+          "hasViewportMeta": false,
+          "spillElements": [
+            {
+              "tag": "TABLE",
+              "text": " aipclima Navegación Inicio Contacto Empresa Reparaciones In",
+              "left": 5,
+              "right": 1005,
+              "width": 1000
+            },
+            {
+              "tag": "TABLE",
+              "text": " aipclima Navegación Inicio Contacto Empresa Reparaciones In",
+              "left": 5,
+              "right": 990,
+              "width": 985
+            },
+            {
+              "tag": "TABLE",
+              "text": " aipclima",
+              "left": 5,
+              "right": 926,
+              "width": 921
+            },
+            {
+              "tag": "TABLE",
+              "text": "Navegación Inicio Contacto Empresa Reparaciones Instalacione",
+              "left": 5,
+              "right": 990,
+              "width": 985
+            },
+            {
+              "tag": "TABLE",
+              "text": " Inicio AIPCLIMA INSTALACIÓN, REPARACIÓN Y VENTA DE AIRE ACO",
+              "left": 190,
+              "right": 758,
+              "width": 568
+            },
+            {
+              "tag": "TABLE",
+              "text": " Inicio AIPCLIMA INSTALACIÓN, REPARACIÓN Y VENTA DE AIRE ACO",
+              "left": 190,
+              "right": 758,
+              "width": 568
+            },
+            {
+              "tag": "TABLE",
+              "text": " Inicio",
+              "left": 190,
+              "right": 758,
+              "width": 568
+            },
+            {
+              "tag": "TABLE",
+              "text": " AIPCLIMA INSTALACIÓN, REPARACIÓN Y VENTA DE AIRE ACONDICION",
+              "left": 190,
+              "right": 758,
+              "width": 568
+            },
+            {
+              "tag": "TABLE",
+              "text": " AIPCLIMA INSTALACIÓN, REPARACIÓN Y VENTA DE AIRE ACONDICION",
+              "left": 190,
+              "right": 758,
+              "width": 568
+            },
+            {
+              "tag": "DIV",
+              "text": "AIPCLIMA INSTALACIÓN, REPARACIÓN Y VENTA DE AIRE ACONDICIONA",
+              "left": 207,
+              "right": 741,
+              "width": 534
+            },
+            {
+              "tag": "DIV",
+              "text": "AIPCLIMA INSTALACIÓN, REPARACIÓN Y VENTA DE AIRE ACONDICIONA",
+              "left": 207,
+              "right": 741,
+              "width": 534
+            },
+            {
+              "tag": "A",
+              "text": "aip_06@hotmail.com",
+              "left": 440,
+              "right": 549,
+              "width": 110
+            },
+            {
+              "tag": "DIV",
+              "text": " RECARGA DE GAS REFRIGERANTE R-407C (Ecológico) Para instala",
+              "left": 207,
+              "right": 741,
+              "width": 534
+            },
+            {
+              "tag": "DIV",
+              "text": " ",
+              "left": 207,
+              "right": 741,
+              "width": 534
+            },
+            {
+              "tag": "IMG",
+              "text": "",
+              "left": 361,
+              "right": 586,
+              "width": 225
+            },
+            {
+              "tag": "TABLE",
+              "text": " ",
+              "left": 190,
+              "right": 758,
+              "width": 568
+            },
+            {
+              "tag": "TABLE",
+              "text": "Acerca de esta página ",
+              "left": 758,
+              "right": 926,
+              "width": 168
+            },
+            {
+              "tag": "TABLE",
+              "text": "FACEBOOK ",
+              "left": 758,
+              "right": 926,
+              "width": 168
+            }
+          ],
+          "images": [
+            {
+              "src": "https://theme.webme.com/designs/iceblue/images/navi_ende.gif",
+              "loaded": true,
+              "naturalWidth": 185
+            },
+            {
+              "src": "https://img.webme.com/pic/a/aipclima/17.jpg",
+              "loaded": true,
+              "naturalWidth": 225
+            }
+          ],
+          "headings": [],
+          "title": "aipclima - Inicio",
+          "httpStatus": 200
+        },
+        "1280": {
+          "windowWidth": 1280,
+          "scrollWidth": 1280,
+          "bodyScrollWidth": 1270,
+          "hasViewportMeta": false,
+          "spillElements": [],
+          "images": [
+            {
+              "src": "https://theme.webme.com/designs/iceblue/images/navi_ende.gif",
+              "loaded": true,
+              "naturalWidth": 185
+            },
+            {
+              "src": "https://img.webme.com/pic/a/aipclima/17.jpg",
+              "loaded": true,
+              "naturalWidth": 225
+            }
+          ],
+          "headings": [],
+          "title": "aipclima - Inicio",
+          "httpStatus": 200
+        }
+      },
+      "mobile_overflow_px": 615,
+      "mobile_failed": true,
+      "conclusion": "nonresponsive_verified"
+    },
+    {
+      "slug": "manitas-sevilla-salva",
+      "url": "https://manitassevilla.es.tl/",
+      "checks": {
+        "390": {
+          "windowWidth": 390,
+          "scrollWidth": 390,
+          "bodyScrollWidth": 390,
+          "hasViewportMeta": true,
+          "spillElements": [],
+          "images": [
+            {
+              "src": "https://img.webme.com/pic/m/manitassevilla/codigo-xqr-manitas-sevilla.png",
+              "loaded": true,
+              "naturalWidth": 476
+            },
+            {
+              "src": "https://img.webme.com/pic/m/manitassevilla/manitas-sevilla-tarjeta-de-visita.jpg",
+              "loaded": true,
+              "naturalWidth": 499
+            }
+          ],
+          "headings": [
+            "Manitas Sevilla - Salva",
+            "Reformas - Reparaciones - Averías - Instalaciones"
+          ],
+          "title": "Manitas Sevilla - Salva - Manitas Sevilla",
+          "httpStatus": 200
+        },
+        "1280": {
+          "windowWidth": 1280,
+          "scrollWidth": 1280,
+          "bodyScrollWidth": 1280,
+          "hasViewportMeta": true,
+          "spillElements": [],
+          "images": [
+            {
+              "src": "https://img.webme.com/pic/m/manitassevilla/codigo-xqr-manitas-sevilla.png",
+              "loaded": true,
+              "naturalWidth": 476
+            },
+            {
+              "src": "https://img.webme.com/pic/m/manitassevilla/manitas-sevilla-tarjeta-de-visita.jpg",
+              "loaded": true,
+              "naturalWidth": 499
+            }
+          ],
+          "headings": [
+            "Manitas Sevilla - Salva",
+            "Reformas - Reparaciones - Averías - Instalaciones"
+          ],
+          "title": "Manitas Sevilla - Salva - Manitas Sevilla",
+          "httpStatus": 200
+        }
+      },
+      "mobile_overflow_px": 0,
+      "mobile_failed": false,
+      "conclusion": "not_proven_nonresponsive"
+    }
+  ]
+}
