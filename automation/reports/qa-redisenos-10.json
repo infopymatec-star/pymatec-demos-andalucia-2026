@@ -1,0 +1,827 @@
+{
+  "date": "2026-10-14T11:18:05.852208+00:00",
+  "status": "pass",
+  "checks": [
+    {
+      "slug": "carpinteria-sarria-contreras",
+      "viewport": 390,
+      "url": "https://infopymatec-star.github.io/pymatec-demos-andalucia-2026/auto-demos/carpinteria-sarria-contreras/",
+      "status": "pass",
+      "errors": [],
+      "metrics": {
+        "viewport": 390,
+        "scrollWidth": 390,
+        "pageTitle": "Carpintería Sarria Contreras · Propuesta visual de Pymatec",
+        "h1": "La madera cambia la forma de vivir un espacio.",
+        "heroWidth": 390,
+        "css": true,
+        "cssWidth": "1220px",
+        "services": 4,
+        "photos": [
+          {
+            "src": "https://images.unsplash.com/photo-1631396328075-9c65a7406f09?auto=format&fit=crop&w=1500&q=82",
+            "loaded": true,
+            "naturalWidth": 1500,
+            "width": 390,
+            "height": 285
+          }
+        ],
+        "mail": [
+          "mailto:carpinteriasarria@gmail.com"
+        ],
+        "phone": [
+          "tel:+34656497291"
+        ],
+        "links": [
+          "#inicio",
+          "#servicios",
+          "#empresa",
+          "#contacto"
+        ],
+        "sourceWords": false,
+        "disclaimer": true,
+        "mobileMenu": true
+      }
+    },
+    {
+      "slug": "carpinteria-sarria-contreras",
+      "viewport": 1280,
+      "url": "https://infopymatec-star.github.io/pymatec-demos-andalucia-2026/auto-demos/carpinteria-sarria-contreras/",
+      "status": "pass",
+      "errors": [],
+      "metrics": {
+        "viewport": 1280,
+        "scrollWidth": 1280,
+        "pageTitle": "Carpintería Sarria Contreras · Propuesta visual de Pymatec",
+        "h1": "La madera cambia la forma de vivir un espacio.",
+        "heroWidth": 589.828125,
+        "css": true,
+        "cssWidth": "1220px",
+        "services": 4,
+        "photos": [
+          {
+            "src": "https://images.unsplash.com/photo-1631396328075-9c65a7406f09?auto=format&fit=crop&w=1500&q=82",
+            "loaded": true,
+            "naturalWidth": 1500,
+            "width": 578.171875,
+            "height": 550
+          }
+        ],
+        "mail": [
+          "mailto:carpinteriasarria@gmail.com"
+        ],
+        "phone": [
+          "tel:+34656497291"
+        ],
+        "links": [
+          "#inicio",
+          "#servicios",
+          "#empresa",
+          "#contacto"
+        ],
+        "sourceWords": false,
+        "disclaimer": true,
+        "mobileMenu": true
+      }
+    },
+    {
+      "slug": "fontgava",
+      "viewport": 390,
+      "url": "https://infopymatec-star.github.io/pymatec-demos-andalucia-2026/auto-demos/fontgava/",
+      "status": "pass",
+      "errors": [],
+      "metrics": {
+        "viewport": 390,
+        "scrollWidth": 390,
+        "pageTitle": "Fontgava · Propuesta visual de Pymatec",
+        "h1": "Soluciones de agua, confort y mantenimiento.",
+        "heroWidth": 390,
+        "css": true,
+        "cssWidth": "1220px",
+        "services": 6,
+        "photos": [
+          {
+            "src": "https://images.unsplash.com/photo-1676210133055-eab6ef033ce3?auto=format&fit=crop&w=1500&q=82",
+            "loaded": true,
+            "naturalWidth": 1500,
+            "width": 390,
+            "height": 605
+          }
+        ],
+        "mail": [
+          "mailto:fontgava2016@gmail.com"
+        ],
+        "phone": [
+          "tel:+34635681057"
+        ],
+        "links": [
+          "#inicio",
+          "#servicios",
+          "#empresa",
+          "#contacto"
+        ],
+        "sourceWords": false,
+        "disclaimer": true,
+        "mobileMenu": true
+      }
+    },
+    {
+      "slug": "fontgava",
+      "viewport": 1280,
+      "url": "https://infopymatec-star.github.io/pymatec-demos-andalucia-2026/auto-demos/fontgava/",
+      "status": "pass",
+      "errors": [],
+      "metrics": {
+        "viewport": 1280,
+        "scrollWidth": 1280,
+        "pageTitle": "Fontgava · Propuesta visual de Pymatec",
+        "h1": "Soluciones de agua, confort y mantenimiento.",
+        "heroWidth": 730,
+        "css": true,
+        "cssWidth": "1220px",
+        "services": 6,
+        "photos": [
+          {
+            "src": "https://images.unsplash.com/photo-1676210133055-eab6ef033ce3?auto=format&fit=crop&w=1500&q=82",
+            "loaded": true,
+            "naturalWidth": 1500,
+            "width": 1280,
+            "height": 640
+          }
+        ],
+        "mail": [
+          "mailto:fontgava2016@gmail.com"
+        ],
+        "phone": [
+          "tel:+34635681057"
+        ],
+        "links": [
+          "#inicio",
+          "#servicios",
+          "#empresa",
+          "#contacto"
+        ],
+        "sourceWords": false,
+        "disclaimer": true,
+        "mobileMenu": true
+      }
+    },
+    {
+      "slug": "paco-lopez-multiservicios",
+      "viewport": 390,
+      "url": "https://infopymatec-star.github.io/pymatec-demos-andalucia-2026/auto-demos/paco-lopez-multiservicios/",
+      "status": "pass",
+      "errors": [],
+      "metrics": {
+        "viewport": 390,
+        "scrollWidth": 390,
+        "pageTitle": "Paco López Multiservicios · Propuesta visual de Pymatec",
+        "h1": "Un solo contacto para cuidar tu hogar.",
+        "heroWidth": 382,
+        "css": true,
+        "cssWidth": "1220px",
+        "services": 6,
+        "photos": [
+          {
+            "src": "https://images.unsplash.com/photo-1679018179962-06922435f6bc?auto=format&fit=crop&w=1500&q=82",
+            "loaded": true,
+            "naturalWidth": 1500,
+            "width": 390,
+            "height": 285
+          }
+        ],
+        "mail": [
+          "mailto:multiserviciospacolopez@gmail.com"
+        ],
+        "phone": [
+          "tel:+34658208768"
+        ],
+        "links": [
+          "#inicio",
+          "#servicios",
+          "#empresa",
+          "#contacto"
+        ],
+        "sourceWords": false,
+        "disclaimer": true,
+        "mobileMenu": true
+      }
+    },
+    {
+      "slug": "paco-lopez-multiservicios",
+      "viewport": 1280,
+      "url": "https://infopymatec-star.github.io/pymatec-demos-andalucia-2026/auto-demos/paco-lopez-multiservicios/",
+      "status": "pass",
+      "errors": [],
+      "metrics": {
+        "viewport": 1280,
+        "scrollWidth": 1280,
+        "pageTitle": "Paco López Multiservicios · Propuesta visual de Pymatec",
+        "h1": "Un solo contacto para cuidar tu hogar.",
+        "heroWidth": 540.625,
+        "css": true,
+        "cssWidth": "1220px",
+        "services": 6,
+        "photos": [
+          {
+            "src": "https://images.unsplash.com/photo-1679018179962-06922435f6bc?auto=format&fit=crop&w=1500&q=82",
+            "loaded": true,
+            "naturalWidth": 1500,
+            "width": 606.375,
+            "height": 530
+          }
+        ],
+        "mail": [
+          "mailto:multiserviciospacolopez@gmail.com"
+        ],
+        "phone": [
+          "tel:+34658208768"
+        ],
+        "links": [
+          "#inicio",
+          "#servicios",
+          "#empresa",
+          "#contacto"
+        ],
+        "sourceWords": false,
+        "disclaimer": true,
+        "mobileMenu": true
+      }
+    },
+    {
+      "slug": "centro-master-fp",
+      "viewport": 390,
+      "url": "https://infopymatec-star.github.io/pymatec-demos-andalucia-2026/auto-demos/centro-master-fp/",
+      "status": "pass",
+      "errors": [],
+      "metrics": {
+        "viewport": 390,
+        "scrollWidth": 390,
+        "pageTitle": "Centro Máster FP · Propuesta visual de Pymatec",
+        "h1": "Tu siguiente paso empieza aprendiendo.",
+        "heroWidth": 390,
+        "css": true,
+        "cssWidth": "1220px",
+        "services": 6,
+        "photos": [
+          {
+            "src": "https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=1500&q=82",
+            "loaded": true,
+            "naturalWidth": 1500,
+            "width": 390,
+            "height": 310
+          }
+        ],
+        "mail": [
+          "mailto:centromasterfp@gmail.com"
+        ],
+        "phone": [
+          "tel:+34649575949"
+        ],
+        "links": [
+          "#inicio",
+          "#servicios",
+          "#empresa",
+          "#contacto"
+        ],
+        "sourceWords": false,
+        "disclaimer": true,
+        "mobileMenu": true
+      }
+    },
+    {
+      "slug": "centro-master-fp",
+      "viewport": 1280,
+      "url": "https://infopymatec-star.github.io/pymatec-demos-andalucia-2026/auto-demos/centro-master-fp/",
+      "status": "pass",
+      "errors": [],
+      "metrics": {
+        "viewport": 1280,
+        "scrollWidth": 1280,
+        "pageTitle": "Centro Máster FP · Propuesta visual de Pymatec",
+        "h1": "Tu siguiente paso empieza aprendiendo.",
+        "heroWidth": 518.875,
+        "css": true,
+        "cssWidth": "1220px",
+        "services": 6,
+        "photos": [
+          {
+            "src": "https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=1500&q=82",
+            "loaded": true,
+            "naturalWidth": 1500,
+            "width": 609.125,
+            "height": 610
+          }
+        ],
+        "mail": [
+          "mailto:centromasterfp@gmail.com"
+        ],
+        "phone": [
+          "tel:+34649575949"
+        ],
+        "links": [
+          "#inicio",
+          "#servicios",
+          "#empresa",
+          "#contacto"
+        ],
+        "sourceWords": false,
+        "disclaimer": true,
+        "mobileMenu": true
+      }
+    },
+    {
+      "slug": "aludecor-marbella",
+      "viewport": 390,
+      "url": "https://infopymatec-star.github.io/pymatec-demos-andalucia-2026/auto-demos/aludecor-marbella/",
+      "status": "pass",
+      "errors": [],
+      "metrics": {
+        "viewport": 390,
+        "scrollWidth": 390,
+        "pageTitle": "Aludecor Marbella · Propuesta visual de Pymatec",
+        "h1": "Diseño, luz y cerramientos para cada espacio.",
+        "heroWidth": 390,
+        "css": true,
+        "cssWidth": "1220px",
+        "services": 6,
+        "photos": [
+          {
+            "src": "https://images.unsplash.com/photo-1761417327319-054b31633fd0?auto=format&fit=crop&w=1500&q=82",
+            "loaded": true,
+            "naturalWidth": 1500,
+            "width": 350,
+            "height": 220
+          }
+        ],
+        "mail": [
+          "mailto:aludecormarbella@hotmail.com"
+        ],
+        "phone": [
+          "tel:+34607671472"
+        ],
+        "links": [
+          "#inicio",
+          "#servicios",
+          "#empresa",
+          "#contacto"
+        ],
+        "sourceWords": false,
+        "disclaimer": true,
+        "mobileMenu": true
+      }
+    },
+    {
+      "slug": "aludecor-marbella",
+      "viewport": 1280,
+      "url": "https://infopymatec-star.github.io/pymatec-demos-andalucia-2026/auto-demos/aludecor-marbella/",
+      "status": "pass",
+      "errors": [],
+      "metrics": {
+        "viewport": 1280,
+        "scrollWidth": 1280,
+        "pageTitle": "Aludecor Marbella · Propuesta visual de Pymatec",
+        "h1": "Diseño, luz y cerramientos para cada espacio.",
+        "heroWidth": 710,
+        "css": true,
+        "cssWidth": "1220px",
+        "services": 6,
+        "photos": [
+          {
+            "src": "https://images.unsplash.com/photo-1761417327319-054b31633fd0?auto=format&fit=crop&w=1500&q=82",
+            "loaded": true,
+            "naturalWidth": 1500,
+            "width": 1220,
+            "height": 445
+          }
+        ],
+        "mail": [
+          "mailto:aludecormarbella@hotmail.com"
+        ],
+        "phone": [
+          "tel:+34607671472"
+        ],
+        "links": [
+          "#inicio",
+          "#servicios",
+          "#empresa",
+          "#contacto"
+        ],
+        "sourceWords": false,
+        "disclaimer": true,
+        "mobileMenu": true
+      }
+    },
+    {
+      "slug": "manolo-peluqueria-caballero",
+      "viewport": 390,
+      "url": "https://infopymatec-star.github.io/pymatec-demos-andalucia-2026/auto-demos/manolo-peluqueria-caballero/",
+      "status": "pass",
+      "errors": [],
+      "metrics": {
+        "viewport": 390,
+        "scrollWidth": 390,
+        "pageTitle": "Manolo · La Peluquería del Caballero · Propuesta visual de Pymatec",
+        "h1": "El estilo está en los detalles.",
+        "heroWidth": 390,
+        "css": true,
+        "cssWidth": "1220px",
+        "services": 4,
+        "photos": [
+          {
+            "src": "https://images.unsplash.com/photo-1593702233354-259d1f794ed1?auto=format&fit=crop&w=1500&q=82",
+            "loaded": true,
+            "naturalWidth": 1500,
+            "width": 390,
+            "height": 285
+          }
+        ],
+        "mail": [
+          "mailto:lapeluqueriadelcaballero@hotmail.com"
+        ],
+        "phone": [
+          "tel:+34625777030"
+        ],
+        "links": [
+          "#inicio",
+          "#servicios",
+          "#empresa",
+          "#contacto"
+        ],
+        "sourceWords": false,
+        "disclaimer": true,
+        "mobileMenu": true
+      }
+    },
+    {
+      "slug": "manolo-peluqueria-caballero",
+      "viewport": 1280,
+      "url": "https://infopymatec-star.github.io/pymatec-demos-andalucia-2026/auto-demos/manolo-peluqueria-caballero/",
+      "status": "pass",
+      "errors": [],
+      "metrics": {
+        "viewport": 1280,
+        "scrollWidth": 1280,
+        "pageTitle": "Manolo · La Peluquería del Caballero · Propuesta visual de Pymatec",
+        "h1": "El estilo está en los detalles.",
+        "heroWidth": 482.21875,
+        "css": true,
+        "cssWidth": "1220px",
+        "services": 4,
+        "photos": [
+          {
+            "src": "https://images.unsplash.com/photo-1593702233354-259d1f794ed1?auto=format&fit=crop&w=1500&q=82",
+            "loaded": true,
+            "naturalWidth": 1500,
+            "width": 679.765625,
+            "height": 560
+          }
+        ],
+        "mail": [
+          "mailto:lapeluqueriadelcaballero@hotmail.com"
+        ],
+        "phone": [
+          "tel:+34625777030"
+        ],
+        "links": [
+          "#inicio",
+          "#servicios",
+          "#empresa",
+          "#contacto"
+        ],
+        "sourceWords": false,
+        "disclaimer": true,
+        "mobileMenu": true
+      }
+    },
+    {
+      "slug": "multiservicios-monge",
+      "viewport": 390,
+      "url": "https://infopymatec-star.github.io/pymatec-demos-andalucia-2026/auto-demos/multiservicios-monge/",
+      "status": "pass",
+      "errors": [],
+      "metrics": {
+        "viewport": 390,
+        "scrollWidth": 390,
+        "pageTitle": "Multiservicios Monge · Propuesta visual de Pymatec",
+        "h1": "Cada mejora empieza con un buen proyecto.",
+        "heroWidth": 390,
+        "css": true,
+        "cssWidth": "1220px",
+        "services": 4,
+        "photos": [
+          {
+            "src": "https://images.unsplash.com/photo-1752594756894-bcf378884a09?auto=format&fit=crop&w=1500&q=82",
+            "loaded": true,
+            "naturalWidth": 1500,
+            "width": 390,
+            "height": 285
+          }
+        ],
+        "mail": [
+          "mailto:juanitomonge@hotmail.com"
+        ],
+        "phone": [
+          "tel:+34649192827"
+        ],
+        "links": [
+          "#inicio",
+          "#servicios",
+          "#empresa",
+          "#contacto"
+        ],
+        "sourceWords": false,
+        "disclaimer": true,
+        "mobileMenu": true
+      }
+    },
+    {
+      "slug": "multiservicios-monge",
+      "viewport": 1280,
+      "url": "https://infopymatec-star.github.io/pymatec-demos-andalucia-2026/auto-demos/multiservicios-monge/",
+      "status": "pass",
+      "errors": [],
+      "metrics": {
+        "viewport": 1280,
+        "scrollWidth": 1280,
+        "pageTitle": "Multiservicios Monge · Propuesta visual de Pymatec",
+        "h1": "Cada mejora empieza con un buen proyecto.",
+        "heroWidth": 589.828125,
+        "css": true,
+        "cssWidth": "1220px",
+        "services": 4,
+        "photos": [
+          {
+            "src": "https://images.unsplash.com/photo-1752594756894-bcf378884a09?auto=format&fit=crop&w=1500&q=82",
+            "loaded": true,
+            "naturalWidth": 1500,
+            "width": 578.171875,
+            "height": 550
+          }
+        ],
+        "mail": [
+          "mailto:juanitomonge@hotmail.com"
+        ],
+        "phone": [
+          "tel:+34649192827"
+        ],
+        "links": [
+          "#inicio",
+          "#servicios",
+          "#empresa",
+          "#contacto"
+        ],
+        "sourceWords": false,
+        "disclaimer": true,
+        "mobileMenu": true
+      }
+    },
+    {
+      "slug": "ingenieria-del-olivar",
+      "viewport": 390,
+      "url": "https://infopymatec-star.github.io/pymatec-demos-andalucia-2026/auto-demos/ingenieria-del-olivar/",
+      "status": "pass",
+      "errors": [],
+      "metrics": {
+        "viewport": 390,
+        "scrollWidth": 390,
+        "pageTitle": "Ingeniería del Olivar · Propuesta visual de Pymatec",
+        "h1": "El territorio merece una mirada técnica.",
+        "heroWidth": 390,
+        "css": true,
+        "cssWidth": "1220px",
+        "services": 6,
+        "photos": [
+          {
+            "src": "https://images.unsplash.com/photo-1771784056984-88140713f9ae?auto=format&fit=crop&w=1500&q=82",
+            "loaded": true,
+            "naturalWidth": 1500,
+            "width": 390,
+            "height": 310
+          }
+        ],
+        "mail": [
+          "mailto:raorpe@hotmail.com"
+        ],
+        "phone": [
+          "tel:+34616132460"
+        ],
+        "links": [
+          "#inicio",
+          "#servicios",
+          "#empresa",
+          "#contacto"
+        ],
+        "sourceWords": false,
+        "disclaimer": true,
+        "mobileMenu": true
+      }
+    },
+    {
+      "slug": "ingenieria-del-olivar",
+      "viewport": 1280,
+      "url": "https://infopymatec-star.github.io/pymatec-demos-andalucia-2026/auto-demos/ingenieria-del-olivar/",
+      "status": "pass",
+      "errors": [],
+      "metrics": {
+        "viewport": 1280,
+        "scrollWidth": 1280,
+        "pageTitle": "Ingeniería del Olivar · Propuesta visual de Pymatec",
+        "h1": "El territorio merece una mirada técnica.",
+        "heroWidth": 518.875,
+        "css": true,
+        "cssWidth": "1220px",
+        "services": 6,
+        "photos": [
+          {
+            "src": "https://images.unsplash.com/photo-1771784056984-88140713f9ae?auto=format&fit=crop&w=1500&q=82",
+            "loaded": true,
+            "naturalWidth": 1500,
+            "width": 609.125,
+            "height": 610
+          }
+        ],
+        "mail": [
+          "mailto:raorpe@hotmail.com"
+        ],
+        "phone": [
+          "tel:+34616132460"
+        ],
+        "links": [
+          "#inicio",
+          "#servicios",
+          "#empresa",
+          "#contacto"
+        ],
+        "sourceWords": false,
+        "disclaimer": true,
+        "mobileMenu": true
+      }
+    },
+    {
+      "slug": "construcciones-ceyve",
+      "viewport": 390,
+      "url": "https://infopymatec-star.github.io/pymatec-demos-andalucia-2026/auto-demos/construcciones-ceyve/",
+      "status": "pass",
+      "errors": [],
+      "metrics": {
+        "viewport": 390,
+        "scrollWidth": 390,
+        "pageTitle": "Construcciones CEYVE · Propuesta visual de Pymatec",
+        "h1": "Construir con una idea clara.",
+        "heroWidth": 390,
+        "css": true,
+        "cssWidth": "1220px",
+        "services": 3,
+        "photos": [
+          {
+            "src": "https://images.unsplash.com/photo-1751703019097-02f294f45343?auto=format&fit=crop&w=1500&q=82",
+            "loaded": true,
+            "naturalWidth": 1500,
+            "width": 390,
+            "height": 605
+          }
+        ],
+        "mail": [
+          "mailto:construccionesceyve@hotmail.com"
+        ],
+        "phone": [
+          "tel:+34699465122"
+        ],
+        "links": [
+          "#inicio",
+          "#servicios",
+          "#empresa",
+          "#contacto"
+        ],
+        "sourceWords": false,
+        "disclaimer": true,
+        "mobileMenu": true
+      }
+    },
+    {
+      "slug": "construcciones-ceyve",
+      "viewport": 1280,
+      "url": "https://infopymatec-star.github.io/pymatec-demos-andalucia-2026/auto-demos/construcciones-ceyve/",
+      "status": "pass",
+      "errors": [],
+      "metrics": {
+        "viewport": 1280,
+        "scrollWidth": 1280,
+        "pageTitle": "Construcciones CEYVE · Propuesta visual de Pymatec",
+        "h1": "Construir con una idea clara.",
+        "heroWidth": 730,
+        "css": true,
+        "cssWidth": "1220px",
+        "services": 3,
+        "photos": [
+          {
+            "src": "https://images.unsplash.com/photo-1751703019097-02f294f45343?auto=format&fit=crop&w=1500&q=82",
+            "loaded": true,
+            "naturalWidth": 1500,
+            "width": 1280,
+            "height": 640
+          }
+        ],
+        "mail": [
+          "mailto:construccionesceyve@hotmail.com"
+        ],
+        "phone": [
+          "tel:+34699465122"
+        ],
+        "links": [
+          "#inicio",
+          "#servicios",
+          "#empresa",
+          "#contacto"
+        ],
+        "sourceWords": false,
+        "disclaimer": true,
+        "mobileMenu": true
+      }
+    },
+    {
+      "slug": "pulidos-fc",
+      "viewport": 390,
+      "url": "https://infopymatec-star.github.io/pymatec-demos-andalucia-2026/auto-demos/pulidos-fc/",
+      "status": "pass",
+      "errors": [],
+      "metrics": {
+        "viewport": 390,
+        "scrollWidth": 390,
+        "pageTitle": "Pulidos F.C. · Propuesta visual de Pymatec",
+        "h1": "Cada suelo tiene una nueva oportunidad.",
+        "heroWidth": 390,
+        "css": true,
+        "cssWidth": "1220px",
+        "services": 4,
+        "photos": [
+          {
+            "src": "https://images.unsplash.com/photo-1706629503571-c165023a7792?auto=format&fit=crop&w=1500&q=82",
+            "loaded": true,
+            "naturalWidth": 1500,
+            "width": 390,
+            "height": 285
+          }
+        ],
+        "mail": [
+          "mailto:cantifc@hotmail.com"
+        ],
+        "phone": [
+          "tel:+34652969070"
+        ],
+        "links": [
+          "#inicio",
+          "#servicios",
+          "#empresa",
+          "#contacto"
+        ],
+        "sourceWords": false,
+        "disclaimer": true,
+        "mobileMenu": true
+      }
+    },
+    {
+      "slug": "pulidos-fc",
+      "viewport": 1280,
+      "url": "https://infopymatec-star.github.io/pymatec-demos-andalucia-2026/auto-demos/pulidos-fc/",
+      "status": "pass",
+      "errors": [],
+      "metrics": {
+        "viewport": 1280,
+        "scrollWidth": 1280,
+        "pageTitle": "Pulidos F.C. · Propuesta visual de Pymatec",
+        "h1": "Cada suelo tiene una nueva oportunidad.",
+        "heroWidth": 582.421875,
+        "css": true,
+        "cssWidth": "1220px",
+        "services": 4,
+        "photos": [
+          {
+            "src": "https://images.unsplash.com/photo-1706629503571-c165023a7792?auto=format&fit=crop&w=1500&q=82",
+            "loaded": true,
+            "naturalWidth": 1500,
+            "width": 563.578125,
+            "height": 530
+          }
+        ],
+        "mail": [
+          "mailto:cantifc@hotmail.com"
+        ],
+        "phone": [
+          "tel:+34652969070"
+        ],
+        "links": [
+          "#inicio",
+          "#servicios",
+          "#empresa",
+          "#contacto"
+        ],
+        "sourceWords": false,
+        "disclaimer": true,
+        "mobileMenu": true
+      }
+    }
+  ],
+  "errors": []
+}
