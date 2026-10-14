@@ -73,7 +73,7 @@ with sync_playwright() as p:
     report["checks"].append(record)
     report["errors"].extend([label+" "+e for e in record["errors"]])
  finally:browser.close()
-report["status"]="pass" if len(report["checks"])==20 and not report["errors"] else "fail"
+report["status"]="pass" if len(report["checks"])==2*len(SLUGS) and not report["errors"] else "fail"
 OUT.write_text(json.dumps(report,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
 print("RESULT",report["status"],"checks",len(report["checks"]),"errors",len(report["errors"]))
 for e in report["errors"]:print("QA_FAIL:",e)
