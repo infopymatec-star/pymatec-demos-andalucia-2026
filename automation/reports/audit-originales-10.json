@@ -1,5 +1,5 @@
 {
-  "date": "2026-10-14T11:19:23.510751+00:00",
+  "date": "2026-10-14T11:23:01.168607+00:00",
   "results": [
     {
       "name": "Carpintería Sarria Contreras",
@@ -644,8 +644,108 @@
         ],
         "anchors": 8
       }
+    },
+    {
+      "name": "Talleres Luis Marín",
+      "url": "https://talleresluismarin.es.tl/",
+      "mobileStatus": "unknown_error",
+      "httpStatus": 200,
+      "evidence": [
+        "layout viewport 980px en dispositivo de 390px (reescala)",
+        "3 enlaces relevantes fuera de 390px",
+        "12 elementos de texto fuera de 390px"
+      ],
+      "metrics": {
+        "innerWidth": 980,
+        "visualWidth": 980,
+        "clientWidth": 980,
+        "scrollWidth": 980,
+        "bodyScroll": 964,
+        "viewportMeta": null,
+        "linksOffscreen": [
+          {
+            "t": "",
+            "left": 693,
+            "right": 693
+          },
+          {
+            "t": "",
+            "left": 753,
+            "right": 753
+          },
+          {
+            "t": "Este sitio web fue creado gratuitamente con P",
+            "left": 14,
+            "right": 966
+          }
+        ],
+        "textOffscreen": [
+          {
+            "tag": "TD",
+            "left": 8,
+            "right": 896
+          },
+          {
+            "tag": "TD",
+            "left": 170,
+            "right": 743
+          },
+          {
+            "tag": "TD",
+            "left": 743,
+            "right": 896
+          },
+          {
+            "tag": "TD",
+            "left": 170,
+            "right": 743
+          },
+          {
+            "tag": "P",
+            "left": 185,
+            "right": 728
+          },
+          {
+            "tag": "P",
+            "left": 185,
+            "right": 728
+          },
+          {
+            "tag": "P",
+            "left": 185,
+            "right": 728
+          },
+          {
+            "tag": "P",
+            "left": 185,
+            "right": 728
+          },
+          {
+            "tag": "P",
+            "left": 185,
+            "right": 728
+          },
+          {
+            "tag": "P",
+            "left": 185,
+            "right": 728
+          },
+          {
+            "tag": "P",
+            "left": 185,
+            "right": 728
+          },
+          {
+            "tag": "P",
+            "left": 185,
+            "right": 728
+          }
+        ],
+        "anchors": 3
+      },
+      "error": "Page.screenshot: Timeout 18000ms exceeded.\nCall log:\n  - taking page screenshot\n  - waiting for fonts to load...\n"
     }
   ],
-  "total": 10,
+  "total": 11,
   "confirmedCount": 9
 }
