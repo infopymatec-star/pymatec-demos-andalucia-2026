@@ -29,7 +29,7 @@
     "pulidosfc.es.tl",
     "talleresluismarin.es.tl"
   ],
-  "updated": "2026-10-16",
+  "updated": "2026-10-19",
   "names": [
     "ReforMarbella",
     "Esspora",
@@ -402,14 +402,34 @@
   "examined_osm_ids": [
     "node:4851165346",
     "node:9805703672",
-    "node:12857335247"
+    "node:12857335247",
+    "node:5736250847",
+    "node:12229757824",
+    "node:12927274240",
+    "node:12927346434",
+    "node:12983530710",
+    "node:13937895228",
+    "node:14049500415",
+    "node:12228134795",
+    "way:736500685"
   ],
   "examined_domains": [
-    "fontanerosestepona.es"
+    "fontanerosestepona.es",
+    "joseluiscamacho.es",
+    "proinco.es"
   ],
   "examined_names": [
     "Vidriokam",
     "m&s Renovierungen · Vermietungen",
-    "Fontanero Estepona Soluciones"
+    "Fontanero Estepona Soluciones",
+    "Rekalde Muebles Originales",
+    "Instalaciones Rayma S.L.",
+    "Ballesteros",
+    "Ecopintor",
+    "Castillo Torrecampo S.L.",
+    "Molero S.L.",
+    "Climalcantara",
+    "José Luis Camacho",
+    "Proinco"
   ]
 }
