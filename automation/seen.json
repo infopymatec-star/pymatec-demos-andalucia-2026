@@ -29,7 +29,7 @@
     "pulidosfc.es.tl",
     "talleresluismarin.es.tl"
   ],
-  "updated": "2026-10-21",
+  "updated": "2026-10-22",
   "names": [
     "ReforMarbella",
     "Esspora",
@@ -411,7 +411,11 @@
     "node:13937895228",
     "node:14049500415",
     "node:12228134795",
-    "way:736500685"
+    "way:736500685",
+    "node:10568721313",
+    "node:12047228752",
+    "node:12048862642",
+    "node:12054541834"
   ],
   "examined_domains": [
     "fontanerosestepona.es",
@@ -430,6 +434,10 @@
     "Molero S.L.",
     "Climalcantara",
     "José Luis Camacho",
-    "Proinco"
+    "Proinco",
+    "Cristalería Fuengirola",
+    "Paco's Jardinería S.L.",
+    "Cristalería Las Cañadas",
+    "Núñez-Bernal y familia"
   ]
 }
