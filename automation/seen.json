@@ -29,7 +29,7 @@
     "pulidosfc.es.tl",
     "talleresluismarin.es.tl"
   ],
-  "updated": "2026-10-28",
+  "updated": "2026-10-29",
   "names": [
     "ReforMarbella",
     "Esspora",
@@ -415,7 +415,16 @@
     "node:10568721313",
     "node:12047228752",
     "node:12048862642",
-    "node:12054541834"
+    "node:12054541834",
+    "node:4519562198",
+    "node:4530591163",
+    "node:4545312402",
+    "node:4545312403",
+    "node:4594802590",
+    "node:4657041746",
+    "node:6673748982",
+    "node:6718480360",
+    "node:6718480362"
   ],
   "examined_domains": [
     "fontanerosestepona.es",
@@ -438,6 +447,15 @@
     "Cristalería Fuengirola",
     "Paco's Jardinería S.L.",
     "Cristalería Las Cañadas",
-    "Núñez-Bernal y familia"
+    "Núñez-Bernal y familia",
+    "El Canario Irrigatie Riegos",
+    "Pinturas La Torre",
+    "Pepe Lopez",
+    "Enrique Camacho",
+    "Hnos Dias Popez",
+    "Klimacentro",
+    "Carpenteria",
+    "Novawood",
+    "Talleres Moyano e Hijos S.L."
   ]
 }
